@@ -12,9 +12,9 @@ TODO:
 
 - Load reports from SQL Server - Ivan
 
-- Generate PDF Reports
+- Generate PDF Reports - Dimitar
 
-- Generate XML Report
+- Generate XML Report - Dimitar
 
 - JSON Reports
 
