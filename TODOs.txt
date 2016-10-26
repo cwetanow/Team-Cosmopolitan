@@ -21,3 +21,5 @@ TODO:
 - Load data from XML
 
 - Excel data
+
+- Load data in MySql
