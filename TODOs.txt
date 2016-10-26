@@ -1,0 +1,17 @@
+- Generate Excel (2003) reports for problem 1
+
+- Generate XML data for problem 5
+
+- Generate SQLite database holding more information for each product for Problem 6
+
+Problem 1 - Load Excel Reports from ZIP File
+
+Problem 2 - Generate PDF Reports
+
+Problem 3 - Generate XML Report
+
+Problem 4 - JSON Reports
+
+Problem 5 - Load data from XML
+
+Problem 6 - Excel data
