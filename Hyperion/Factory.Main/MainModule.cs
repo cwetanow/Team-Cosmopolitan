@@ -2,19 +2,20 @@
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using System.Collections.Generic;
+using Factory.InsertData;
 
 namespace Factory.Main
 {
     public class MainModule
     {
-        private static List<SpaceshipMap> mongoDBData;
         private const string DataName = "spaceships";
 
         public static void Main(string[] args)
         {
 
-            GetDataFromMongoDb();
-            foreach (var item in mongoDBData)
+            var mongoData = GetDataFromMongoDb();
+
+            foreach (var item in mongoData)
             {
                 Console.WriteLine(item.Model);
             }
@@ -24,7 +25,7 @@ namespace Factory.Main
             // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.
-            // PopulateSQLDataBase();
+            PopulateSQLDataBase(mongoData);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();
@@ -45,11 +46,21 @@ namespace Factory.Main
             // CreateExcel();
         }
 
-        private static void GetDataFromMongoDb()
+        private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
+        {
+            var dbContext = new FactoryDbContext();
+            dbContext.Spaceships.AddRange(data);
+
+            dbContext.SaveChanges();
+        }
+
+        private static IList<SpaceshipMap> GetDataFromMongoDb()
         {
             var mongoContext = new MongoDBContext(DataName);
 
-            mongoDBData = mongoContext.GetData();
+            var mongoDBData = mongoContext.GetData();
+
+            return mongoDBData;
         }
     }
 }
