@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{690E48DA-FC7D-42E0-8942-C216EBF68F1E}</ProjectGuid>
+    <ProjectGuid>{AF746C24-5464-42A6-A093-29258D7599FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Factory.Main</RootNamespace>
-    <AssemblyName>Factory.Main</AssemblyName>
+    <RootNamespace>Factory.ExcelReports</RootNamespace>
+    <AssemblyName>Factory.ExcelReports</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,16 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="DotNetZip, Version=1.10.1.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.10.1\lib\net20\DotNetZip.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,26 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainModule.cs" />
+    <Compile Include="ExcelSalesReportsReader.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Factory.ExcelReports\Factory.ExcelReports.csproj">
-      <Project>{af746c24-5464-42a6-a093-29258d7599fc}</Project>
-      <Name>Factory.ExcelReports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Factory.InsertData\Factory.InsertData.csproj">
-      <Project>{dc12117c-5e63-43fe-89c3-34390ace2bfa}</Project>
-      <Name>Factory.InsertData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Factory.MongoDB\Factory.MongoDB.csproj">
-      <Project>{95419d20-d5d1-4e94-8b50-fed10e2d9985}</Project>
-      <Name>Factory.MongoDB</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using System.Collections.Generic;
 using Factory.InsertData;
+using Factory.ExcelReports;
 
 namespace Factory.Main
 {
@@ -15,12 +16,11 @@ namespace Factory.Main
 
             var mongoData = GetDataFromMongoDb();
 
-            foreach (var item in mongoData)
-            {
-                Console.WriteLine(item.Model);
-            }
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            // GetReportsDataFromExcel();
+            // only unzping part inplemented 
+            string zipFilePath = "../../../../SalesReports.zip";
+            string unzipedFilesPath = "../../../../";
+            GetReportsDataFromExcel(zipFilePath, unzipedFilesPath);
 
             // GetDataFromXML();
 
@@ -52,6 +52,14 @@ namespace Factory.Main
             dbContext.Spaceships.AddRange(data);
 
             dbContext.SaveChanges();
+        }
+
+        private static void GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
+        {
+            ExcelSalesReportsReader excelReader = new ExcelSalesReportsReader();
+            excelReader.UnzipFiles(zipFilePath, unzipedFilesPath);
+
+            //TODO loadData from files
         }
 
         private static IList<SpaceshipMap> GetDataFromMongoDb()

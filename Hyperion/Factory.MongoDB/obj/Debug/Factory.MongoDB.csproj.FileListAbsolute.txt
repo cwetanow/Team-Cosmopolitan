@@ -10,3 +10,15 @@ C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\Mongo
 C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.csprojResolveAssemblyReference.cache
 C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.exe
 C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.pdb
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\Factory.MongoDB.exe.config
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\Factory.MongoDB.exe
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\Factory.MongoDB.pdb
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Bson.dll
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Driver.dll
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Bson.xml
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Driver.xml
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.csprojResolveAssemblyReference.cache
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.exe
+C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.MongoDB\obj\Debug\Factory.MongoDB.pdb
