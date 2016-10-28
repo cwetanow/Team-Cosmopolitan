@@ -11,10 +11,10 @@ namespace Factory.Main
     {
         private const string DataName = "spaceships";
 
-        public static void Main(string[] args)
+        public static void Main()
         {
 
-            var mongoData = GetDataFromMongoDb();
+            // var mongoData = GetDataFromMongoDb();
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             // only unzping part inplemented 
@@ -25,7 +25,7 @@ namespace Factory.Main
             // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.
-            PopulateSQLDataBase(mongoData);
+            // PopulateSQLDataBase(mongoData);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();
@@ -46,13 +46,13 @@ namespace Factory.Main
             // CreateExcel();
         }
 
-        private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
-        {
-            var dbContext = new FactoryDbContext();
-            dbContext.Spaceships.AddRange(data);
+        //private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
+        //{
+        //    var dbContext = new FactoryDbContext();
+        //    dbContext.Spaceships.AddRange(data);
 
-            dbContext.SaveChanges();
-        }
+        //    dbContext.SaveChanges();
+        //}
 
         private static void GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
         {
