@@ -50,6 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryDbContext.cs" />
+    <Compile Include="Models\Products\Category.cs" />
+    <Compile Include="Models\Products\City.cs" />
+    <Compile Include="Models\Products\Country.cs" />
+    <Compile Include="Models\Products\Part.cs" />
+    <Compile Include="Models\Products\PartType.cs" />
+    <Compile Include="Models\Products\Spaceship.cs" />
+    <Compile Include="Models\Products\Supplier.cs" />
+    <Compile Include="Models\Reports\Report.cs" />
+    <Compile Include="Models\Reports\Sale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,6 @@
 ﻿using System.Data.Entity;
+using Factory.InsertData.Models.Products;
+using Factory.InsertData.Models.Reports;
 using Factory.MongoDB.ModelMaps;
 
 namespace Factory.InsertData
@@ -10,9 +12,22 @@ namespace Factory.InsertData
         {
         }
 
-        public DbSet<PartMap> Parts { get; set; }
-        public DbSet<PartTypeMap> PartTypes { get; set; }
-        public DbSet<SpaceshipMap> Spaceships { get; set; }
-        public DbSet<SupplierMap> Suppliers { get; set; }
+        public DbSet<Part> Parts { get; set; }
+
+        public DbSet<PartType> PartTypes { get; set; }
+
+        public DbSet<Spaceship> Spaceships { get; set; }
+
+        public DbSet<Supplier> Suppliers { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<City> Cities { get; set; }
+
+        public DbSet<Country> Countries { get; set; }
+
+        public DbSet<Report> Reports { get; set; }
+
+        public DbSet<Sale> Sales { get; set; }
     }
 }
