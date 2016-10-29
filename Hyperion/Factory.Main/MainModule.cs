@@ -1,4 +1,5 @@
-﻿using Factory.MongoDB;
+﻿using System;
+using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using System.Collections.Generic;
 using Factory.InsertData;
@@ -19,15 +20,20 @@ namespace Factory.Main
         public static void Main()
         {
 
-            var mongoData = GetDataFromMongoDb();
+            //  var mongoData = GetDataFromMongoDb();
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
-           
+            foreach (var excelReport in reports)
+            {
+                Console.WriteLine(excelReport.GetTotalSum() + " " + excelReport.Date);
+            }
             // GetDataFromXML();
 
+            var migrator = DataMigrator.Instance;
+
             //SQL Server should be accessed through Entity Framework.
-            PopulateSQLDataBase(mongoData);
+            //     PopulateSQLDataBase(mongoData);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();

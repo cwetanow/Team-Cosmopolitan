@@ -95,7 +95,7 @@ namespace Factory.ExcelReports
                     string productName = reader[0].ToString();
                     if (productName != "Total sum")
                     {
-                        decimal quantity = decimal.Parse(reader[1].ToString());
+                        int quantity = int.Parse(reader[1].ToString());
                         decimal unitPrice = decimal.Parse(reader[2].ToString());
                         // TODO cannot get the result from the formula.
                         decimal sum = quantity * unitPrice;

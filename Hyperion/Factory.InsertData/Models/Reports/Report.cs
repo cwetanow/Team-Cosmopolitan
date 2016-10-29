@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Factory.InsertData.Models.Reports
@@ -11,5 +12,7 @@ namespace Factory.InsertData.Models.Reports
         public virtual ICollection<Sale> Sales { get; set; }
 
         public decimal TotalSum { get; set; }
+
+        public DateTime Date { get; set; }
     }
 }

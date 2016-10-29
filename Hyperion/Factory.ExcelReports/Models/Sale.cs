@@ -2,11 +2,11 @@
 {
     public class Sale
     {
-        public Sale(string productName, decimal quantity, decimal UnitPrice, decimal sum)
+        public Sale(string productName, int quantity, decimal unitPrice, decimal sum)
         {
             this.ProductName = productName;
             this.Quantity = quantity;
-            this.UnitPrice = UnitPrice;
+            this.UnitPrice = unitPrice;
             this.Sum = sum;
         }
 

@@ -3,7 +3,7 @@ using Factory.InsertData.Models.Products;
 
 namespace Factory.InsertData.Models.Reports
 {
-    public class Sale
+    public class ProductSale
     {
         [Key]
         public int Id { get; set; }
@@ -13,7 +13,7 @@ namespace Factory.InsertData.Models.Reports
         public Report Report { get; set; }
 
         [StringLength(50)]
-        public string SpaceshipName { get; set; }
+        public string ProductName { get; set; }
 
         public decimal Price { get; set; }
 

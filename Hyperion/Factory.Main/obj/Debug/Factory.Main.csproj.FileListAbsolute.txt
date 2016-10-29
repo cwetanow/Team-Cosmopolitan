@@ -42,3 +42,7 @@ C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.Main\bin
 C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\MongoDB.Bson.xml
 C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\MongoDB.Driver.Core.xml
 C:\Users\Ga\Desktop\TeamCosmopoliten\Team-Cosmopolitan\Hyperion\Factory.Main\obj\Debug\Factory.Main.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\Factory.ExcelReports.exe
+C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\DotNetZip.dll
+C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\Factory.ExcelReports.pdb
+C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.Main\bin\Debug\DotNetZip.xml
