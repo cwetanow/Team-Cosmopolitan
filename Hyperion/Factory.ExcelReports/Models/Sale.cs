@@ -2,7 +2,7 @@
 {
     public class Sale
     {
-        public Sale(string productName, double quantity, double UnitPrice, double sum)
+        public Sale(string productName, decimal quantity, decimal UnitPrice, decimal sum)
         {
             this.ProductName = productName;
             this.Quantity = quantity;
@@ -13,10 +13,10 @@
         //TODO validation
         public string ProductName { get; set; }
 
-        public double Quantity { get; set; }
+        public decimal Quantity { get; set; }
 
-        public double UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
 
-        public double Sum { get; set; }
+        public decimal Sum { get; set; }
     }
 }

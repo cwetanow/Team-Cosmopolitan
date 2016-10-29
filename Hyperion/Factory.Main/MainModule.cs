@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Factory.InsertData;
 using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
+using System.Linq;
+using System.Diagnostics;
 
 namespace Factory.Main
 {
@@ -21,7 +23,7 @@ namespace Factory.Main
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
-
+           
             // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.

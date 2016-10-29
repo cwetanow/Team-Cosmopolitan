@@ -75,6 +75,11 @@ namespace Factory.ExcelReports
                 OleDbDataReader reader = cmdReadData.ExecuteReader();
 
                 var report = new ExcelReport();
+                int lastSlash = filePath.LastIndexOf(@"\");
+                int lastDot = filePath.LastIndexOf(".");
+                string date = filePath.Substring(lastSlash + 1, lastDot - lastSlash - 1);
+                report.Date = DateTime.Parse(date);
+
                 AddSalesToReport(reader, report);
 
                 return report;
@@ -90,13 +95,12 @@ namespace Factory.ExcelReports
                     string productName = reader[0].ToString();
                     if (productName != "Total sum")
                     {
-                        double quantity = (double)reader[1];
-                        double unitPrice = (double)reader[2];
+                        decimal quantity = decimal.Parse(reader[1].ToString());
+                        decimal unitPrice = decimal.Parse(reader[2].ToString());
                         // TODO cannot get the result from the formula.
-                        double sum = quantity * unitPrice;
+                        decimal sum = quantity * unitPrice;
                         var sale = new Sale(productName, quantity, unitPrice, sum);
                         report.AddSale(sale);
-
                     }
                 }
             }

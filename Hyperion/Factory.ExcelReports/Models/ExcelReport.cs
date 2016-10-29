@@ -11,8 +11,8 @@ namespace Factory.ExcelReports.Models
         {
             this.sales = new List<Sale>();
         }
-
-        private double TotalSum { get; set; }
+        
+        public DateTime Date { get; set; }
 
         public void AddSale(Sale sale)
         {
@@ -29,9 +29,9 @@ namespace Factory.ExcelReports.Models
             return this.sales;
         }
 
-        public double GetTotalSum()
+        public decimal GetTotalSum()
         {
-            double totalSum = 0;
+            decimal totalSum = 0;
             foreach (var sale in this.sales)
             {
                 totalSum += sale.Sum;
