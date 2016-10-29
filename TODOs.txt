@@ -6,7 +6,7 @@ TODO:
 
 - Generate SQLite database holding more information for each product for Problem 6
 
-- Load Excel Reports from ZIP File
+- Load Excel Reports from ZIP File Galin DONE
 
 - Insert data in SQL Server - Ivan
 
