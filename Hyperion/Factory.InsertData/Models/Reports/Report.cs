@@ -9,7 +9,7 @@ namespace Factory.InsertData.Models.Reports
         [Key]
         public int Id { get; set; }
 
-        public virtual ICollection<Sale> Sales { get; set; }
+        public virtual ICollection<ProductSale> Sales { get; set; }
 
         public decimal TotalSum { get; set; }
 

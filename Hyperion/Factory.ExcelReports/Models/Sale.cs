@@ -13,7 +13,7 @@
         //TODO validation
         public string ProductName { get; set; }
 
-        public decimal Quantity { get; set; }
+        public int Quantity { get; set; }
 
         public decimal UnitPrice { get; set; }
 

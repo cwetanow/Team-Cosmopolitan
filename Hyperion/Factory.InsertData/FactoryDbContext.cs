@@ -28,6 +28,6 @@ namespace Factory.InsertData
 
         public DbSet<Report> Reports { get; set; }
 
-        public DbSet<Sale> Sales { get; set; }
+        public DbSet<ProductSale> Sales { get; set; }
     }
 }

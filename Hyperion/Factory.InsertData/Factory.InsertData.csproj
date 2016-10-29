@@ -58,7 +58,7 @@
     <Compile Include="Models\Products\Spaceship.cs" />
     <Compile Include="Models\Products\Supplier.cs" />
     <Compile Include="Models\Reports\Report.cs" />
-    <Compile Include="Models\Reports\Sale.cs" />
+    <Compile Include="Models\Reports\ProductSale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

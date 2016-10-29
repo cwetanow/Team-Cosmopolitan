@@ -7,6 +7,7 @@ using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
 using System.Linq;
 using System.Diagnostics;
+using Factory.InsertData.Models.Reports;
 
 namespace Factory.Main
 {
@@ -19,21 +20,20 @@ namespace Factory.Main
 
         public static void Main()
         {
+            var context = new FactoryDbContext();
+            context.Database.CreateIfNotExists();
 
             //  var mongoData = GetDataFromMongoDb();
-
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
-            foreach (var excelReport in reports)
-            {
-                Console.WriteLine(excelReport.GetTotalSum() + " " + excelReport.Date);
-            }
-            // GetDataFromXML();
 
-            var migrator = DataMigrator.Instance;
+            // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.
             //     PopulateSQLDataBase(mongoData);
+            var reportsForSql = DataMigrator.Instance.GetReports(reports);
+
+            PopulateSqlDbReports(reportsForSql, context);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();
@@ -52,6 +52,12 @@ namespace Factory.Main
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             // CreateExcel();
+        }
+
+        private static void PopulateSqlDbReports(ICollection<Report> reportsForSql, FactoryDbContext context)
+        {
+            context.Reports.AddRange(reportsForSql);
+            context.SaveChanges();
         }
 
         private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
