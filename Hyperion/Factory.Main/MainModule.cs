@@ -1,31 +1,31 @@
-﻿using System;
-using Factory.MongoDB;
+﻿using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using System.Collections.Generic;
 using Factory.InsertData;
 using Factory.ExcelReports;
+using Factory.ExcelReports.Models;
 
 namespace Factory.Main
 {
     public class MainModule
     {
         private const string DataName = "spaceships";
+        private const string ZipFilePath = "../../../../SalesReports.zip";
+        private const string UnzipedFilesPath = "../../../../";
+        private const string SalesReportsPath = "../../../../SalesReports";
 
         public static void Main()
         {
 
-            // var mongoData = GetDataFromMongoDb();
+            var mongoData = GetDataFromMongoDb();
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            // only unzping part inplemented 
-            string zipFilePath = "../../../../SalesReports.zip";
-            string unzipedFilesPath = "../../../../";
-            GetReportsDataFromExcel(zipFilePath, unzipedFilesPath);
+            var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
 
             // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.
-            // PopulateSQLDataBase(mongoData);
+            PopulateSQLDataBase(mongoData);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();
@@ -46,20 +46,21 @@ namespace Factory.Main
             // CreateExcel();
         }
 
-        //private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
-        //{
-        //    var dbContext = new FactoryDbContext();
-        //    dbContext.Spaceships.AddRange(data);
+        private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
+        {
+            //var dbContext = new FactoryDbContext();
+            //dbContext.Spaceships.AddRange(data);
 
-        //    dbContext.SaveChanges();
-        //}
+            //dbContext.SaveChanges();
+        }
 
-        private static void GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
+        private static ICollection<ExcelReport> GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
         {
             ExcelSalesReportsReader excelReader = new ExcelSalesReportsReader();
             excelReader.UnzipFiles(zipFilePath, unzipedFilesPath);
+            var reports = excelReader.GetSalesReports(SalesReportsPath);
 
-            //TODO loadData from files
+            return reports;
         }
 
         private static IList<SpaceshipMap> GetDataFromMongoDb()
