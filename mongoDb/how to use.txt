@@ -1,0 +1,12 @@
+put the file at the bin dir of mongoDb, start a cmd and write mongod.exe. Then write in another cmd the following
+mongoimport --db spaceships --collection spaceships --file spaceships.json
+
+then write mongo.exe
+common commands
+- db shows - will show all the dbs you have
+- use spaceships - will switch to spaceships db
+- db.spaceships.find().pretty() - will show the db data
+- db.spaceships.find({"Model": "Death Star"}) - will show the info for Death Star
+
+
+if it does not work, call Galin :)
