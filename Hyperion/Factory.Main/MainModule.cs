@@ -7,6 +7,7 @@ using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
 using System.Linq;
 using System.Diagnostics;
+using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
 
 namespace Factory.Main
@@ -23,7 +24,8 @@ namespace Factory.Main
             var context = new FactoryDbContext();
             context.Database.CreateIfNotExists();
 
-            //  var mongoData = GetDataFromMongoDb();
+            var mongoData = GetDataFromMongoDb();
+
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
 
@@ -31,9 +33,11 @@ namespace Factory.Main
 
             //SQL Server should be accessed through Entity Framework.
             //     PopulateSQLDataBase(mongoData);
-            var reportsForSql = DataMigrator.Instance.GetReports(reports);
+            var productData = ProductMigrator.Instance.GetProductData(mongoData);
+            PopulateSQLDataBase(productData, context);
 
-            PopulateSqlDbReports(reportsForSql, context);
+            var reportsData = ReportMigrator.Instance.GetReports(reports);
+            PopulateSqlDbReports(reportsData, context);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
             // GenerateXMLReport();
@@ -54,19 +58,18 @@ namespace Factory.Main
             // CreateExcel();
         }
 
-        private static void PopulateSqlDbReports(ICollection<Report> reportsForSql, FactoryDbContext context)
+        private static void PopulateSQLDataBase(IEnumerable<Spaceship> productData, FactoryDbContext context)
+        {
+            context.Spaceships.AddRange(productData);
+            context.SaveChanges();
+        }
+
+        private static void PopulateSqlDbReports(IEnumerable<Report> reportsForSql, FactoryDbContext context)
         {
             context.Reports.AddRange(reportsForSql);
             context.SaveChanges();
         }
 
-        private static void PopulateSQLDataBase(IEnumerable<SpaceshipMap> data)
-        {
-            //var dbContext = new FactoryDbContext();
-            //dbContext.Spaceships.AddRange(data);
-
-            //dbContext.SaveChanges();
-        }
 
         private static ICollection<ExcelReport> GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
         {

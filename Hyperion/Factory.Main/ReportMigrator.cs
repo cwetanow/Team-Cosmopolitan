@@ -5,15 +5,15 @@ using Factory.InsertData.Models.Reports;
 
 namespace Factory.Main
 {
-    public class DataMigrator
+    public class ReportMigrator
     {
-        private static DataMigrator instance;
+        private static ReportMigrator instance;
 
-        private static object lockObject = new object();
+        private static readonly object lockObject = new object();
 
-        private DataMigrator() { }
+        private ReportMigrator() { }
 
-        public static DataMigrator Instance
+        public static ReportMigrator Instance
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Factory.Main
                     {
                         if (instance == null)
                         {
-                            instance = new DataMigrator();
+                            instance = new ReportMigrator();
                         }
                     }
                 }
