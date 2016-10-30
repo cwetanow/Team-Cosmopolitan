@@ -2,7 +2,7 @@ TODO:
 
 - Generate Excel (2003) reports for problem 1 - Galin DONE
 
-- Generate XML data for problem 5
+- Generate XML data for problem 5 - Bojko
 
 - Generate SQLite database holding more information for each product for Problem 6
 
@@ -18,7 +18,7 @@ TODO:
 
 - JSON Reports
 
-- Load data from XML
+- Load data from XML - Bojko
 
 - Excel data
 
