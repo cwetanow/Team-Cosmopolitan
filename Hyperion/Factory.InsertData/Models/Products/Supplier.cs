@@ -9,6 +9,13 @@ namespace Factory.InsertData.Models.Products
 {
     public class Supplier
     {
+        private ICollection<Part> parts;
+
+        public Supplier()
+        {
+            this.parts = new HashSet<Part>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -20,6 +27,10 @@ namespace Factory.InsertData.Models.Products
 
         public City City { get; set; }
 
-        public virtual ICollection<Part> Parts { get; set; }
+        public virtual ICollection<Part> Parts
+        {
+            get { return this.parts; }
+            set { this.parts = value; }
+        }
     }
 }
