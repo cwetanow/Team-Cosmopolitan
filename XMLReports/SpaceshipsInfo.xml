@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Spaceships>
+  <Spaceship>
+    <id>1</id>
+    <SpaceshipName>Black Cloud</SpaceshipName>
+    <Captain>Irene Henry</Captain>
+    <HomePlanet>Clovis</HomePlanet>
+    <NumberOfCrewMembers>148</NumberOfCrewMembers>
+    <Commission>04-Jun-4575</Commission>
+    <MissionType>Peace enforcement</MissionType>
+    <Status>Successful</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>2</id>
+    <SpaceshipName>CS Dream</SpaceshipName>
+    <Captain>Lillian Ruiz</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>314</NumberOfCrewMembers>
+    <Commission>11-Nov-4286</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>3</id>
+    <SpaceshipName>The Falcon</SpaceshipName>
+    <Captain>Gloria Schmidt</Captain>
+    <HomePlanet>Valhalla</HomePlanet>
+    <NumberOfCrewMembers>169</NumberOfCrewMembers>
+    <Commission>11-Sep-4484</Commission>
+    <MissionType>Conflict prevention and mediation</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>4</id>
+    <SpaceshipName>BC Intervention</SpaceshipName>
+    <Captain>Rachel Butler</Captain>
+    <HomePlanet>Clovis</HomePlanet>
+    <NumberOfCrewMembers>389</NumberOfCrewMembers>
+    <Commission>17-Jan-3690</Commission>
+    <MissionType>Peacekeeping</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>5</id>
+    <SpaceshipName>Star Opal</SpaceshipName>
+    <Captain>Juan Dean</Captain>
+    <HomePlanet>Regansburg</HomePlanet>
+    <NumberOfCrewMembers>496</NumberOfCrewMembers>
+    <Commission>21-Dec-3691</Commission>
+    <MissionType>Peacekeeping</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>6</id>
+    <SpaceshipName>Pursuit</SpaceshipName>
+    <Captain>Stephanie Riley</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>61</NumberOfCrewMembers>
+    <Commission>26-Apr-3812</Commission>
+    <MissionType>Monitoring</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>7</id>
+    <SpaceshipName>BC Intervention</SpaceshipName>
+    <Captain>Susan Rose</Captain>
+    <HomePlanet>Marduk</HomePlanet>
+    <NumberOfCrewMembers>141</NumberOfCrewMembers>
+    <Commission>17-Oct-4496</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Successful</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>8</id>
+    <SpaceshipName>STS Apollo</SpaceshipName>
+    <Captain>Jose Garrett</Captain>
+    <HomePlanet>Mombasa 3</HomePlanet>
+    <NumberOfCrewMembers>167</NumberOfCrewMembers>
+    <Commission>22-Nov-4207</Commission>
+    <MissionType>Conflict prevention and mediation</MissionType>
+    <Status>Successful</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>9</id>
+    <SpaceshipName>Divine Intervention</SpaceshipName>
+    <Captain>Phyllis Thompson</Captain>
+    <HomePlanet>Marduk</HomePlanet>
+    <NumberOfCrewMembers>267</NumberOfCrewMembers>
+    <Commission>15-Aug-4054</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>10</id>
+    <SpaceshipName>Cataphract</SpaceshipName>
+    <Captain>Dennis Hawkins</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>52</NumberOfCrewMembers>
+    <Commission>02-Oct-3622</Commission>
+    <MissionType>Peacekeeping</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>11</id>
+    <SpaceshipName>HWSS Fate</SpaceshipName>
+    <Captain>Victor Patterson</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>435</NumberOfCrewMembers>
+    <Commission>10-Sep-4816</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>12</id>
+    <SpaceshipName>BS Praetor</SpaceshipName>
+    <Captain>Norma Reed</Captain>
+    <HomePlanet>McCreary</HomePlanet>
+    <NumberOfCrewMembers>267</NumberOfCrewMembers>
+    <Commission>10-Aug-3568</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>13</id>
+    <SpaceshipName>CS Dream</SpaceshipName>
+    <Captain>Donald Boyd</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>495</NumberOfCrewMembers>
+    <Commission>26-Oct-4654</Commission>
+    <MissionType>Monitoring</MissionType>
+    <Status>Successful</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>14</id>
+    <SpaceshipName>Cataphract</SpaceshipName>
+    <Captain>Kathryn Wells</Captain>
+    <HomePlanet>Mombasa 3</HomePlanet>
+    <NumberOfCrewMembers>149</NumberOfCrewMembers>
+    <Commission>16-Sep-3889</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>15</id>
+    <SpaceshipName>Fate</SpaceshipName>
+    <Captain>Bobby Hill</Captain>
+    <HomePlanet>Mombasa 3</HomePlanet>
+    <NumberOfCrewMembers>422</NumberOfCrewMembers>
+    <Commission>11-Oct-3923</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>16</id>
+    <SpaceshipName>BC Elizabeth</SpaceshipName>
+    <Captain>Russell Perry</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>318</NumberOfCrewMembers>
+    <Commission>11-Jan-4436</Commission>
+    <MissionType>Conflict prevention and mediation</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>17</id>
+    <SpaceshipName>Opal Star</SpaceshipName>
+    <Captain>Susan Jones</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>448</NumberOfCrewMembers>
+    <Commission>31-Dec-4761</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>18</id>
+    <SpaceshipName>BS Praetor</SpaceshipName>
+    <Captain>Juan Meyer</Captain>
+    <HomePlanet>Regansburg</HomePlanet>
+    <NumberOfCrewMembers>313</NumberOfCrewMembers>
+    <Commission>23-Jun-4999</Commission>
+    <MissionType>Spying</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>19</id>
+    <SpaceshipName>CS Dream</SpaceshipName>
+    <Captain>Bonnie Martinez</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>264</NumberOfCrewMembers>
+    <Commission>17-Nov-4858</Commission>
+    <MissionType>Conflict prevention and mediation</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>20</id>
+    <SpaceshipName>Black Cloud</SpaceshipName>
+    <Captain>John White</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>405</NumberOfCrewMembers>
+    <Commission>13-Dec-3818</Commission>
+    <MissionType>Peace enforcement</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>21</id>
+    <SpaceshipName>BC Elizabeth</SpaceshipName>
+    <Captain>Margaret Wallace</Captain>
+    <HomePlanet>McCreary</HomePlanet>
+    <NumberOfCrewMembers>382</NumberOfCrewMembers>
+    <Commission>16-Feb-3813</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>22</id>
+    <SpaceshipName>BC Intervention</SpaceshipName>
+    <Captain>Albert Smith</Captain>
+    <HomePlanet>Horus</HomePlanet>
+    <NumberOfCrewMembers>413</NumberOfCrewMembers>
+    <Commission>26-Jul-4032</Commission>
+    <MissionType>Peace enforcement</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>23</id>
+    <SpaceshipName>The Exterminator</SpaceshipName>
+    <Captain>Earl Carroll</Captain>
+    <HomePlanet>Clovis</HomePlanet>
+    <NumberOfCrewMembers>288</NumberOfCrewMembers>
+    <Commission>15-Jul-4913</Commission>
+    <MissionType>Monitoring</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>24</id>
+    <SpaceshipName>Cataphract</SpaceshipName>
+    <Captain>Fred Holmes</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>388</NumberOfCrewMembers>
+    <Commission>09-Feb-4192</Commission>
+    <MissionType>Monitoring</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>25</id>
+    <SpaceshipName>HWSS Fate</SpaceshipName>
+    <Captain>Helen Anderson</Captain>
+    <HomePlanet>Clovis</HomePlanet>
+    <NumberOfCrewMembers>229</NumberOfCrewMembers>
+    <Commission>28-Apr-3773</Commission>
+    <MissionType>Peacekeeping</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>26</id>
+    <SpaceshipName>Fate</SpaceshipName>
+    <Captain>Catherine Long</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>112</NumberOfCrewMembers>
+    <Commission>02-May-4714</Commission>
+    <MissionType>Monitoring</MissionType>
+    <Status>Successful</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>27</id>
+    <SpaceshipName>STS Coyote</SpaceshipName>
+    <Captain>Janice Matthews</Captain>
+    <HomePlanet>Regansburg</HomePlanet>
+    <NumberOfCrewMembers>203</NumberOfCrewMembers>
+    <Commission>07-Aug-4610</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>28</id>
+    <SpaceshipName>BS Sonne</SpaceshipName>
+    <Captain>Sean Oliver</Captain>
+    <HomePlanet>Mombasa 3</HomePlanet>
+    <NumberOfCrewMembers>305</NumberOfCrewMembers>
+    <Commission>19-Dec-4917</Commission>
+    <MissionType>Peace enforcement</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>29</id>
+    <SpaceshipName>CS Calypso</SpaceshipName>
+    <Captain>Marie Stevens</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>160</NumberOfCrewMembers>
+    <Commission>28-May-3913</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>30</id>
+    <SpaceshipName>HMS Dark</SpaceshipName>
+    <Captain>Ralph Hansen</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>53</NumberOfCrewMembers>
+    <Commission>01-Oct-3542</Commission>
+    <MissionType>Peacemaking</MissionType>
+    <Status>Pending</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>31</id>
+    <SpaceshipName>Opal Star</SpaceshipName>
+    <Captain>Debra Riley</Captain>
+    <HomePlanet>Khaba</HomePlanet>
+    <NumberOfCrewMembers>490</NumberOfCrewMembers>
+    <Commission>01-Mar-4962</Commission>
+    <MissionType>Conflict prevention and mediation</MissionType>
+    <Status>Ongoing</Status>
+  </Spaceship>
+  <Spaceship>
+    <id>32</id>
+    <SpaceshipName>The Exterminator</SpaceshipName>
+    <Captain>Denise Mendoza</Captain>
+    <HomePlanet>Vordania Prime</HomePlanet>
+    <NumberOfCrewMembers>235</NumberOfCrewMembers>
+    <Commission>05-Feb-4900</Commission>
+    <MissionType>Peace enforcement</MissionType>
+    <Status>Failed</Status>
+  </Spaceship>
+</Spaceships>
