@@ -83,6 +83,8 @@ namespace Factory.Main
                     Year = spaceshipMap.Year,
                     Parts = currentShipParts
                 };
+
+                products.Add(spaceship);
             }
 
             return products;
