@@ -42,7 +42,6 @@ namespace Factory.Main
             // GenerateXMLReport();
 
             //For the PDF export use a non-commercial third party framework.
-            System.Console.WriteLine(1);
             GeneratePDFReport(reports, PdfReportsPath);
 
             //For JSON serializations use a non-commercial library / framework of your choice.
