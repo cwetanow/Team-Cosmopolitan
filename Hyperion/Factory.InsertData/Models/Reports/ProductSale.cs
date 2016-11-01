@@ -10,7 +10,7 @@ namespace Factory.InsertData.Models.Reports
 
         public int Quantity { get; set; }
 
-        public Report Report { get; set; }
+        public virtual Report Report { get; set; }
 
         [StringLength(50)]
         public string ProductName { get; set; }

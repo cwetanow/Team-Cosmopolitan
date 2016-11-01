@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using Factory.InsertData.Migrations;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
 using Factory.MongoDB.ModelMaps;
@@ -29,5 +30,12 @@ namespace Factory.InsertData
         public DbSet<Report> Reports { get; set; }
 
         public DbSet<ProductSale> Sales { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<FactoryDbContext, Configuration>());
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
+

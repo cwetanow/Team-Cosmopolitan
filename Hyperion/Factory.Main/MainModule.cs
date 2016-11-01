@@ -33,7 +33,7 @@ namespace Factory.Main
 
             //SQL Server should be accessed through Entity Framework.
             //     PopulateSQLDataBase(mongoData);
-            var productData = ProductMigrator.Instance.GetProductData(mongoData);
+            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
             PopulateSQLDataBase(productData, context);
 
             var reportsData = ReportMigrator.Instance.GetReports(reports);

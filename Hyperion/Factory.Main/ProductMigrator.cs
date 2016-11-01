@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Factory.InsertData;
 using Factory.InsertData.Models.Products;
 using Factory.MongoDB.ModelMaps;
 
@@ -33,19 +34,31 @@ namespace Factory.Main
             }
         }
 
-        public ICollection<Spaceship> GetProductData(ICollection<SpaceshipMap> maps)
+        public ICollection<Spaceship> GetProductData(ICollection<SpaceshipMap> maps, FactoryDbContext context)
         {
             var categories = this.GetCategories(maps);
+            context.Categories.AddRange(categories);
+            context.SaveChanges();
 
             var countries = this.GetCountries(maps);
+            context.Countries.AddRange(countries);
+            context.SaveChanges();
 
-            var cities = this.GetCities(maps, countries);
+            var cities = this.GetCities(maps, context.Countries);
+            context.Cities.AddRange(cities);
+            context.SaveChanges();
 
             var partTypes = this.GetPartTypes(maps);
+            context.PartTypes.AddRange(partTypes);
+            context.SaveChanges();
 
-            var suppliers = this.GetSuppliers(maps, cities);
+            var suppliers = this.GetSuppliers(maps, context.Cities);
+            context.Suppliers.AddRange(suppliers);
+            context.SaveChanges();
 
-            var parts = this.GetParts(maps, suppliers, partTypes).ToList();
+            var parts = this.GetParts(maps, context.Suppliers, context.PartTypes).ToList();
+            context.Parts.AddRange(parts);
+            context.SaveChanges();
 
             var products = new Collection<Spaceship>();
 
@@ -60,7 +73,7 @@ namespace Factory.Main
                     x.Quantity
                 });
 
-                var spaceshipParts = parts
+                var spaceshipParts = context.Parts
                     .Select(x => new
                     {
                         Supplier = x.Supplier.Name,
@@ -72,11 +85,11 @@ namespace Factory.Main
                     .Where(x => existingParts.Contains(x))
                     .Select(x => x.Name);
 
-                var currentShipParts = parts.Where(x => spaceshipParts.Contains(x.Name)).ToList();
-                
+                var currentShipParts = context.Parts.Where(x => spaceshipParts.Contains(x.Name)).ToList();
+
                 var spaceship = new Spaceship
                 {
-                    Category = categories.FirstOrDefault(x => x.Name.Equals(spaceshipMap.Category)),
+                    Category = context.Categories.FirstOrDefault(x => x.Name.Equals(spaceshipMap.Category)),
                     Color = spaceshipMap.Color,
                     Model = spaceshipMap.Model,
                     Price = (decimal)spaceshipMap.Price,
@@ -86,6 +99,7 @@ namespace Factory.Main
 
                 products.Add(spaceship);
             }
+
 
             return products;
         }
@@ -172,7 +186,6 @@ namespace Factory.Main
                 .ToList();
 
             return categoriesNames;
-
         }
 
         private IEnumerable<Supplier> GetSuppliers(IEnumerable<SpaceshipMap> maps, IEnumerable<City> cities)
