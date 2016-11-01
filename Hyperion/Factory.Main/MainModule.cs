@@ -1,14 +1,12 @@
-﻿using System;
-using Factory.MongoDB;
-using Factory.MongoDB.ModelMaps;
-using System.Collections.Generic;
-using Factory.InsertData;
+﻿using System.Collections.Generic;
 using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
-using System.Linq;
-using System.Diagnostics;
+using Factory.InsertData;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
+using Factory.MongoDB;
+using Factory.MongoDB.ModelMaps;
+using Factory.PdfReports;
 
 namespace Factory.Main
 {
@@ -18,6 +16,7 @@ namespace Factory.Main
         private const string ZipFilePath = "../../../../SalesReports.zip";
         private const string UnzipedFilesPath = "../../../../";
         private const string SalesReportsPath = "../../../../SalesReports";
+        private const string PdfReportsPath = "../../../../PdfReports/AggregatedSalesReport.pdf";
 
         public static void Main()
         {
@@ -43,7 +42,8 @@ namespace Factory.Main
             // GenerateXMLReport();
 
             //For the PDF export use a non-commercial third party framework.
-            // GeneratePDFReport();
+            System.Console.WriteLine(1);
+            GeneratePDFReport(reports, PdfReportsPath);
 
             //For JSON serializations use a non-commercial library / framework of your choice.
             // GenerateJSONReportsForEachProduct();
@@ -56,6 +56,12 @@ namespace Factory.Main
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             // CreateExcel();
+        }
+
+        private static void GeneratePDFReport(ICollection<ExcelReport> salesReports, string resultFilePath)
+        {
+            var pdfWriter = new PdfReportsWriter(salesReports);
+            pdfWriter.WriteAggregatedSalesReportsToPdf(resultFilePath);
         }
 
         private static void PopulateSQLDataBase(IEnumerable<Spaceship> productData, FactoryDbContext context)

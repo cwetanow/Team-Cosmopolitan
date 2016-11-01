@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{690E48DA-FC7D-42E0-8942-C216EBF68F1E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{389F6CD6-A713-4EC8-8ADB-7746D9802F95}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Factory.Main</RootNamespace>
-    <AssemblyName>Factory.Main</AssemblyName>
+    <RootNamespace>Factory.PdfReports</RootNamespace>
+    <AssemblyName>Factory.PdfReports</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,16 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,32 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProductMigrator.cs" />
-    <Compile Include="ReportMigrator.cs" />
-    <Compile Include="MainModule.cs" />
+    <Compile Include="PdfReportsWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Factory.ExcelReports\Factory.ExcelReports.csproj">
       <Project>{af746c24-5464-42a6-a093-29258d7599fc}</Project>
       <Name>Factory.ExcelReports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Factory.InsertData\Factory.InsertData.csproj">
-      <Project>{dc12117c-5e63-43fe-89c3-34390ace2bfa}</Project>
-      <Name>Factory.InsertData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Factory.MongoDB\Factory.MongoDB.csproj">
-      <Project>{95419d20-d5d1-4e94-8b50-fed10e2d9985}</Project>
-      <Name>Factory.MongoDB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Factory.PdfReports\Factory.PdfReports.csproj">
-      <Project>{389f6cd6-a713-4ec8-8adb-7746d9802f95}</Project>
-      <Name>Factory.PdfReports</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

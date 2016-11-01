@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.InsertData", "Facto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.ExcelReports", "Factory.ExcelReports\Factory.ExcelReports.csproj", "{AF746C24-5464-42A6-A093-29258D7599FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.PdfReports", "Factory.PdfReports\Factory.PdfReports.csproj", "{389F6CD6-A713-4EC8-8ADB-7746D9802F95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AF746C24-5464-42A6-A093-29258D7599FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF746C24-5464-42A6-A093-29258D7599FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF746C24-5464-42A6-A093-29258D7599FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389F6CD6-A713-4EC8-8ADB-7746D9802F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389F6CD6-A713-4EC8-8ADB-7746D9802F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389F6CD6-A713-4EC8-8ADB-7746D9802F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389F6CD6-A713-4EC8-8ADB-7746D9802F95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
