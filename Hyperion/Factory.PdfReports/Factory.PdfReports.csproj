@@ -48,13 +48,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Factory.ExcelReports\Factory.ExcelReports.csproj">
-      <Project>{af746c24-5464-42a6-a093-29258d7599fc}</Project>
-      <Name>Factory.ExcelReports</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Factory.InsertData\Factory.InsertData.csproj">
+      <Project>{dc12117c-5e63-43fe-89c3-34390ace2bfa}</Project>
+      <Name>Factory.InsertData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

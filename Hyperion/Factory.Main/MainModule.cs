@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
 using Factory.InsertData;
@@ -42,7 +43,7 @@ namespace Factory.Main
             // GenerateXMLReport();
 
             //For the PDF export use a non-commercial third party framework.
-            GeneratePDFReport(reports, PdfReportsPath);
+            GeneratePDFReport(context, PdfReportsPath);
 
             //For JSON serializations use a non-commercial library / framework of your choice.
             // GenerateJSONReportsForEachProduct();
@@ -57,8 +58,9 @@ namespace Factory.Main
             // CreateExcel();
         }
 
-        private static void GeneratePDFReport(ICollection<ExcelReport> salesReports, string resultFilePath)
+        private static void GeneratePDFReport(FactoryDbContext context, string resultFilePath)
         {
+            var salesReports = context.Reports.OrderBy(x => x.Date).ToList();
             var pdfWriter = new PdfReportsWriter(salesReports);
             pdfWriter.WriteAggregatedSalesReportsToPdf(resultFilePath);
         }

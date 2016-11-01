@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Factory.ExcelReports.Models;
+using Factory.InsertData.Models.Reports;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 
@@ -9,9 +9,9 @@ namespace Factory.PdfReports
 {
     public class PdfReportsWriter
     {
-        private readonly List<ExcelReport> SalesReports;
+        private readonly IEnumerable<Report> SalesReports;
 
-        public PdfReportsWriter(ICollection<ExcelReport> salesReports)
+        public PdfReportsWriter(IEnumerable<Report> salesReports)
         {
             this.SalesReports = salesReports.ToList();
         }
@@ -21,8 +21,8 @@ namespace Factory.PdfReports
             var pdf = new Document(PageSize.A4, 36, 36, 36, 36);
             var path = File.Create(resultFilePath);
             PdfWriter.GetInstance(pdf, path);
-            pdf.Open();
 
+            pdf.Open();
             PdfPTable table = new PdfPTable(4);
             table.WidthPercentage = 100;
             float[] widths = new float[] { 2.5f, 1f, 1.5f, 1.5f };
@@ -35,11 +35,8 @@ namespace Factory.PdfReports
             header.HorizontalAlignment = 1;
             header.Padding = 7;
             table.AddCell(header);
-
-            decimal totalDailySum = 0;
+            
             decimal grandTotal = 0;
-
-            this.SalesReports.Sort((a, b) => a.Date.CompareTo(b.Date));
             foreach (var dailyReport in this.SalesReports)
             {
                 // Date
@@ -52,7 +49,7 @@ namespace Factory.PdfReports
                 table.AddCell(GetHeaderCell("Sum"));                
 
                 // Details
-                var salesDetails = dailyReport.GetSales();
+                var salesDetails = dailyReport.Sales;
                 foreach (var detailedReport in salesDetails)
                 {
                     table.AddCell(GetDetailsCell(detailedReport.ProductName, 0));
@@ -64,20 +61,15 @@ namespace Factory.PdfReports
                     }
 
                     table.AddCell(GetDetailsCell(quantity, 1));
-
-                    table.AddCell(GetDetailsCell($"{detailedReport.UnitPrice.ToString()} BGN", 2));
-
-                    table.AddCell(GetDetailsCell($"{detailedReport.Sum.ToString()} BGN", 2));
-
-                    totalDailySum += detailedReport.Sum;
+                    table.AddCell(GetDetailsCell($"{detailedReport.Price.ToString()} BGN", 2));
+                    table.AddCell(GetDetailsCell($"{detailedReport.Sum.ToString()} BGN", 2));                    
                 }
 
                 // Footer
                 table.AddCell(GetFooterCell($"Total sum for {dailyReport.Date.ToString("dd-MMM-yyyy")}", 2, 3));
-                table.AddCell(GetFooterCell($"{totalDailySum.ToString()} BGN", 2));
+                table.AddCell(GetFooterCell($"{dailyReport.TotalSum.ToString()} BGN", 2));
 
-                grandTotal += totalDailySum;
-                totalDailySum = 0;
+                grandTotal += dailyReport.TotalSum;
             }
 
             // Summary
@@ -109,7 +101,7 @@ namespace Factory.PdfReports
 
         private PdfPCell GetFooterCell(string cellContent, int textAlign = 2, int collSpan = 1)
         {
-            var font = FontFactory.GetFont(BaseFont.HELVETICA, 11, Font.BOLD);
+            var font = FontFactory.GetFont(BaseFont.HELVETICA, 12, Font.BOLD);
             var cell = new PdfPCell(new Phrase(cellContent, font));
             cell.Colspan = collSpan;
             cell.HorizontalAlignment = textAlign;
@@ -119,7 +111,7 @@ namespace Factory.PdfReports
 
         private PdfPCell GetSummaryCell(string cellContent, int textAlign = 2, int collSpan = 1)
         {
-            var font = FontFactory.GetFont(BaseFont.HELVETICA, 11, Font.BOLD);
+            var font = FontFactory.GetFont(BaseFont.HELVETICA, 12, Font.BOLD);
             var cell = new PdfPCell(new Phrase(cellContent, font));
             cell.Colspan = collSpan;
             cell.HorizontalAlignment = textAlign;
