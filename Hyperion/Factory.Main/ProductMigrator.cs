@@ -74,6 +74,7 @@ namespace Factory.Main
                 });
 
                 var spaceshipParts = context.Parts
+                    .ToList()
                     .Select(x => new
                     {
                         Supplier = x.Supplier.Name,

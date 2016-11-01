@@ -1,8 +1,0 @@
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\bin\Debug\Factory.ExcelReports.exe.config
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\bin\Debug\Factory.ExcelReports.exe
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\bin\Debug\Factory.ExcelReports.pdb
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\bin\Debug\DotNetZip.dll
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\bin\Debug\DotNetZip.xml
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\obj\Debug\Factory.ExcelReports.csprojResolveAssemblyReference.cache
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\obj\Debug\Factory.ExcelReports.exe
-C:\Users\asus\Desktop\Team-Cosmopolitan\Hyperion\Factory.ExcelReports\obj\Debug\Factory.ExcelReports.pdb
