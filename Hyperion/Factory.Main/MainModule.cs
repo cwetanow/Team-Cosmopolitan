@@ -8,6 +8,9 @@ using Factory.InsertData.Models.Reports;
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using Factory.PdfReports;
+using Factory.LoadXML;
+
+using MongoDB.Driver;
 
 namespace Factory.Main
 {
@@ -19,6 +22,7 @@ namespace Factory.Main
         private const string UnzipedFilesPath = "../../../../";
         private const string SalesReportsPath = "../../../../SalesReports";
         private const string PdfReportsPath = "../../../../PdfReports/AggregatedSalesReport.pdf";
+        private const string XmlDataToImport = "../../../../XMLReports/SpaceshipsInfo.xml";
 
         public static void Main()
         {
@@ -95,6 +99,13 @@ namespace Factory.Main
             var mongoDBData = mongoContext.GetData(collectionName);
 
             return mongoDBData;
+        }
+
+        private static void GetDataFromXML()
+        {
+            var mongo = new MongoDBContext(DataName);
+            var importer = new FactoryXmlImporter();
+            importer.ImportDataFromXml(mongo, XmlDataToImport);
         }
     }
 }
