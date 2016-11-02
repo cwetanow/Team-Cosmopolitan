@@ -14,7 +14,7 @@ namespace Factory.MongoDB
         public MongoDBContext(string dataName)
         {
             DataName = dataName;
-            client = new MongoClient();
+            client = new MongoClient("mongodb://localhost");
             dataBase = client.GetDatabase(DataName);
         }
 

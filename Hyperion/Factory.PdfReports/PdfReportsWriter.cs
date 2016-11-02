@@ -43,7 +43,7 @@ namespace Factory.PdfReports
                 table.AddCell(GetHeaderCell($"Date: {dailyReport.Date.ToString("dd-MMM-yyyy")}", 0, 4));
 
                 // Table Headers
-                table.AddCell(GetHeaderCell("Ship Name"));
+                table.AddCell(GetHeaderCell("Ship Model"));
                 table.AddCell(GetHeaderCell("Quantity"));
                 table.AddCell(GetHeaderCell("Unit Price"));
                 table.AddCell(GetHeaderCell("Sum"));                
