@@ -15,7 +15,7 @@ namespace Factory.LoadXML
         {
         }
 
-        public void ImportDataFromXml(MongoDBContext database, string path)
+        public void ImportDataFromXml(IMongoDatabase database, string path)
         {
             this.serializer = new XmlSerializer(typeof(List<Spaceship>));
 

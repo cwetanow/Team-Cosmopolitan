@@ -105,7 +105,7 @@ namespace Factory.Main
         {
             var mongo = new MongoDBContext(DataName);
             var importer = new FactoryXmlImporter();
-            importer.ImportDataFromXml(mongo, XmlDataToImport);
+            importer.ImportDataFromXml((IMongoDatabase)mongo, XmlDataToImport);
         }
     }
 }
