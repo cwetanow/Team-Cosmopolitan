@@ -42,8 +42,8 @@ namespace Factory.Main
 
             //SQL Server should be accessed through Entity Framework.
             //     PopulateSQLDataBase(mongoData);
-           // var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-          //  PopulateSQLDataBase(productData, context);
+            // var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+            //  PopulateSQLDataBase(productData, context);
 
             //  var reportsData = ReportMigrator.Instance.GetReports(reports);
             //  PopulateSqlDbReports(reportsData, context);
@@ -61,16 +61,18 @@ namespace Factory.Main
             // PopulateMySQLDataBase();
 
             //The SQLite embedded database should be accesses though its Entity Framework provider.
-            GetDataFromSQLite();
+            var modelExpesesPair = GetDataFromSQLite();
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
-            // CreateExcel();
+           //  CreateExcelYearlyFinancialResult();
         }
 
-        private static void GetDataFromSQLite()
+        private static IDictionary<string, decimal> GetDataFromSQLite()
         {
             ReadSQLiteDB sqlDB = new ReadSQLiteDB();
-            sqlDB.GetData();
+            var modelExpesesPair = sqlDB.GetModelExpensesData();
+
+            return modelExpesesPair;
         }
 
         private static void GenerateXMLReport(FactoryDbContext context, string resultFilePath)
@@ -103,11 +105,11 @@ namespace Factory.Main
 
         private static ICollection<ExcelReport> GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
         {
-            ExcelSalesReportsReader excelReader = new ExcelSalesReportsReader();
+            ExcelsReader excelReader = new ExcelsReader();
             excelReader.UnzipFiles(zipFilePath, unzipedFilesPath);
-            var reports = excelReader.GetSalesReports(SalesReportsPath);
+            var salesReports = excelReader.GetReports(SalesReportsPath);
 
-            return reports;
+            return salesReports;
         }
 
         private static IList<SpaceshipMap> GetDataFromMongoDb(string dataName, string collectionName)

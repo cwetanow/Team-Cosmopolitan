@@ -5,10 +5,11 @@ using System.IO;
 using Ionic.Zip;
 using System.Data;
 using Factory.ExcelReports.Models;
+using Factory.ExcelReports.Contracts;
 
 namespace Factory.ExcelReports
 {
-    public class ExcelSalesReportsReader
+    public class ExcelsReader : IExcelReader
     {
         public void UnzipFiles(string zipFilePath, string unzipedFilesPath)
         {
@@ -38,7 +39,7 @@ namespace Factory.ExcelReports
             }
         }
 
-        public ICollection<ExcelReport> GetSalesReports(string paths)
+        public ICollection<ExcelReport> GetReports(string paths)
         {
             if (!Directory.Exists(paths))
             {
@@ -54,7 +55,7 @@ namespace Factory.ExcelReports
                 var files = Directory.GetFiles(dir);
                 foreach (var file in files)
                 {
-                    var currentReport = GetReport(file);
+                    var currentReport = GetSingleReport(file);
                     reports.Add(currentReport);
                 }
             }
@@ -62,7 +63,7 @@ namespace Factory.ExcelReports
             return reports;
         }
 
-        private ExcelReport GetReport(string filePath)
+        private ExcelReport GetSingleReport(string filePath)
         {
             string connectionString = $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={filePath} ; " +
                 "Extended Properties = 'Excel 8.0;HDR=Yes;IMEX=1'; ";
@@ -97,7 +98,6 @@ namespace Factory.ExcelReports
                     {
                         int quantity = int.Parse(reader[1].ToString());
                         decimal unitPrice = decimal.Parse(reader[2].ToString());
-                        // TODO cannot get the result from the formula.
                         decimal sum = quantity * unitPrice;
                         var sale = new Sale(productName, quantity, unitPrice, sum);
                         report.AddSale(sale);
