@@ -15,6 +15,11 @@ namespace Factory.ExcelReports
 
         public ExcelsReader(IUserMessageWriter messageWriter)
         {
+            if (messageWriter == null)
+            {
+                throw new ArgumentNullException("Message writer must not be null!");
+            }
+
             this.messageWriter = messageWriter;
         }
 
