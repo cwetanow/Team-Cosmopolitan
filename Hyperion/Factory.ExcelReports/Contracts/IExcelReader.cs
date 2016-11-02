@@ -6,5 +6,7 @@ namespace Factory.ExcelReports.Contracts
     public interface IExcelReader
     {
         ICollection<ExcelReport> GetReports(string paths);
+
+        bool AreReportsReaded { get; set; }
     }
 }

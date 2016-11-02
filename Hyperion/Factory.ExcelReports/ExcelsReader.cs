@@ -2,49 +2,29 @@
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.IO;
-using Ionic.Zip;
 using System.Data;
 using Factory.ExcelReports.Models;
 using Factory.ExcelReports.Contracts;
+using Factory.Common.Contracts;
 
 namespace Factory.ExcelReports
 {
     public class ExcelsReader : IExcelReader
     {
-        public void UnzipFiles(string zipFilePath, string unzipedFilesPath)
+        private readonly IUserMessageWriter messageWriter;
+
+        public ExcelsReader(IUserMessageWriter messageWriter)
         {
-            if (!File.Exists(zipFilePath))
-            {
-                // TODO Remove console.writeline with someting better
-                System.Console.WriteLine("File not found");
-                return;
-            }
-
-            if (!Directory.Exists(unzipedFilesPath))
-            {
-                // TODO Remove console.writeline with someting better
-                System.Console.WriteLine("Directory not found");
-                return;
-            }
-
-            using (ZipFile zip = ZipFile.Read(zipFilePath))
-            {
-                foreach (ZipEntry file in zip)
-                {
-                    if (!File.Exists(unzipedFilesPath + file.FileName))
-                    {
-                        file.Extract(unzipedFilesPath);
-                    }
-                }
-            }
+            this.messageWriter = messageWriter;
         }
 
+        public bool AreReportsReaded { get; set; }
+        
         public ICollection<ExcelReport> GetReports(string paths)
         {
             if (!Directory.Exists(paths))
             {
-                // TODO Remove console.writeline with someting better
-                Console.WriteLine("Missing directory");
+                this.messageWriter.Show("Missing directory");
                 return null;
             }
 
@@ -59,6 +39,8 @@ namespace Factory.ExcelReports
                     reports.Add(currentReport);
                 }
             }
+
+            this.AreReportsReaded = true;
 
             return reports;
         }
@@ -114,5 +96,3 @@ namespace Factory.ExcelReports
         }
     }
 }
-
-

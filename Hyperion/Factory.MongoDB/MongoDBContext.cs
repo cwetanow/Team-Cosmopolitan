@@ -10,9 +10,9 @@ namespace Factory.MongoDB
         private readonly MongoClient client;
         private readonly IMongoDatabase dataBase;
 
-        public MongoDBContext(string dataName)
+        public MongoDBContext(string dataName, string connectionString)
         {
-            client = new MongoClient("mongodb://localhost");
+            client = new MongoClient(connectionString);
             dataBase = client.GetDatabase(dataName);
         }
 

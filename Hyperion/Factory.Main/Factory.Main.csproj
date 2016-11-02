@@ -88,6 +88,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Factory.Common\Factory.Common.csproj">
+      <Project>{7a473bd5-c891-44dc-8108-2a7c85aafab2}</Project>
+      <Name>Factory.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Factory.ExcelReports\Factory.ExcelReports.csproj">
       <Project>{735e5110-854e-44e3-b805-c964065b32d1}</Project>
       <Name>Factory.ExcelReports</Name>
