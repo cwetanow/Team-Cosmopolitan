@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 2,
+    "name": "Battleship"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": null
+      },
+      "id": 1,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": null
+      },
+      "id": 6,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 7,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 1,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": null
+      },
+      "id": 8,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 5,
+      "supplierId": 7
+    }
+  ],
+  "id": 2,
+  "model": "Sith Infiltrator",
+  "year": 3562,
+  "price": 24679.00,
+  "categoryId": 2,
+  "color": "Green"
+}

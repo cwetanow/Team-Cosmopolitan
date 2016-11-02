@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Spacecraft"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": null
+      },
+      "id": 1,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 5,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 5,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 9,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 1,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": null
+      },
+      "id": 11,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 7,
+      "supplierId": 9
+    }
+  ],
+  "id": 9,
+  "model": "Corellian Corvette",
+  "year": 4320,
+  "price": 14996.00,
+  "categoryId": 3,
+  "color": "Red"
+}

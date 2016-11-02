@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 2,
+    "name": "Battleship"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": null
+      },
+      "id": 1,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": null
+      },
+      "id": 4,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 4,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": null
+      },
+      "id": 8,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 5,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": null
+      },
+      "id": 10,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 6,
+      "supplierId": 8
+    }
+  ],
+  "id": 11,
+  "model": "Rebel BlockadeRunner",
+  "year": 4435,
+  "price": 45598.00,
+  "categoryId": 2,
+  "color": "Pink"
+}

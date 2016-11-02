@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 1,
+    "name": "Cruiser"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": null
+      },
+      "id": 3,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 5,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 5,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": null
+      },
+      "id": 6,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 7,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 1,
+      "supplierId": 6
+    }
+  ],
+  "id": 29,
+  "model": "Republic Assault Ship",
+  "year": 3613,
+  "price": 9393.00,
+  "categoryId": 1,
+  "color": "Black"
+}

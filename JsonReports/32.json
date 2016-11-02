@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 1,
+    "name": "Cruiser"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": null
+      },
+      "id": 6,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 7,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 1,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 9,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 1,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": null
+      },
+      "id": 11,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 7,
+      "supplierId": 9
+    }
+  ],
+  "id": 32,
+  "model": "Techno Union Starship",
+  "year": 3752,
+  "price": 33389.00,
+  "categoryId": 1,
+  "color": "Green"
+}

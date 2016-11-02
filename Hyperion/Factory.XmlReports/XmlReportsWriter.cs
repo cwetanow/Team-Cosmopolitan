@@ -25,8 +25,9 @@ namespace Factory.XmlReports
             {
                 doc.WriteStartDocument();
                 doc.WriteStartElement("sales");
+                doc.WriteAttributeString("year", "4500");
 
-                foreach (var model in ShipModels)
+                foreach (var model in this.ShipModels)
                 {
                     doc.WriteStartElement("sale");
                     doc.WriteAttributeString("model", model);

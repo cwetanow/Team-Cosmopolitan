@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Spacecraft"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": null
+      },
+      "id": 1,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 5,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 5,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": null
+      },
+      "id": 8,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 5,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": null
+      },
+      "id": 10,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": null
+      },
+      "id": 11,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 7,
+      "supplierId": 9
+    }
+  ],
+  "id": 7,
+  "model": "TIE Fighter",
+  "year": 4095,
+  "price": 24792.00,
+  "categoryId": 3,
+  "color": "Blue"
+}

@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 2,
+    "name": "Battleship"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 2,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": null
+      },
+      "id": 3,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 5,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 5,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": null
+      },
+      "id": 6,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": null
+      },
+      "id": 11,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 7,
+      "supplierId": 9
+    }
+  ],
+  "id": 5,
+  "model": "Corellian Corvette",
+  "year": 3691,
+  "price": 48421.00,
+  "categoryId": 2,
+  "color": "Lilla"
+}

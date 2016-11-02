@@ -1,0 +1,104 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Spacecraft"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": null
+      },
+      "id": 1,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": null
+      },
+      "id": 4,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 4,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": null
+      },
+      "id": 5,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 5,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": null
+      },
+      "id": 7,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 1,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": null
+      },
+      "id": 10,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 6,
+      "supplierId": 8
+    }
+  ],
+  "id": 18,
+  "model": "Republic Attack Cruiser",
+  "year": 3740,
+  "price": 12757.00,
+  "categoryId": 3,
+  "color": "Green"
+}
