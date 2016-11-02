@@ -100,6 +100,10 @@
       <Project>{dc12117c-5e63-43fe-89c3-34390ace2bfa}</Project>
       <Name>Factory.InsertData</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Factory.JsonReports\Factory.JsonReports.csproj">
+      <Project>{0dd4786d-06f2-4e33-bf24-c878d6737da9}</Project>
+      <Name>Factory.JsonReports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Factory.LoadXML\Factory.LoadXML.csproj">
       <Project>{9A012B8C-D594-40FB-8402-00532CC098D9}</Project>
       <Name>Factory.LoadXML</Name>

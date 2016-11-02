@@ -5,6 +5,7 @@ using Factory.ExcelReports.Models;
 using Factory.InsertData;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
+using Factory.JsonReports;
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using Factory.PdfReports;
@@ -44,7 +45,7 @@ namespace Factory.Main
             GeneratePDFReport(context, Constants.PdfReportsPath);
 
             //For JSON serializations use a non-commercial library / framework of your choice.
-            // GenerateJSONReportsForEachProduct();
+            GenerateJSONReports(context, Constants.JsonReportsPath);
 
             //MySQL should be accessed through Telerik® Data Access ORM (research it).
             // PopulateMySQLDataBase();
@@ -54,6 +55,13 @@ namespace Factory.Main
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             //  CreateExcelYearlyFinancialResult();
+        }
+
+        private static void GenerateJSONReports(FactoryDbContext context, string resultFilesPath)
+        {
+            var spaceships = context.Spaceships.ToList();
+            var jsonWriter = new JsonReportsWriter(spaceships);
+            jsonWriter.WriteReportsToJson(resultFilesPath);
         }
 
         private static IDictionary<string, decimal> GetDataFromSQLite()

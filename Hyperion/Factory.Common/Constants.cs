@@ -17,5 +17,6 @@ namespace Factory.Common
         public const string XmlDataToImport = "../../../../XMLReports/SpaceshipsInfo.xml";
         public const string XmlReportsPath = "../../../../XmlReports/AggregatedReportByModels.xml";
         public const string MongoDbConnectionString = "mongodb://localhost";
+        public const string JsonReportsPath = "../../../../JsonReports/";
     }
 }
