@@ -33,26 +33,26 @@ namespace Factory.Main
             var context = new FactoryDbContext();
             context.Database.CreateIfNotExists();
 
-            var mongoData = GetDataFromMongoDb(DataName, CollectionName);
+            //   var mongoData = GetDataFromMongoDb(DataName, CollectionName);
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
+            //  var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
 
             // GetDataFromXML();
 
             //SQL Server should be accessed through Entity Framework.
             //     PopulateSQLDataBase(mongoData);
-            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-            PopulateSQLDataBase(productData, context);
+           // var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+          //  PopulateSQLDataBase(productData, context);
 
-            var reportsData = ReportMigrator.Instance.GetReports(reports);
-            PopulateSqlDbReports(reportsData, context);
+            //  var reportsData = ReportMigrator.Instance.GetReports(reports);
+            //  PopulateSqlDbReports(reportsData, context);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
-            GenerateXMLReport(context, XmlReportsPath);
+            //   GenerateXMLReport(context, XmlReportsPath);
 
             //For the PDF export use a non-commercial third party framework.
-            GeneratePDFReport(context, PdfReportsPath);
+            //   GeneratePDFReport(context, PdfReportsPath);
 
             //For JSON serializations use a non-commercial library / framework of your choice.
             // GenerateJSONReportsForEachProduct();

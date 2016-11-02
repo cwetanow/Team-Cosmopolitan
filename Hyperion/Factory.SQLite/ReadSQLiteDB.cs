@@ -1,10 +1,12 @@
-﻿namespace Factory.SQLite
+﻿using System.Linq;
+
+namespace Factory.SQLite
 {
     public class ReadSQLiteDB
     {
         public void GetData()
         {
-          
+            
         }
     }
 }
