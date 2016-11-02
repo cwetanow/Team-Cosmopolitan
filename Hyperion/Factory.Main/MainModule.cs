@@ -10,6 +10,7 @@ using Factory.MongoDB.ModelMaps;
 using Factory.PdfReports;
 using Factory.LoadXML;
 using Factory.SQLite;
+using Factory.XmlReports;
 
 using MongoDB.Driver;
 using System;
@@ -25,6 +26,7 @@ namespace Factory.Main
         private const string SalesReportsPath = "../../../../SalesReports";
         private const string PdfReportsPath = "../../../../PdfReports/AggregatedSalesReport.pdf";
         private const string XmlDataToImport = "../../../../XMLReports/SpaceshipsInfo.xml";
+        private const string XmlReportsPath = "../../../../XmlReports/AggregatedReportByModels.xml";
 
         public static void Main()
         {
@@ -47,7 +49,7 @@ namespace Factory.Main
             PopulateSqlDbReports(reportsData, context);
 
             //The XML files should be read / written through the standard .NET parsers (by your choice).
-            // GenerateXMLReport();
+            GenerateXMLReport(context, XmlReportsPath);
 
             //For the PDF export use a non-commercial third party framework.
             GeneratePDFReport(context, PdfReportsPath);
@@ -59,7 +61,7 @@ namespace Factory.Main
             // PopulateMySQLDataBase();
 
             //The SQLite embedded database should be accesses though its Entity Framework provider.
-             GetDataFromSQLite();
+            GetDataFromSQLite();
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             // CreateExcel();
@@ -71,9 +73,17 @@ namespace Factory.Main
             sqlDB.GetData();
         }
 
+        private static void GenerateXMLReport(FactoryDbContext context, string resultFilePath)
+        {
+            var shipModels = context.Spaceships.Select(sh => sh.Model).ToList();
+            var reports = context.Reports.OrderBy(r => r.Date).ToList();
+            var xmlWriter = new XmlReportsWriter(shipModels, reports);
+            xmlWriter.WriteReportsToXml(resultFilePath);
+        }
+
         private static void GeneratePDFReport(FactoryDbContext context, string resultFilePath)
         {
-            var salesReports = context.Reports.OrderBy(x => x.Date).ToList();
+            var salesReports = context.Reports.OrderBy(r => r.Date).ToList();
             var pdfWriter = new PdfReportsWriter(salesReports);
             pdfWriter.WriteAggregatedSalesReportsToPdf(resultFilePath);
         }
