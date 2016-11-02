@@ -14,6 +14,7 @@ namespace Factory.Main
     public class MainModule
     {
         private const string DataName = "spaceships";
+        private const string CollectionName = "spaceships";
         private const string ZipFilePath = "../../../../SalesReports.zip";
         private const string UnzipedFilesPath = "../../../../";
         private const string SalesReportsPath = "../../../../SalesReports";
@@ -24,7 +25,7 @@ namespace Factory.Main
             var context = new FactoryDbContext();
             context.Database.CreateIfNotExists();
 
-            var mongoData = GetDataFromMongoDb();
+            var mongoData = GetDataFromMongoDb(DataName, CollectionName);
 
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(ZipFilePath, UnzipedFilesPath);
@@ -49,7 +50,7 @@ namespace Factory.Main
             // GenerateJSONReportsForEachProduct();
 
             //MySQL should be accessed through Telerik® Data Access ORM (research it).
-            // PopulateMySQLDataBaseWithJSONReports();
+            // PopulateMySQLDataBase();
 
             //The SQLite embedded database should be accesses though its Entity Framework provider.
             // GetDataFromSQLite();
@@ -87,11 +88,11 @@ namespace Factory.Main
             return reports;
         }
 
-        private static IList<SpaceshipMap> GetDataFromMongoDb()
+        private static IList<SpaceshipMap> GetDataFromMongoDb(string dataName, string collectionName)
         {
-            var mongoContext = new MongoDBContext(DataName);
+            var mongoContext = new MongoDBContext(dataName);
 
-            var mongoDBData = mongoContext.GetData();
+            var mongoDBData = mongoContext.GetData(collectionName);
 
             return mongoDBData;
         }

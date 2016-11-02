@@ -2,7 +2,6 @@
 using Factory.InsertData.Migrations;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
-using Factory.MongoDB.ModelMaps;
 
 namespace Factory.InsertData
 {

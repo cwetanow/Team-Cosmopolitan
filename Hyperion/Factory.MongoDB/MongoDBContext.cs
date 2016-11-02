@@ -9,18 +9,16 @@ namespace Factory.MongoDB
     {
         private readonly MongoClient client;
         private readonly IMongoDatabase dataBase;
-        private readonly string DataName;
 
         public MongoDBContext(string dataName)
         {
-            DataName = dataName;
             client = new MongoClient("mongodb://localhost");
-            dataBase = client.GetDatabase(DataName);
+            dataBase = client.GetDatabase(dataName);
         }
 
-        public List<SpaceshipMap> GetData()
+        public List<SpaceshipMap> GetData(string collectionName)
         {
-            var collection = this.dataBase.GetCollection<SpaceshipMap>(DataName);
+            var collection = this.dataBase.GetCollection<SpaceshipMap>(collectionName);
             return collection.Find(new BsonDocument()).ToList();
         }
     }

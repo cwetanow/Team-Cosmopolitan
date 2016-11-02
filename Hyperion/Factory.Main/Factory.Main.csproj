@@ -71,7 +71,7 @@
       <Name>Factory.InsertData</Name>
     </ProjectReference>
     <ProjectReference Include="..\Factory.MongoDB\Factory.MongoDB.csproj">
-      <Project>{95419d20-d5d1-4e94-8b50-fed10e2d9985}</Project>
+      <Project>{586b8862-81ec-49b5-a42c-a849f9941c7d}</Project>
       <Name>Factory.MongoDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\Factory.PdfReports\Factory.PdfReports.csproj">
