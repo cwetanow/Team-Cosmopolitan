@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.ExcelReports", "Fac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.LoadXML", "Factory.LoadXML\Factory.LoadXML.csproj", "{9A012B8C-D594-40FB-8402-00532CC098D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.SQLite", "Factory.SQLite\Factory.SQLite.csproj", "{1A9D0A8F-7C72-48E7-909A-6D8757007657}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9A012B8C-D594-40FB-8402-00532CC098D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A012B8C-D594-40FB-8402-00532CC098D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A012B8C-D594-40FB-8402-00532CC098D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9D0A8F-7C72-48E7-909A-6D8757007657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9D0A8F-7C72-48E7-909A-6D8757007657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9D0A8F-7C72-48E7-909A-6D8757007657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9D0A8F-7C72-48E7-909A-6D8757007657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

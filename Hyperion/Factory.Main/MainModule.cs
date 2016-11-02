@@ -9,8 +9,10 @@ using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using Factory.PdfReports;
 using Factory.LoadXML;
+using Factory.SQLite;
 
 using MongoDB.Driver;
+using System;
 
 namespace Factory.Main
 {
@@ -57,10 +59,16 @@ namespace Factory.Main
             // PopulateMySQLDataBase();
 
             //The SQLite embedded database should be accesses though its Entity Framework provider.
-            // GetDataFromSQLite();
+             GetDataFromSQLite();
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             // CreateExcel();
+        }
+
+        private static void GetDataFromSQLite()
+        {
+            ReadSQLiteDB sqlDB = new ReadSQLiteDB();
+            sqlDB.GetData();
         }
 
         private static void GeneratePDFReport(FactoryDbContext context, string resultFilePath)
