@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Factory.ExcelReports\Factory.ExcelReports.csproj">
-      <Project>{af746c24-5464-42a6-a093-29258d7599fc}</Project>
+      <Project>{735e5110-854e-44e3-b805-c964065b32d1}</Project>
       <Name>Factory.ExcelReports</Name>
     </ProjectReference>
     <ProjectReference Include="..\Factory.InsertData\Factory.InsertData.csproj">
