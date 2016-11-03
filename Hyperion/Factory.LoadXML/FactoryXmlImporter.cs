@@ -1,35 +1,71 @@
-﻿using Factory.LoadXML.Models;
-using Factory.MongoDB;
-using MongoDB.Driver;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Xml.Serialization;
+using System.Xml.Linq;
+
+using Factory.LoadXML.Models;
+using System.Globalization;
 
 namespace Factory.LoadXML
 {
     public class FactoryXmlImporter
     {
-        private XmlSerializer serializer;
-
-        public FactoryXmlImporter()
+        public static ICollection<SpaceshipsXML> ImportSpaceships(string filePath)
         {
-        }
+            var spaceships = new List<SpaceshipsXML>();
 
-        public void ImportDataFromXml(IMongoDatabase database, string path)
-        {
-            this.serializer = new XmlSerializer(typeof(List<Spaceship>));
+            var xmlDoc = XDocument.Load(filePath);
+            var spaceshipElements = xmlDoc.Root.Elements();
 
-            var spaceships = new List<Spaceship>();
-
-            using (var reader = new StreamReader(path))
+            foreach (var spaceship in spaceshipElements)
             {
-                spaceships = this.serializer.Deserialize(reader) as List<Spaceship>;
+                var sp = new SpaceshipsXML();
 
+                var spaceshipName = spaceship.Element("SpaceshipName");
+                if (spaceshipName != null)
+                {
+                    sp.SpaceshipName = spaceshipName.Value;
+                }
+
+                var captainsName = spaceship.Element("Captain");
+                if (captainsName != null)
+                {
+                    sp.Captain = captainsName.Value;
+                }
+
+                var homePlanet = spaceship.Element("HomePlanet");
+                if (homePlanet != null)
+                {
+                    sp.HomePlanet = homePlanet.Value;
+                }
+
+                var numberOfCrewMembers = spaceship.Element("NumberOfCrewMembers");
+                if (numberOfCrewMembers != null)
+                {
+                    sp.NumberOfCrewMembers = int.Parse(numberOfCrewMembers.Value);
+                }
+
+                var missionType = spaceship.Element("MissionType");
+                if (missionType != null)
+                {
+                    sp.MissionType = missionType.Value;
+                }
+
+                var commission = spaceship.Element("Commission");
+                if (commission != null)
+                {
+                    sp.Commission = DateTime.Parse(commission.Value);
+                }
+
+                var missionStatus = spaceship.Element("MissionStatus");
+                if (missionStatus != null)
+                {
+                    sp.MissionStatus = missionStatus.Value;
+                }
+
+                spaceships.Add(sp);
             }
 
-            var collection = database.GetCollection<Spaceship>("Spaceships");
-
-            collection.InsertMany(spaceships);
+            return spaceships;
         }
     }
 }

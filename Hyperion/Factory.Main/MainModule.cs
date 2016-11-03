@@ -14,6 +14,7 @@ using Factory.SQLite;
 using Factory.XmlReports;
 using Factory.Common;
 using MongoDB.Driver;
+using Factory.LoadXML.Models;
 
 namespace Factory.Main
 {
@@ -29,7 +30,7 @@ namespace Factory.Main
             // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
 
-            //GetDataFromXML();
+            GetXML();
 
             //SQL Server should be accessed through Entity Framework.
             var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
@@ -51,7 +52,7 @@ namespace Factory.Main
             // PopulateMySQLDataBase();
 
             //The SQLite embedded database should be accesses though its Entity Framework provider.
-            var modelExpensesPair = GetDataFromSQLite();
+            // var modelExpensesPair = GetDataFromSQLite();
 
             //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
             //  CreateExcelYearlyFinancialResult();
@@ -120,11 +121,19 @@ namespace Factory.Main
             return mongoDBData;
         }
 
-        private static void GetDataFromXML()
+        private static void GetXML()
         {
-            var mongo = new MongoDBContext(Constants.DataName, Constants.MongoDbConnectionString);
-            var importer = new FactoryXmlImporter();
-            importer.ImportDataFromXml((IMongoDatabase)mongo, Constants.XmlDataToImport);
+            var mongo = new MongoClient(Constants.MongoDbConnectionString);
+            var db = mongo.GetDatabase(Constants.DataName);
+
+            var collection = FactoryXmlImporter.ImportSpaceships(Constants.XmlDataToImport);
+
+            var mongoCollection = db.GetCollection<SpaceshipsXML>("spaceships");
+
+            foreach (var spaceship in collection)
+            {
+                mongoCollection.InsertOne(spaceship);
+            }
         }
     }
 }
