@@ -1,0 +1,404 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Cruiser"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 5,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 7,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 8,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 15,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 16,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 18,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 19,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 20,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 26,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 27,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 29,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 30,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 31,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    }
+  ],
+  "id": 72,
+  "model": "Naboo Royal Cruiser",
+  "year": 4334,
+  "price": 38320.00,
+  "categoryId": 3,
+  "color": "Pink"
+}

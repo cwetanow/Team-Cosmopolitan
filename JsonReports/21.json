@@ -1,104 +1,144 @@
 {
   "category": {
-    "id": 3,
-    "name": "Spacecraft"
+    "id": 1,
+    "name": "Battleship"
   },
   "parts": [
     {
       "partType": {
-        "id": 3,
+        "id": 1,
         "name": "Defense system"
       },
       "supplier": {
-        "id": 3,
-        "name": "Padberg, Kohler and Stroman",
-        "address": "2 Debs Road",
-        "city": null
+        "id": 1,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
       },
-      "id": 3,
-      "name": "Shield booster",
-      "price": 415.00,
-      "quantity": 45,
-      "partTypeId": 3,
-      "supplierId": 3
+      "id": 1,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 1,
+      "supplierId": 1
     },
     {
       "partType": {
-        "id": 4,
-        "name": "Power system"
+        "id": 2,
+        "name": "Engine"
       },
       "supplier": {
         "id": 4,
-        "name": "Dare, Raynor and Abbott",
-        "address": "553 Jay Road",
-        "city": null
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
       "id": 4,
-      "name": "Solar collector",
-      "price": 564.00,
-      "quantity": 58,
-      "partTypeId": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
       "supplierId": 4
     },
     {
       "partType": {
-        "id": 1,
-        "name": "Engine"
+        "id": 5,
+        "name": "Weapon system"
       },
       "supplier": {
         "id": 6,
-        "name": "Emard Group",
-        "address": "048 Lerdahl Avenue",
-        "city": null
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
       },
-      "id": 7,
-      "name": "Accelerator",
-      "price": 120.00,
-      "quantity": 55,
-      "partTypeId": 1,
+      "id": 6,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
       "supplierId": 6
     },
     {
       "partType": {
-        "id": 6,
-        "name": "Interior"
+        "id": 3,
+        "name": "Manuevering"
       },
       "supplier": {
-        "id": 8,
-        "name": "Stracke-Schimmel",
-        "address": "Tsarevets 33",
-        "city": null
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
-      "id": 10,
-      "name": "Smuggling compartment",
-      "price": 1293.00,
-      "quantity": 12,
-      "partTypeId": 6,
-      "supplierId": 8
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
     },
     {
       "partType": {
-        "id": 7,
-        "name": "Weapon system"
+        "id": 2,
+        "name": "Engine"
       },
       "supplier": {
-        "id": 9,
-        "name": "Schuppe, Doyle and Hartmann",
-        "address": "69560 High Crossing Avenue",
-        "city": null
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
       },
-      "id": 11,
-      "name": "Rail-guns",
-      "price": 569.00,
-      "quantity": 15,
-      "partTypeId": 7,
-      "supplierId": 9
+      "id": 10,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
     }
   ],
   "id": 21,
-  "model": "Ebon Hawk",
-  "year": 4263,
-  "price": 49248.00,
-  "categoryId": 3,
-  "color": "Green"
+  "model": "Trade Federation Cruiser",
+  "year": 3727,
+  "price": 4204.00,
+  "categoryId": 1,
+  "color": "Pink"
 }

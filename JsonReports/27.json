@@ -1,104 +1,144 @@
 {
   "category": {
-    "id": 1,
+    "id": 3,
     "name": "Cruiser"
   },
   "parts": [
     {
       "partType": {
-        "id": 2,
-        "name": "Bordering"
+        "id": 1,
+        "name": "Defense system"
       },
       "supplier": {
-        "id": 2,
-        "name": "Barton, Grant and Huel",
-        "address": "89694 Darwin Junction",
-        "city": null
+        "id": 1,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
       },
-      "id": 2,
-      "name": "Signal beacon",
-      "price": 1257.00,
-      "quantity": 44,
-      "partTypeId": 2,
-      "supplierId": 2
-    },
-    {
-      "partType": {
-        "id": 5,
-        "name": "Manuevering"
-      },
-      "supplier": {
-        "id": 2,
-        "name": "Barton, Grant and Huel",
-        "address": "89694 Darwin Junction",
-        "city": null
-      },
-      "id": 5,
-      "name": "Gyro control module",
-      "price": 588.00,
-      "quantity": 97,
-      "partTypeId": 5,
-      "supplierId": 2
+      "id": 1,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 1,
+      "supplierId": 1
     },
     {
       "partType": {
         "id": 3,
-        "name": "Defense system"
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
       },
       "supplier": {
         "id": 5,
-        "name": "Cartwright Inc",
-        "address": "65015 Golf Course Drive",
-        "city": null
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
-      "id": 6,
-      "name": "Shield",
-      "price": 380.00,
-      "quantity": 4,
-      "partTypeId": 3,
+      "id": 5,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
       "supplierId": 5
     },
     {
       "partType": {
         "id": 5,
-        "name": "Manuevering"
-      },
-      "supplier": {
-        "id": 7,
-        "name": "Koss and Sons",
-        "address": "889 Hayes Street",
-        "city": null
-      },
-      "id": 8,
-      "name": "Locking claw",
-      "price": 1275.00,
-      "quantity": 77,
-      "partTypeId": 5,
-      "supplierId": 7
-    },
-    {
-      "partType": {
-        "id": 7,
         "name": "Weapon system"
       },
       "supplier": {
-        "id": 9,
+        "id": 6,
         "name": "Schuppe, Doyle and Hartmann",
         "address": "69560 High Crossing Avenue",
-        "city": null
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
       },
-      "id": 11,
+      "id": 6,
       "name": "Rail-guns",
       "price": 569.00,
       "quantity": 15,
-      "partTypeId": 7,
-      "supplierId": 9
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
     }
   ],
   "id": 27,
   "model": "Death Star",
   "year": 3576,
   "price": 44848.00,
-  "categoryId": 1,
+  "categoryId": 3,
   "color": "White"
 }

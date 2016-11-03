@@ -1,0 +1,534 @@
+{
+  "id": 107,
+  "model": "Rebel BlockadeRunner",
+  "year": 4435,
+  "price": 45598.0,
+  "categoryId": 1,
+  "category": {
+    "id": 1,
+    "name": "Battleship"
+  },
+  "color": "Pink",
+  "parts": [
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 5,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 8,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      },
+      "id": 11,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 14,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 15,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 16,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 19,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      },
+      "id": 22,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 25,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 26,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 27,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 30,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      },
+      "id": 33,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
+    },
+    {
+      "id": 36,
+      "name": "Locking claw",
+      "price": 1275.0,
+      "quantity": 77,
+      "partTypeId": 3,
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplierId": 3,
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Fuel injector",
+      "price": 638.0,
+      "quantity": 88,
+      "partTypeId": 2,
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplierId": 4,
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    },
+    {
+      "id": 38,
+      "name": "Signal beacon",
+      "price": 1257.0,
+      "quantity": 44,
+      "partTypeId": 4,
+      "partType": {
+        "id": 4,
+        "name": "Bordering"
+      },
+      "supplierId": 5,
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Solar collector",
+      "price": 564.0,
+      "quantity": 58,
+      "partTypeId": 6,
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplierId": 8,
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "Smuggling compartment",
+      "price": 1293.0,
+      "quantity": 12,
+      "partTypeId": 7,
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplierId": 9,
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      }
+    }
+  ]
+}

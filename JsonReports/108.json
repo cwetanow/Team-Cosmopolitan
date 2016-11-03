@@ -1,0 +1,534 @@
+{
+  "id": 108,
+  "model": "Trade Federation Cruiser",
+  "year": 4164,
+  "price": 26675.0,
+  "categoryId": 1,
+  "category": {
+    "id": 1,
+    "name": "Battleship"
+  },
+  "color": "Red",
+  "parts": [
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      },
+      "id": 6,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 8,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 14,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 15,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      },
+      "id": 17,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 19,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 20,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 25,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 26,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      },
+      "id": 28,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 30,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 31,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "id": 36,
+      "name": "Locking claw",
+      "price": 1275.0,
+      "quantity": 77,
+      "partTypeId": 3,
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplierId": 3,
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Fuel injector",
+      "price": 638.0,
+      "quantity": 88,
+      "partTypeId": 2,
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplierId": 4,
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "Rail-guns",
+      "price": 569.0,
+      "quantity": 15,
+      "partTypeId": 5,
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplierId": 6,
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Solar collector",
+      "price": 564.0,
+      "quantity": 58,
+      "partTypeId": 6,
+      "partType": {
+        "id": 6,
+        "name": "Power system"
+      },
+      "supplierId": 8,
+      "supplier": {
+        "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Gyro control module",
+      "price": 588.0,
+      "quantity": 97,
+      "partTypeId": 3,
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplierId": 5,
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    }
+  ]
+}

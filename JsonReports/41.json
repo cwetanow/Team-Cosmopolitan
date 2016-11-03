@@ -1,0 +1,274 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Cruiser"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 2,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 7,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 10,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      },
+      "id": 11,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 13,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 18,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 20,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 21,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
+      },
+      "id": 22,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
+    }
+  ],
+  "id": 41,
+  "model": "Millennium Falcon",
+  "year": 3994,
+  "price": 26165.00,
+  "categoryId": 3,
+  "color": "Blue"
+}

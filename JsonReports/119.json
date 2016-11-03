@@ -1,0 +1,534 @@
+{
+  "id": 119,
+  "model": "Sith Infiltrator",
+  "year": 3571,
+  "price": 6889.0,
+  "categoryId": 3,
+  "category": {
+    "id": 3,
+    "name": "Cruiser"
+  },
+  "color": "Pink",
+  "parts": [
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 2,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 7,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 10,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 13,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 15,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 18,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 20,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 21,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 24,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 26,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
+      "supplierId": 4
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 29,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
+      "supplierId": 7
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      },
+      "id": 31,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 32,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "id": 35,
+      "name": "Accelerator",
+      "price": 120.0,
+      "quantity": 55,
+      "partTypeId": 2,
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplierId": 2,
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Fuel injector",
+      "price": 638.0,
+      "quantity": 88,
+      "partTypeId": 2,
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplierId": 4,
+      "supplier": {
+        "id": 4,
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "Shield booster",
+      "price": 415.0,
+      "quantity": 45,
+      "partTypeId": 1,
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplierId": 7,
+      "supplier": {
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Gyro control module",
+      "price": 588.0,
+      "quantity": 97,
+      "partTypeId": 3,
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplierId": 5,
+      "supplier": {
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "Fuel driver",
+      "price": 1009.0,
+      "quantity": 94,
+      "partTypeId": 2,
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplierId": 2,
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      }
+    }
+  ]
+}

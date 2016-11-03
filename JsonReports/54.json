@@ -1,0 +1,274 @@
+{
+  "category": {
+    "id": 3,
+    "name": "Cruiser"
+  },
+  "parts": [
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 1,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 2,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      },
+      "id": 6,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 10,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 1,
+        "name": "Defense system"
+      },
+      "supplier": {
+        "id": 1,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 12,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 1,
+      "supplierId": 1
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 13,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
+      "partTypeId": 2,
+      "supplierId": 2
+    },
+    {
+      "partType": {
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 14,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 5,
+        "name": "Weapon system"
+      },
+      "supplier": {
+        "id": 6,
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
+      },
+      "id": 17,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
+      "supplierId": 6
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 21,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
+    }
+  ],
+  "id": 54,
+  "model": "Star Destroyer",
+  "year": 3659,
+  "price": 8885.00,
+  "categoryId": 3,
+  "color": "White"
+}

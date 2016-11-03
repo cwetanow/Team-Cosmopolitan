@@ -1,104 +1,144 @@
 {
   "category": {
-    "id": 2,
+    "id": 1,
     "name": "Battleship"
   },
   "parts": [
     {
       "partType": {
-        "id": 1,
+        "id": 3,
+        "name": "Manuevering"
+      },
+      "supplier": {
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
+      },
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
+      "partTypeId": 3,
+      "supplierId": 3
+    },
+    {
+      "partType": {
+        "id": 2,
         "name": "Engine"
       },
       "supplier": {
-        "id": 1,
+        "id": 4,
         "name": "Feeney, Kuhlman and Torp",
         "address": "5133 Thompson Parkway",
-        "city": null
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
-      "id": 1,
+      "id": 4,
       "name": "Fuel injector",
       "price": 638.00,
       "quantity": 88,
-      "partTypeId": 1,
-      "supplierId": 1
-    },
-    {
-      "partType": {
-        "id": 2,
-        "name": "Bordering"
-      },
-      "supplier": {
-        "id": 2,
-        "name": "Barton, Grant and Huel",
-        "address": "89694 Darwin Junction",
-        "city": null
-      },
-      "id": 2,
-      "name": "Signal beacon",
-      "price": 1257.00,
-      "quantity": 44,
       "partTypeId": 2,
-      "supplierId": 2
-    },
-    {
-      "partType": {
-        "id": 4,
-        "name": "Power system"
-      },
-      "supplier": {
-        "id": 4,
-        "name": "Dare, Raynor and Abbott",
-        "address": "553 Jay Road",
-        "city": null
-      },
-      "id": 4,
-      "name": "Solar collector",
-      "price": 564.00,
-      "quantity": 58,
-      "partTypeId": 4,
       "supplierId": 4
     },
     {
       "partType": {
-        "id": 5,
-        "name": "Manuevering"
+        "id": 4,
+        "name": "Bordering"
       },
       "supplier": {
-        "id": 7,
-        "name": "Koss and Sons",
-        "address": "889 Hayes Street",
-        "city": null
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
-      "id": 8,
-      "name": "Locking claw",
-      "price": 1275.00,
-      "quantity": 77,
-      "partTypeId": 5,
-      "supplierId": 7
+      "id": 5,
+      "name": "Signal beacon",
+      "price": 1257.00,
+      "quantity": 44,
+      "partTypeId": 4,
+      "supplierId": 5
     },
     {
       "partType": {
         "id": 6,
-        "name": "Interior"
+        "name": "Power system"
       },
       "supplier": {
         "id": 8,
+        "name": "Dare, Raynor and Abbott",
+        "address": "553 Jay Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
+      },
+      "id": 8,
+      "name": "Solar collector",
+      "price": 564.00,
+      "quantity": 58,
+      "partTypeId": 6,
+      "supplierId": 8
+    },
+    {
+      "partType": {
+        "id": 7,
+        "name": "Interior"
+      },
+      "supplier": {
+        "id": 9,
         "name": "Stracke-Schimmel",
         "address": "Tsarevets 33",
-        "city": null
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
       },
-      "id": 10,
+      "id": 11,
       "name": "Smuggling compartment",
       "price": 1293.00,
       "quantity": 12,
-      "partTypeId": 6,
-      "supplierId": 8
+      "partTypeId": 7,
+      "supplierId": 9
     }
   ],
   "id": 11,
   "model": "Rebel BlockadeRunner",
   "year": 4435,
   "price": 45598.00,
-  "categoryId": 2,
+  "categoryId": 1,
   "color": "Pink"
 }

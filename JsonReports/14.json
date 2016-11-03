@@ -1,104 +1,144 @@
 {
   "category": {
     "id": 2,
-    "name": "Battleship"
+    "name": "Spacecraft"
   },
   "parts": [
     {
       "partType": {
-        "id": 1,
+        "id": 2,
         "name": "Engine"
       },
       "supplier": {
-        "id": 1,
-        "name": "Feeney, Kuhlman and Torp",
-        "address": "5133 Thompson Parkway",
-        "city": null
-      },
-      "id": 1,
-      "name": "Fuel injector",
-      "price": 638.00,
-      "quantity": 88,
-      "partTypeId": 1,
-      "supplierId": 1
-    },
-    {
-      "partType": {
         "id": 2,
-        "name": "Bordering"
-      },
-      "supplier": {
-        "id": 2,
-        "name": "Barton, Grant and Huel",
-        "address": "89694 Darwin Junction",
-        "city": null
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
       },
       "id": 2,
-      "name": "Signal beacon",
-      "price": 1257.00,
-      "quantity": 44,
+      "name": "Accelerator",
+      "price": 120.00,
+      "quantity": 55,
       "partTypeId": 2,
       "supplierId": 2
     },
     {
       "partType": {
-        "id": 4,
-        "name": "Power system"
+        "id": 2,
+        "name": "Engine"
       },
       "supplier": {
         "id": 4,
-        "name": "Dare, Raynor and Abbott",
-        "address": "553 Jay Road",
-        "city": null
+        "name": "Feeney, Kuhlman and Torp",
+        "address": "5133 Thompson Parkway",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
       "id": 4,
-      "name": "Solar collector",
-      "price": 564.00,
-      "quantity": 58,
-      "partTypeId": 4,
+      "name": "Fuel injector",
+      "price": 638.00,
+      "quantity": 88,
+      "partTypeId": 2,
       "supplierId": 4
     },
     {
       "partType": {
         "id": 1,
-        "name": "Engine"
+        "name": "Defense system"
       },
       "supplier": {
-        "id": 6,
-        "name": "Emard Group",
-        "address": "048 Lerdahl Avenue",
-        "city": null
+        "id": 7,
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
       },
-      "id": 9,
-      "name": "Fuel driver",
-      "price": 1009.00,
-      "quantity": 94,
+      "id": 7,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
       "partTypeId": 1,
-      "supplierId": 6
+      "supplierId": 7
     },
     {
       "partType": {
-        "id": 7,
-        "name": "Weapon system"
+        "id": 3,
+        "name": "Manuevering"
       },
       "supplier": {
-        "id": 9,
-        "name": "Schuppe, Doyle and Hartmann",
-        "address": "69560 High Crossing Avenue",
-        "city": null
+        "id": 5,
+        "name": "Barton, Grant and Huel",
+        "address": "89694 Darwin Junction",
+        "city": {
+          "country": {
+            "id": 3,
+            "name": "England"
+          },
+          "id": 3,
+          "name": "London",
+          "countryId": 3
+        }
       },
-      "id": 11,
-      "name": "Rail-guns",
-      "price": 569.00,
-      "quantity": 15,
-      "partTypeId": 7,
-      "supplierId": 9
+      "id": 9,
+      "name": "Gyro control module",
+      "price": 588.00,
+      "quantity": 97,
+      "partTypeId": 3,
+      "supplierId": 5
+    },
+    {
+      "partType": {
+        "id": 2,
+        "name": "Engine"
+      },
+      "supplier": {
+        "id": 2,
+        "name": "Emard Group",
+        "address": "048 Lerdahl Avenue",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 2,
+          "name": "New York",
+          "countryId": 2
+        }
+      },
+      "id": 10,
+      "name": "Fuel driver",
+      "price": 1009.00,
+      "quantity": 94,
+      "partTypeId": 2,
+      "supplierId": 2
     }
   ],
   "id": 14,
-  "model": "Techno Union Starship",
-  "year": 3727,
-  "price": 23930.00,
+  "model": "Neimoidian Shuttle",
+  "year": 4487,
+  "price": 30065.00,
   "categoryId": 2,
-  "color": "Pink"
+  "color": "White"
 }

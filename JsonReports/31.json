@@ -1,104 +1,144 @@
 {
   "category": {
-    "id": 2,
+    "id": 1,
     "name": "Battleship"
   },
   "parts": [
     {
       "partType": {
-        "id": 5,
-        "name": "Manuevering"
+        "id": 1,
+        "name": "Defense system"
       },
       "supplier": {
-        "id": 2,
-        "name": "Barton, Grant and Huel",
-        "address": "89694 Darwin Junction",
-        "city": null
+        "id": 1,
+        "name": "Cartwright Inc",
+        "address": "65015 Golf Course Drive",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
       },
-      "id": 5,
-      "name": "Gyro control module",
-      "price": 588.00,
-      "quantity": 97,
-      "partTypeId": 5,
-      "supplierId": 2
+      "id": 1,
+      "name": "Shield",
+      "price": 380.00,
+      "quantity": 4,
+      "partTypeId": 1,
+      "supplierId": 1
     },
     {
       "partType": {
         "id": 3,
-        "name": "Defense system"
+        "name": "Manuevering"
       },
       "supplier": {
-        "id": 5,
-        "name": "Cartwright Inc",
-        "address": "65015 Golf Course Drive",
-        "city": null
+        "id": 3,
+        "name": "Koss and Sons",
+        "address": "889 Hayes Street",
+        "city": {
+          "country": {
+            "id": 1,
+            "name": "Denmark"
+          },
+          "id": 1,
+          "name": "Copenhagen",
+          "countryId": 1
+        }
       },
-      "id": 6,
-      "name": "Shield",
-      "price": 380.00,
-      "quantity": 4,
+      "id": 3,
+      "name": "Locking claw",
+      "price": 1275.00,
+      "quantity": 77,
       "partTypeId": 3,
-      "supplierId": 5
+      "supplierId": 3
     },
     {
       "partType": {
-        "id": 1,
-        "name": "Engine"
+        "id": 5,
+        "name": "Weapon system"
       },
       "supplier": {
         "id": 6,
-        "name": "Emard Group",
-        "address": "048 Lerdahl Avenue",
-        "city": null
+        "name": "Schuppe, Doyle and Hartmann",
+        "address": "69560 High Crossing Avenue",
+        "city": {
+          "country": {
+            "id": 4,
+            "name": "Spain"
+          },
+          "id": 4,
+          "name": "Madrid",
+          "countryId": 4
+        }
       },
-      "id": 7,
-      "name": "Accelerator",
-      "price": 120.00,
-      "quantity": 55,
-      "partTypeId": 1,
+      "id": 6,
+      "name": "Rail-guns",
+      "price": 569.00,
+      "quantity": 15,
+      "partTypeId": 5,
       "supplierId": 6
     },
     {
       "partType": {
-        "id": 5,
-        "name": "Manuevering"
+        "id": 1,
+        "name": "Defense system"
       },
       "supplier": {
         "id": 7,
-        "name": "Koss and Sons",
-        "address": "889 Hayes Street",
-        "city": null
+        "name": "Padberg, Kohler and Stroman",
+        "address": "2 Debs Road",
+        "city": {
+          "country": {
+            "id": 2,
+            "name": "USA"
+          },
+          "id": 5,
+          "name": "San Francisco",
+          "countryId": 2
+        }
       },
-      "id": 8,
-      "name": "Locking claw",
-      "price": 1275.00,
-      "quantity": 77,
-      "partTypeId": 5,
+      "id": 7,
+      "name": "Shield booster",
+      "price": 415.00,
+      "quantity": 45,
+      "partTypeId": 1,
       "supplierId": 7
     },
     {
       "partType": {
-        "id": 1,
-        "name": "Engine"
+        "id": 7,
+        "name": "Interior"
       },
       "supplier": {
-        "id": 6,
-        "name": "Emard Group",
-        "address": "048 Lerdahl Avenue",
-        "city": null
+        "id": 9,
+        "name": "Stracke-Schimmel",
+        "address": "Tsarevets 33",
+        "city": {
+          "country": {
+            "id": 5,
+            "name": "Bulgaria"
+          },
+          "id": 6,
+          "name": "Sofia",
+          "countryId": 5
+        }
       },
-      "id": 9,
-      "name": "Fuel driver",
-      "price": 1009.00,
-      "quantity": 94,
-      "partTypeId": 1,
-      "supplierId": 6
+      "id": 11,
+      "name": "Smuggling compartment",
+      "price": 1293.00,
+      "quantity": 12,
+      "partTypeId": 7,
+      "supplierId": 9
     }
   ],
   "id": 31,
-  "model": "Republic Cruiser",
-  "year": 4381,
-  "price": 10046.00,
-  "categoryId": 2,
-  "color": "White"
+  "model": "Republic Assault Ship",
+  "year": 4065,
+  "price": 17950.00,
+  "categoryId": 1,
+  "color": "Blue"
 }
