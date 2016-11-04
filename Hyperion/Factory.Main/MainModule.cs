@@ -8,13 +8,17 @@ using Factory.InsertData.Models.Reports;
 using Factory.JsonReports;
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
+using Factory.MySql;
+using Factory.MySql.Models;
+using Factory.Models;
 using Factory.PdfReports;
 using Factory.LoadXML;
 using Factory.SQLite;
 using Factory.XmlReports;
 using Factory.Common;
-using MongoDB.Driver;
 using Factory.LoadXML.Models;
+using MongoDB.Driver;
+using Newtonsoft.Json;
 
 namespace Factory.Main
 {
@@ -49,8 +53,10 @@ namespace Factory.Main
             GenerateJSONReports(context, Constants.JsonReportsPath);
 
             //MySQL should be accessed through Telerik® Data Access ORM (research it).
-            // PopulateMySQLDataBase();
-
+            var mySqlContext = new FactoryMySqlDbContext();
+            mySqlContext.UpdateDatabase();
+            PopulateMySQLDataBase(context, mySqlContext);
+            
             //The SQLite embedded database should be accesses though its Entity Framework provider.
             // var modelExpensesPair = GetDataFromSQLite();
 
@@ -58,10 +64,43 @@ namespace Factory.Main
             //  CreateExcelYearlyFinancialResult();
         }
 
+        private static Dictionary<string, decimal> GetIncomePerModel(FactoryMySqlDbContext mySqlContext)
+        {
+            var dict = new Dictionary<string, decimal>();
+            mySqlContext
+                .ProductsReports
+                .ToList()
+                .ForEach(r =>
+                {
+                    dict.Add(r.Model, r.TotalIncome);
+                });
+
+            return dict;
+        }
+
+        private static void PopulateMySQLDataBase(FactoryDbContext sqlContext, FactoryMySqlDbContext mySqlContext)
+        {
+            var spaceships = sqlContext.Spaceships.ToList();
+            var sales = sqlContext.Sales.ToList();
+            var reports = new List<ProductReport>();
+            var jsonWriter = new JsonReportsWriter(spaceships, sales, reports);
+            var jsonData = jsonWriter.GetReportsInJsonFormat();
+
+            foreach (var json in jsonData)
+            {
+                var report = JsonConvert.DeserializeObject<MySqlReport>(json);
+                mySqlContext.Add(report);
+            }
+
+            mySqlContext.SaveChanges();
+        }
+
         private static void GenerateJSONReports(FactoryDbContext context, string resultFilesPath)
         {
             var spaceships = context.Spaceships.ToList();
-            var jsonWriter = new JsonReportsWriter(spaceships);
+            var sales = context.Sales.ToList();
+            var reports = new List<ProductReport>();
+            var jsonWriter = new JsonReportsWriter(spaceships, sales, reports);
             jsonWriter.WriteReportsToJson(resultFilesPath);
         }
 
