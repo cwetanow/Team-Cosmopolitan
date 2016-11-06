@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryXmlImporter.cs" />
-    <Compile Include="Models\SpaceshipsXML.cs" />
+    <Compile Include="Models\SpaceshipMissionsXmlModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,7 @@ using Factory.Common;
 using Factory.LoadXML.Models;
 using MongoDB.Driver;
 using Newtonsoft.Json;
+using Factory.InsertData.Models.SpaceshipMissions;
 
 namespace Factory.Main
 {
@@ -29,39 +30,40 @@ namespace Factory.Main
             var context = new FactoryDbContext();
             context.Database.CreateIfNotExists();
 
-            var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
+            //var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
 
-            // For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
+            //// For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
+            //var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
 
-            GetXML();
+            //ImportXmlToMongoDb();
+            ImportXMLToSqlServer();
 
-            //SQL Server should be accessed through Entity Framework.
-            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-            PopulateSQLDataBase(productData, context);
+            ////SQL Server should be accessed through Entity Framework.
+            //var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+            //PopulateSQLDataBase(productData, context);
 
-            var reportsData = ReportMigrator.Instance.GetReports(reports);
-            PopulateSqlDbReports(reportsData, context);
+            //var reportsData = ReportMigrator.Instance.GetReports(reports);
+            //PopulateSqlDbReports(reportsData, context);
 
-            //The XML files should be read / written through the standard .NET parsers (by your choice).
-            GenerateXMLReport(context, Constants.XmlReportsPath);
+            ////The XML files should be read / written through the standard .NET parsers (by your choice).
+            //GenerateXMLReport(context, Constants.XmlReportsPath);
 
-            //For the PDF export use a non-commercial third party framework.
-            GeneratePDFReport(context, Constants.PdfReportsPath);
+            ////For the PDF export use a non-commercial third party framework.
+            //GeneratePDFReport(context, Constants.PdfReportsPath);
 
-            //For JSON serializations use a non-commercial library / framework of your choice.
-            GenerateJSONReports(context, Constants.JsonReportsPath);
+            ////For JSON serializations use a non-commercial library / framework of your choice.
+            //GenerateJSONReports(context, Constants.JsonReportsPath);
 
-            //MySQL should be accessed through Telerik® Data Access ORM (research it).
-            var mySqlContext = new FactoryMySqlDbContext();
-            mySqlContext.UpdateDatabase();
-            PopulateMySQLDataBase(context, mySqlContext);
+            ////MySQL should be accessed through Telerik® Data Access ORM (research it).
+            //var mySqlContext = new FactoryMySqlDbContext();
+            //mySqlContext.UpdateDatabase();
+            //PopulateMySQLDataBase(context, mySqlContext);
             
-            //The SQLite embedded database should be accesses though its Entity Framework provider.
-            // var modelExpensesPair = GetDataFromSQLite();
+            ////The SQLite embedded database should be accesses though its Entity Framework provider.
+            //// var modelExpensesPair = GetDataFromSQLite();
 
-            //For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
-            //  CreateExcelYearlyFinancialResult();
+            ////For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
+            ////  CreateExcelYearlyFinancialResult();
         }
 
         private static Dictionary<string, decimal> GetIncomePerModel(FactoryMySqlDbContext mySqlContext)
@@ -160,19 +162,47 @@ namespace Factory.Main
             return mongoDBData;
         }
 
-        private static void GetXML()
+        private static void ImportXmlToMongoDb()
         {
             var mongo = new MongoClient(Constants.MongoDbConnectionString);
             var db = mongo.GetDatabase(Constants.DataName);
 
             var collection = FactoryXmlImporter.ImportSpaceships(Constants.XmlDataToImport);
 
-            var mongoCollection = db.GetCollection<SpaceshipsXML>("spaceships");
+            var mongoCollection = db.GetCollection<SpaceshipMissionsXmlModel>("spaceships");
 
             foreach (var spaceship in collection)
             {
                 mongoCollection.InsertOne(spaceship);
             }
+        }
+
+        private static void ImportXMLToSqlServer()
+        {
+            var db = new FactoryDbContext();
+
+            var collection = FactoryXmlImporter.ImportSpaceships(Constants.XmlDataToImport);
+
+            foreach (var spaceship in collection)
+            {
+                var sp = new SpaceshipMission
+                {
+                    SpaceshipName = spaceship.SpaceshipName,
+                    Captain = spaceship.Captain,
+                    HomePlanet = spaceship.HomePlanet,
+                    NumberOfCrewMembers = spaceship.NumberOfCrewMembers,
+                    MissionType = spaceship.MissionType,
+                    Commision = spaceship.Commission,
+                    MissionStatus = spaceship.MissionStatus
+                };
+
+                db.SpaceshipMissions.Add(sp);
+
+                db.SaveChanges();
+                db = new FactoryDbContext();
+            }
+
+            db.SaveChanges();
         }
     }
 }

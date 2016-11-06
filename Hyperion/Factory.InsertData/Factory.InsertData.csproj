@@ -90,6 +90,7 @@
     <Compile Include="Models\Products\Supplier.cs" />
     <Compile Include="Models\Reports\Report.cs" />
     <Compile Include="Models\Reports\ProductSale.cs" />
+    <Compile Include="Models\SpaceshipMissions\SpaceshipMission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

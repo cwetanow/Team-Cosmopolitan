@@ -1,28 +1,32 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Factory.LoadXML.Models
+namespace Factory.InsertData.Models.SpaceshipMissions
 {
-    [Serializable]
-    public class SpaceshipsXML
+    public class SpaceshipMission
     {
-        [StringLength(50)]
+        public int Id { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string SpaceshipName { get; set; }
 
-        [StringLength(50)]
+        [MaxLength(50)]
         public string Captain { get; set; }
 
-        [StringLength(50)]
+        [MaxLength(50)]
         public string HomePlanet { get; set; }
 
         public int NumberOfCrewMembers { get; set; }
 
-        [StringLength(50)]
+        [Required]
+        [MaxLength(50)]
         public string MissionType { get; set; }
 
-        public DateTime Commission { get; set; }
+        public DateTime Commision { get; set; }
 
-        [StringLength(20)]
+        [MaxLength(50)]
         public string MissionStatus { get; set; }
+
     }
 }

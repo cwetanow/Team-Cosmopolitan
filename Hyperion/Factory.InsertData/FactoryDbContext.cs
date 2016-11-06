@@ -2,6 +2,7 @@
 using Factory.InsertData.Migrations;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
+using Factory.InsertData.Models.SpaceshipMissions;
 
 namespace Factory.InsertData
 {
@@ -29,6 +30,8 @@ namespace Factory.InsertData
         public DbSet<Report> Reports { get; set; }
 
         public DbSet<ProductSale> Sales { get; set; }
+
+        public DbSet<SpaceshipMission> SpaceshipMissions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

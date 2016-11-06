@@ -9,16 +9,16 @@ namespace Factory.LoadXML
 {
     public class FactoryXmlImporter
     {
-        public static ICollection<SpaceshipsXML> ImportSpaceships(string filePath)
+        public static ICollection<SpaceshipMissionsXmlModel> ImportSpaceships(string filePath)
         {
-            var spaceships = new List<SpaceshipsXML>();
+            var spaceships = new List<SpaceshipMissionsXmlModel>();
 
             var xmlDoc = XDocument.Load(filePath);
             var spaceshipElements = xmlDoc.Root.Elements();
 
             foreach (var spaceship in spaceshipElements)
             {
-                var sp = new SpaceshipsXML();
+                var sp = new SpaceshipMissionsXmlModel();
 
                 var spaceshipName = spaceship.Element("SpaceshipName");
                 if (spaceshipName != null)
