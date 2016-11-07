@@ -2,7 +2,7 @@
   "id": 31,
   "model": "Techno Union Starship",
   "category": "Cruiser",
-  "price": 33389.0,
-  "quantity-sold": 627,
-  "total-income": 18078285.0
+  "price": 33389.00,
+  "quantity-sold": 304,
+  "total-income": 10150256.00
 }

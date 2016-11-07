@@ -1,8 +1,8 @@
 {
   "id": 11,
-  "model": "Rogue Shadow",
-  "category": "Cruiser",
-  "price": 21778.0,
-  "quantity-sold": 313,
-  "total-income": 6816514.0
+  "model": "Imperial Landing Craft",
+  "category": "Battleship",
+  "price": 23930.00,
+  "quantity-sold": 484,
+  "total-income": 11582120.00
 }

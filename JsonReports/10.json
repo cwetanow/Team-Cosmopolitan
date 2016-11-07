@@ -1,8 +1,8 @@
 {
   "id": 10,
-  "model": "Republic Attack Cruiser",
-  "category": "Spacecraft",
-  "price": 12757.0,
-  "quantity-sold": 287,
-  "total-income": 3661259.0
+  "model": "Naboo Royal Cruiser",
+  "category": "Cruiser",
+  "price": 38320.00,
+  "quantity-sold": 220,
+  "total-income": 8430400.00
 }

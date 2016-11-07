@@ -1,8 +1,8 @@
 {
   "id": 8,
-  "model": "Slave I",
-  "category": "Battleship",
-  "price": 44586.0,
-  "quantity-sold": 372,
-  "total-income": 16585992.0
+  "model": "Millennium Falcon",
+  "category": "Cruiser",
+  "price": 26165.00,
+  "quantity-sold": 415,
+  "total-income": 10858475.00
 }

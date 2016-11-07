@@ -1,8 +1,8 @@
 {
   "id": 4,
-  "model": "Millennium Falcon",
-  "category": "Cruiser",
-  "price": 26165.0,
-  "quantity-sold": 479,
-  "total-income": 12533035.0
+  "model": "Lambda-class Shuttle",
+  "category": "Battleship",
+  "price": 48421.00,
+  "quantity-sold": 390,
+  "total-income": 18884190.00
 }

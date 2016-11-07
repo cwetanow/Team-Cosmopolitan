@@ -8,7 +8,7 @@ namespace Factory.ExcelReports
 {
     public class ExcelWriter : IExcelWriter
     {
-        public void WriteRepors(IList<string> headers, IDictionary<string, IList<int>> modelFinancialData)
+        public void WriteRepors(IList<string> headers, IDictionary<string, decimal> expensePerModel, IDictionary<string, decimal> incomePerModel)
         {
             var workbook = new HSSFWorkbook();
             var sheet = workbook.CreateSheet("Financial Result");

@@ -20,6 +20,7 @@ using MongoDB.Driver;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace Factory.Main
 {
@@ -35,38 +36,48 @@ namespace Factory.Main
             //// For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
             // var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
 
-            //ImportXmlToMongoDb();
-            //ImportXMLToSqlServer();
+           // ImportXmlToMongoDb();
+           // ImportXMLToSqlServer();
 
             ////SQL Server should be accessed through Entity Framework.
-            //var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-            //PopulateSQLDataBase(productData, context);
+           // var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+           // PopulateSQLDataBase(productData, context);
 
-            //var reportsData = ReportMigrator.Instance.GetReports(reports);
-            //PopulateSqlDbReports(reportsData, context);
+           // var reportsData = ReportMigrator.Instance.GetReports(reports);
+           // PopulateSqlDbReports(reportsData, context);
 
             ////The XML files should be read / written through the standard .NET parsers (by your choice).
-            //GenerateXMLReport(context, Constants.XmlReportsPath);
+           // GenerateXMLReport(context, Constants.XmlReportsPath);
 
             ////For the PDF export use a non-commercial third party framework.
-            //GeneratePDFReport(context, Constants.PdfReportsPath);
+           // GeneratePDFReport(context, Constants.PdfReportsPath);
 
             ////For JSON serializations use a non-commercial library / framework of your choice.
             //GenerateJSONReports(context, Constants.JsonReportsPath);
 
             ////MySQL should be accessed through Telerik® Data Access ORM (research it).
-            var mySqlContext = new FactoryMySqlDbContext();
-            mySqlContext.UpdateDatabase();
-            PopulateMySQLDataBase(context, mySqlContext);
+           var mySqlContext = new FactoryMySqlDbContext();
+           //mySqlContext.UpdateDatabase();
+           //PopulateMySQLDataBase(context, mySqlContext);
 
             ////The SQLite embedded database should be accesses though its Entity Framework provider.
-            //// var modelExpensesPair = GetDataFromSQLite();
+            var expensePerModel = GetDataFromSQLite();
 
             ////For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
-            ////  CreateExcelYearlyFinancialResult();
+            var incomePerModel = GetIncomePerModel(mySqlContext);
+            CreateExcelYearlyFinancialResult(expensePerModel, incomePerModel);
         }
 
-        private static Dictionary<string, decimal> GetIncomePerModel(FactoryMySqlDbContext mySqlContext)
+        private static void CreateExcelYearlyFinancialResult(IDictionary<string, decimal> expensePerModel, IDictionary<string, decimal> incomePerModel)
+        {
+            var excelWriter = new ExcelWriter();
+            var headers = new List<string>() { "Model", "Incomes", "Expenses", "Financial Result"};
+            var financialDataPerModel = new Dictionary<string, List<decimal>>();
+
+            excelWriter.WriteRepors(headers, expensePerModel, incomePerModel)
+        }
+
+        private static IDictionary<string, decimal> GetIncomePerModel(FactoryMySqlDbContext mySqlContext)
         {
             var dict = new Dictionary<string, decimal>();
             mySqlContext

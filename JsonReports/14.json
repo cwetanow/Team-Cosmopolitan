@@ -1,8 +1,8 @@
 {
   "id": 14,
-  "model": "Rebel BlockadeRunner",
-  "category": "Cruiser",
-  "price": 11585.0,
-  "quantity-sold": 691,
-  "total-income": 19059460.0
+  "model": "Republic Attack Cruiser",
+  "category": "Spacecraft",
+  "price": 12757.00,
+  "quantity-sold": 386,
+  "total-income": 4924202.00
 }

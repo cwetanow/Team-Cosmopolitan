@@ -1,450 +1,449 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sales year="4500">
+  <sale model="Raven's Claw">
+    <summary month="January" units-sold="26" total-sum="1281566" />
+    <summary month="February" units-sold="33" total-sum="1626603" />
+    <summary month="March" units-sold="36" total-sum="1774476" />
+    <summary month="April" units-sold="2" total-sum="98582" />
+    <summary month="May" units-sold="36" total-sum="1774476" />
+    <summary month="June" units-sold="56" total-sum="2760296" />
+    <summary month="July" units-sold="31" total-sum="1528021" />
+    <summary month="August" units-sold="103" total-sum="5076973" />
+    <summary month="September" units-sold="29" total-sum="1429439" />
+    <summary month="October" units-sold="50" total-sum="2464550" />
+    <summary month="November" units-sold="4" total-sum="197164" />
+    <summary month="December" units-sold="6" total-sum="295746" />
+  </sale>
+  <sale model="Trade Federation Battleship">
+    <summary month="January" units-sold="37" total-sum="452917" />
+    <summary month="February" units-sold="8" total-sum="97928" />
+    <summary month="March" units-sold="73" total-sum="893593" />
+    <summary month="April" units-sold="57" total-sum="697737" />
+    <summary month="June" units-sold="6" total-sum="73446" />
+    <summary month="June" units-sold="24" total-sum="293784" />
+    <summary month="July" units-sold="52" total-sum="636532" />
+    <summary month="August" units-sold="56" total-sum="685496" />
+    <summary month="September" units-sold="12" total-sum="146892" />
+    <summary month="October" units-sold="16" total-sum="195856" />
+    <summary month="November" units-sold="20" total-sum="244820" />
+    <summary month="December" units-sold="44" total-sum="538604" />
+  </sale>
   <sale model="TIE Fighter">
-    <summary month="January" units-sold="73" total-sum="2269464" />
-    <summary month="February" units-sold="22" total-sum="756096" />
-    <summary month="March" units-sold="91" total-sum="2792328" />
-    <summary month="April" units-sold="65" total-sum="1611480" />
-    <summary month="May" units-sold="18" total-sum="589896" />
-    <summary month="June" units-sold="74" total-sum="2160192" />
-    <summary month="July" units-sold="78" total-sum="2537064" />
-    <summary month="August" units-sold="16" total-sum="396672" />
-    <summary month="September" units-sold="28" total-sum="722904" />
-    <summary month="October" units-sold="29" total-sum="996672" />
-    <summary month="November" units-sold="83" total-sum="2584416" />
-    <summary month="December" units-sold="12" total-sum="316656" />
+    <summary month="January" units-sold="48" total-sum="1190016" />
+    <summary month="February" units-sold="24" total-sum="595008" />
+    <summary month="March" units-sold="21" total-sum="520632" />
+    <summary month="April" units-sold="25" total-sum="619800" />
+    <summary month="May" units-sold="10" total-sum="247920" />
+    <summary month="June" units-sold="82" total-sum="2032944" />
+    <summary month="July" units-sold="24" total-sum="595008" />
+    <summary month="August" units-sold="39" total-sum="966888" />
+    <summary month="September" units-sold="67" total-sum="1661064" />
+    <summary month="October" units-sold="24" total-sum="595008" />
+    <summary month="November" units-sold="42" total-sum="1041264" />
+    <summary month="December" units-sold="49" total-sum="1214808" />
+  </sale>
+  <sale model="Lambda-class Shuttle">
+    <summary month="January" units-sold="35" total-sum="1694735" />
+    <summary month="February" units-sold="39" total-sum="1888419" />
+    <summary month="March" units-sold="22" total-sum="1065262" />
+    <summary month="April" units-sold="52" total-sum="2517892" />
+    <summary month="May" units-sold="45" total-sum="2178945" />
+    <summary month="June" units-sold="28" total-sum="1355788" />
+    <summary month="July" units-sold="23" total-sum="1113683" />
+    <summary month="August" units-sold="37" total-sum="1791577" />
+    <summary month="September" units-sold="27" total-sum="1307367" />
+    <summary month="October" units-sold="7" total-sum="338947" />
+    <summary month="November" units-sold="27" total-sum="1307367" />
+    <summary month="December" units-sold="48" total-sum="2324208" />
   </sale>
   <sale model="Corellian Corvette">
-    <summary month="January" units-sold="16" total-sum="774736" />
-    <summary month="February" units-sold="37" total-sum="554852" />
-    <summary month="March" units-sold="48" total-sum="1354883" />
-    <summary month="April" units-sold="38" total-sum="670123" />
-    <summary month="May" units-sold="47" total-sum="1473587" />
-    <summary month="June" units-sold="30" total-sum="784130" />
-    <summary month="July" units-sold="64" total-sum="1995919" />
-    <summary month="August" units-sold="79" total-sum="3156759" />
-    <summary month="September" units-sold="9" total-sum="302089" />
-    <summary month="October" units-sold="24" total-sum="359904" />
-    <summary month="November" units-sold="63" total-sum="3050523" />
-    <summary month="December" units-sold="60" total-sum="2236760" />
+    <summary month="January" units-sold="27" total-sum="404892" />
+    <summary month="February" units-sold="21" total-sum="314916" />
+    <summary month="March" units-sold="76" total-sum="1139696" />
+    <summary month="April" units-sold="31" total-sum="464876" />
+    <summary month="May" units-sold="27" total-sum="404892" />
+    <summary month="June" units-sold="46" total-sum="689816" />
+    <summary month="July" units-sold="34" total-sum="509864" />
+    <summary month="August" units-sold="1" total-sum="14996" />
+    <summary month="September" units-sold="32" total-sum="479872" />
+    <summary month="November" units-sold="4" total-sum="59984" />
+    <summary month="November" units-sold="69" total-sum="1034724" />
+    <summary month="December" units-sold="26" total-sum="389896" />
   </sale>
   <sale model="Rebel BlockadeRunner">
-    <summary month="January" units-sold="36" total-sum="927255" />
-    <summary month="February" units-sold="38" total-sum="1732724" />
-    <summary month="March" units-sold="47" total-sum="544495" />
-    <summary month="April" units-sold="60" total-sum="1069243" />
-    <summary month="May" units-sold="94" total-sum="3469900" />
-    <summary month="June" units-sold="21" total-sum="379337" />
-    <summary month="July" units-sold="63" total-sum="1444128" />
-    <summary month="August" units-sold="72" total-sum="1582406" />
-    <summary month="September" units-sold="42" total-sum="1268869" />
-    <summary month="October" units-sold="48" total-sum="1270353" />
-    <summary month="November" units-sold="19" total-sum="220115" />
-    <summary month="December" units-sold="37" total-sum="1483048" />
+    <summary month="January" units-sold="38" total-sum="1732724" />
+    <summary month="February" units-sold="2" total-sum="91196" />
+    <summary month="March" units-sold="24" total-sum="1094352" />
+    <summary month="April" units-sold="8" total-sum="364784" />
+    <summary month="May" units-sold="4" total-sum="182392" />
+    <summary month="June" units-sold="31" total-sum="1413538" />
+    <summary month="July" units-sold="8" total-sum="364784" />
+    <summary month="August" units-sold="50" total-sum="2279900" />
+    <summary month="September" units-sold="12" total-sum="547176" />
+    <summary month="October" units-sold="15" total-sum="683970" />
+    <summary month="November" units-sold="35" total-sum="1595930" />
+    <summary month="December" units-sold="31" total-sum="1413538" />
+  </sale>
+  <sale model="TIE Fighter 2002">
+    <summary month="January" units-sold="78" total-sum="2680704" />
+    <summary month="March" units-sold="9" total-sum="309312" />
+    <summary month="May" units-sold="9" total-sum="309312" />
+    <summary month="May" units-sold="30" total-sum="1031040" />
+    <summary month="June" units-sold="55" total-sum="1890240" />
+    <summary month="July" units-sold="6" total-sum="206208" />
+    <summary month="August" units-sold="37" total-sum="1271616" />
+    <summary month="September" units-sold="10" total-sum="343680" />
+    <summary month="October" units-sold="32" total-sum="1099776" />
+    <summary month="November" units-sold="38" total-sum="1305984" />
+    <summary month="December" units-sold="22" total-sum="756096" />
   </sale>
   <sale model="Millennium Falcon">
-    <summary month="January" units-sold="48" total-sum="1255920" />
-    <summary month="February" units-sold="24" total-sum="627960" />
-    <summary month="March" units-sold="74" total-sum="1936210" />
-    <summary month="April" units-sold="63" total-sum="1648395" />
-    <summary month="May" units-sold="45" total-sum="1177425" />
-    <summary month="June" units-sold="40" total-sum="1046600" />
-    <summary month="July" units-sold="96" total-sum="2511840" />
-    <summary month="August" units-sold="24" total-sum="627960" />
-    <summary month="September" units-sold="24" total-sum="627960" />
-    <summary month="October" units-sold="21" total-sum="549465" />
-    <summary month="November" units-sold="6" total-sum="156990" />
-    <summary month="December" units-sold="14" total-sum="366310" />
+    <summary month="January" units-sold="68" total-sum="1779220" />
+    <summary month="February" units-sold="37" total-sum="968105" />
+    <summary month="March" units-sold="67" total-sum="1753055" />
+    <summary month="April" units-sold="23" total-sum="601795" />
+    <summary month="May" units-sold="22" total-sum="575630" />
+    <summary month="June" units-sold="18" total-sum="470970" />
+    <summary month="July" units-sold="36" total-sum="941940" />
+    <summary month="August" units-sold="47" total-sum="1229755" />
+    <summary month="September" units-sold="6" total-sum="156990" />
+    <summary month="October" units-sold="10" total-sum="261650" />
+    <summary month="November" units-sold="57" total-sum="1491405" />
+    <summary month="December" units-sold="24" total-sum="627960" />
   </sale>
-  <sale model="TIE Fighter">
-    <summary month="January" units-sold="73" total-sum="2269464" />
-    <summary month="February" units-sold="22" total-sum="756096" />
-    <summary month="March" units-sold="91" total-sum="2792328" />
-    <summary month="April" units-sold="65" total-sum="1611480" />
-    <summary month="May" units-sold="18" total-sum="589896" />
-    <summary month="June" units-sold="74" total-sum="2160192" />
-    <summary month="July" units-sold="78" total-sum="2537064" />
-    <summary month="August" units-sold="16" total-sum="396672" />
-    <summary month="September" units-sold="28" total-sum="722904" />
-    <summary month="October" units-sold="29" total-sum="996672" />
-    <summary month="November" units-sold="83" total-sum="2584416" />
-    <summary month="December" units-sold="12" total-sum="316656" />
-  </sale>
-  <sale model="Trade Federation Cruiser">
-    <summary month="January" units-sold="68" total-sum="1218663" />
-    <summary month="February" units-sold="33" total-sum="342611" />
-    <summary month="March" units-sold="88" total-sum="1076556" />
-    <summary month="April" units-sold="66" total-sum="615018" />
-    <summary month="May" units-sold="51" total-sum="346113" />
-    <summary month="June" units-sold="67" total-sum="1037971" />
-    <summary month="July" units-sold="78" total-sum="504726" />
-    <summary month="August" units-sold="77" total-sum="1007678" />
-    <summary month="September" units-sold="83" total-sum="1653890" />
-    <summary month="October" units-sold="44" total-sum="827284" />
-    <summary month="November" units-sold="90" total-sum="823349" />
-    <summary month="December" units-sold="62" total-sum="841777" />
-  </sale>
-  <sale model="Techno Union Starship">
-    <summary month="January" units-sold="58" total-sum="1681169" />
-    <summary month="February" units-sold="52" total-sum="1584884" />
-    <summary month="March" units-sold="88" total-sum="2408528" />
-    <summary month="April" units-sold="20" total-sum="478600" />
-    <summary month="May" units-sold="46" total-sum="1403468" />
-    <summary month="June" units-sold="38" total-sum="1051225" />
-    <summary month="July" units-sold="65" total-sum="1668958" />
-    <summary month="August" units-sold="26" total-sum="697852" />
-    <summary month="September" units-sold="64" total-sum="2089601" />
-    <summary month="October" units-sold="6" total-sum="200334" />
-    <summary month="November" units-sold="83" total-sum="2194288" />
-    <summary month="December" units-sold="72" total-sum="2404008" />
-  </sale>
-  <sale model="Slave I">
-    <summary month="January" units-sold="24" total-sum="1070064" />
-    <summary month="March" units-sold="8" total-sum="356688" />
-    <summary month="March" units-sold="35" total-sum="1560510" />
-    <summary month="April" units-sold="27" total-sum="1203822" />
-    <summary month="May" units-sold="4" total-sum="178344" />
-    <summary month="June" units-sold="5" total-sum="222930" />
-    <summary month="July" units-sold="81" total-sum="3611466" />
-    <summary month="August" units-sold="62" total-sum="2764332" />
-    <summary month="September" units-sold="14" total-sum="624204" />
-    <summary month="October" units-sold="64" total-sum="2853504" />
-    <summary month="November" units-sold="24" total-sum="1070064" />
-    <summary month="December" units-sold="24" total-sum="1070064" />
-  </sale>
-  <sale model="Neimoidian Shuttle">
-    <summary month="January" units-sold="45" total-sum="1352925" />
-    <summary month="February" units-sold="53" total-sum="1593445" />
-    <summary month="March" units-sold="8" total-sum="240520" />
-    <summary month="April" units-sold="88" total-sum="2645720" />
-    <summary month="May" units-sold="12" total-sum="360780" />
-    <summary month="June" units-sold="21" total-sum="631365" />
-    <summary month="July" units-sold="63" total-sum="1894095" />
-    <summary month="September" units-sold="5" total-sum="150325" />
-    <summary month="September" units-sold="56" total-sum="1683640" />
-    <summary month="November" units-sold="7" total-sum="210455" />
-    <summary month="November" units-sold="14" total-sum="420910" />
-    <summary month="December" units-sold="71" total-sum="2134615" />
-  </sale>
-  <sale model="Republic Attack Cruiser">
-    <summary month="January" units-sold="42" total-sum="535794" />
-    <summary month="February" units-sold="28" total-sum="357196" />
-    <summary month="March" units-sold="18" total-sum="229626" />
-    <summary month="April" units-sold="46" total-sum="586822" />
-    <summary month="May" units-sold="8" total-sum="102056" />
-    <summary month="June" units-sold="4" total-sum="51028" />
-    <summary month="July" units-sold="36" total-sum="459252" />
-    <summary month="August" units-sold="30" total-sum="382710" />
-    <summary month="September" units-sold="12" total-sum="153084" />
-    <summary month="November" units-sold="7" total-sum="89299" />
-    <summary month="November" units-sold="45" total-sum="574065" />
-    <summary month="December" units-sold="11" total-sum="140327" />
-  </sale>
-  <sale model="Rogue Shadow">
-    <summary month="January" units-sold="49" total-sum="1067122" />
-    <summary month="February" units-sold="12" total-sum="261336" />
-    <summary month="March" units-sold="55" total-sum="1197790" />
-    <summary month="April" units-sold="25" total-sum="544450" />
-    <summary month="May" units-sold="24" total-sum="522672" />
-    <summary month="June" units-sold="4" total-sum="87112" />
-    <summary month="July" units-sold="47" total-sum="1023566" />
-    <summary month="August" units-sold="14" total-sum="304892" />
-    <summary month="September" units-sold="47" total-sum="1023566" />
-    <summary month="October" units-sold="9" total-sum="196002" />
-    <summary month="November" units-sold="12" total-sum="261336" />
-    <summary month="December" units-sold="15" total-sum="326670" />
-  </sale>
-  <sale model="Death Star">
-    <summary month="January" units-sold="76" total-sum="2938528" />
-    <summary month="February" units-sold="8" total-sum="280464" />
-    <summary month="March" units-sold="72" total-sum="2680816" />
-    <summary month="April" units-sold="48" total-sum="1996064" />
-    <summary month="May" units-sold="85" total-sum="2979930" />
-    <summary month="June" units-sold="41" total-sum="1642968" />
-    <summary month="July" units-sold="82" total-sum="3501316" />
-    <summary month="August" units-sold="9" total-sum="403632" />
-    <summary month="September" units-sold="39" total-sum="1690332" />
-    <summary month="October" units-sold="40" total-sum="1529590" />
-    <summary month="November" units-sold="7" total-sum="245406" />
-    <summary month="December" units-sold="82" total-sum="3285936" />
-  </sale>
-  <sale model="Ebon Hawk">
-    <summary month="January" units-sold="48" total-sum="2363904" />
-    <summary month="March" units-sold="8" total-sum="393984" />
-    <summary month="March" units-sold="11" total-sum="541728" />
-    <summary month="April" units-sold="33" total-sum="1625184" />
-    <summary month="May" units-sold="5" total-sum="246240" />
-    <summary month="June" units-sold="12" total-sum="590976" />
-    <summary month="July" units-sold="54" total-sum="2659392" />
-    <summary month="August" units-sold="42" total-sum="2068416" />
-    <summary month="September" units-sold="42" total-sum="2068416" />
-    <summary month="October" units-sold="29" total-sum="1428192" />
-    <summary month="November" units-sold="67" total-sum="3299616" />
-    <summary month="December" units-sold="17" total-sum="837216" />
-  </sale>
-  <sale model="Rebel BlockadeRunner">
-    <summary month="January" units-sold="36" total-sum="927255" />
-    <summary month="February" units-sold="38" total-sum="1732724" />
-    <summary month="March" units-sold="47" total-sum="544495" />
-    <summary month="April" units-sold="60" total-sum="1069243" />
-    <summary month="May" units-sold="94" total-sum="3469900" />
-    <summary month="June" units-sold="21" total-sum="379337" />
-    <summary month="July" units-sold="63" total-sum="1444128" />
-    <summary month="August" units-sold="72" total-sum="1582406" />
-    <summary month="September" units-sold="42" total-sum="1268869" />
-    <summary month="October" units-sold="48" total-sum="1270353" />
-    <summary month="November" units-sold="19" total-sum="220115" />
-    <summary month="December" units-sold="37" total-sum="1483048" />
-  </sale>
-  <sale model="Republic Cruiser">
-    <summary month="January" units-sold="94" total-sum="2945819" />
-    <summary month="February" units-sold="20" total-sum="671860" />
-    <summary month="March" units-sold="62" total-sum="858322" />
-    <summary month="April" units-sold="39" total-sum="1137449" />
-    <summary month="May" units-sold="39" total-sum="1215939" />
-    <summary month="June" units-sold="36" total-sum="871841" />
-    <summary month="July" units-sold="57" total-sum="2809587" />
-    <summary month="August" units-sold="39" total-sum="705754" />
-    <summary month="September" units-sold="49" total-sum="2179789" />
-    <summary month="October" units-sold="25" total-sum="1232275" />
-    <summary month="November" units-sold="74" total-sum="2862634" />
-    <summary month="December" units-sold="94" total-sum="2082429" />
-  </sale>
-  <sale model="Naboo Star Skiff">
-    <summary month="January" units-sold="49" total-sum="1405124" />
-    <summary month="February" units-sold="39" total-sum="1118364" />
-    <summary month="March" units-sold="32" total-sum="917632" />
-    <summary month="April" units-sold="50" total-sum="1433800" />
-    <summary month="May" units-sold="21" total-sum="602196" />
-    <summary month="June" units-sold="33" total-sum="946308" />
-    <summary month="July" units-sold="33" total-sum="946308" />
-    <summary month="August" units-sold="24" total-sum="688224" />
-    <summary month="September" units-sold="18" total-sum="516168" />
-    <summary month="October" units-sold="21" total-sum="602196" />
-    <summary month="November" units-sold="19" total-sum="544844" />
-    <summary month="December" units-sold="59" total-sum="1691884" />
-  </sale>
-  <sale model="Trade Federation Cruiser">
-    <summary month="January" units-sold="68" total-sum="1218663" />
-    <summary month="February" units-sold="33" total-sum="342611" />
-    <summary month="March" units-sold="88" total-sum="1076556" />
-    <summary month="April" units-sold="66" total-sum="615018" />
-    <summary month="May" units-sold="51" total-sum="346113" />
-    <summary month="June" units-sold="67" total-sum="1037971" />
-    <summary month="July" units-sold="78" total-sum="504726" />
-    <summary month="August" units-sold="77" total-sum="1007678" />
-    <summary month="September" units-sold="83" total-sum="1653890" />
-    <summary month="October" units-sold="44" total-sum="827284" />
-    <summary month="November" units-sold="90" total-sum="823349" />
-    <summary month="December" units-sold="62" total-sum="841777" />
-  </sale>
-  <sale model="Corellian Corvette">
-    <summary month="January" units-sold="16" total-sum="774736" />
-    <summary month="February" units-sold="37" total-sum="554852" />
-    <summary month="March" units-sold="48" total-sum="1354883" />
-    <summary month="April" units-sold="38" total-sum="670123" />
-    <summary month="May" units-sold="47" total-sum="1473587" />
-    <summary month="June" units-sold="30" total-sum="784130" />
-    <summary month="July" units-sold="64" total-sum="1995919" />
-    <summary month="August" units-sold="79" total-sum="3156759" />
-    <summary month="September" units-sold="9" total-sum="302089" />
-    <summary month="October" units-sold="24" total-sum="359904" />
-    <summary month="November" units-sold="63" total-sum="3050523" />
-    <summary month="December" units-sold="60" total-sum="2236760" />
-  </sale>
-  <sale model="Trade Federation Cruiser">
-    <summary month="January" units-sold="68" total-sum="1218663" />
-    <summary month="February" units-sold="33" total-sum="342611" />
-    <summary month="March" units-sold="88" total-sum="1076556" />
-    <summary month="April" units-sold="66" total-sum="615018" />
-    <summary month="May" units-sold="51" total-sum="346113" />
-    <summary month="June" units-sold="67" total-sum="1037971" />
-    <summary month="July" units-sold="78" total-sum="504726" />
-    <summary month="August" units-sold="77" total-sum="1007678" />
-    <summary month="September" units-sold="83" total-sum="1653890" />
-    <summary month="October" units-sold="44" total-sum="827284" />
-    <summary month="November" units-sold="90" total-sum="823349" />
-    <summary month="December" units-sold="62" total-sum="841777" />
-  </sale>
-  <sale model="Star Destroyer">
-    <summary month="January" units-sold="42" total-sum="373170" />
-    <summary month="April" units-sold="3" total-sum="26655" />
-    <summary month="April" units-sold="34" total-sum="302090" />
-    <summary month="May" units-sold="12" total-sum="106620" />
-    <summary month="June" units-sold="27" total-sum="239895" />
-    <summary month="July" units-sold="36" total-sum="319860" />
-    <summary month="August" units-sold="24" total-sum="213240" />
-    <summary month="September" units-sold="35" total-sum="310975" />
-    <summary month="November" units-sold="2" total-sum="17770" />
-    <summary month="November" units-sold="6" total-sum="53310" />
-    <summary month="December" units-sold="41" total-sum="364285" />
-  </sale>
-  <sale model="Sith Infiltrator">
-    <summary month="January" units-sold="61" total-sum="1078459" />
-    <summary month="February" units-sold="28" total-sum="548692" />
-    <summary month="March" units-sold="40" total-sum="595780" />
-    <summary month="April" units-sold="53" total-sum="969977" />
-    <summary month="May" units-sold="52" total-sum="963088" />
-    <summary month="June" units-sold="41" total-sum="282449" />
-    <summary month="July" units-sold="61" total-sum="740449" />
-    <summary month="August" units-sold="20" total-sum="280100" />
-    <summary month="September" units-sold="57" total-sum="1246593" />
-    <summary month="October" units-sold="59" total-sum="406451" />
-    <summary month="November" units-sold="83" total-sum="1799297" />
-    <summary month="December" units-sold="89" total-sum="1022291" />
-  </sale>
-  <sale model="Nebulon-B Frigate">
-    <summary month="January" units-sold="51" total-sum="282387" />
-    <summary month="February" units-sold="20" total-sum="110740" />
-    <summary month="March" units-sold="33" total-sum="182721" />
-    <summary month="April" units-sold="25" total-sum="138425" />
-    <summary month="May" units-sold="74" total-sum="409738" />
-    <summary month="June" units-sold="2" total-sum="11074" />
-    <summary month="July" units-sold="21" total-sum="116277" />
-    <summary month="August" units-sold="43" total-sum="238091" />
-    <summary month="September" units-sold="48" total-sum="265776" />
-    <summary month="November" units-sold="3" total-sum="16611" />
-    <summary month="November" units-sold="11" total-sum="60907" />
-    <summary month="December" units-sold="20" total-sum="110740" />
-  </sale>
-  <sale model="Sith Infiltrator">
-    <summary month="January" units-sold="61" total-sum="1078459" />
-    <summary month="February" units-sold="28" total-sum="548692" />
-    <summary month="March" units-sold="40" total-sum="595780" />
-    <summary month="April" units-sold="53" total-sum="969977" />
-    <summary month="May" units-sold="52" total-sum="963088" />
-    <summary month="June" units-sold="41" total-sum="282449" />
-    <summary month="July" units-sold="61" total-sum="740449" />
-    <summary month="August" units-sold="20" total-sum="280100" />
-    <summary month="September" units-sold="57" total-sum="1246593" />
-    <summary month="October" units-sold="59" total-sum="406451" />
-    <summary month="November" units-sold="83" total-sum="1799297" />
-    <summary month="December" units-sold="89" total-sum="1022291" />
+  <sale model="Trade Federation Shuttle">
+    <summary month="January" units-sold="13" total-sum="346775" />
+    <summary month="February" units-sold="20" total-sum="533500" />
+    <summary month="March" units-sold="106" total-sum="2827550" />
+    <summary month="April" units-sold="54" total-sum="1440450" />
+    <summary month="June" units-sold="3" total-sum="80025" />
+    <summary month="June" units-sold="12" total-sum="320100" />
+    <summary month="July" units-sold="60" total-sum="1600500" />
+    <summary month="August" units-sold="20" total-sum="533500" />
+    <summary month="September" units-sold="53" total-sum="1413775" />
+    <summary month="October" units-sold="21" total-sum="560175" />
+    <summary month="November" units-sold="67" total-sum="1787225" />
+    <summary month="December" units-sold="18" total-sum="480150" />
   </sale>
   <sale model="Naboo Royal Cruiser">
-    <summary month="January" units-sold="27" total-sum="1034640" />
-    <summary month="February" units-sold="60" total-sum="2299200" />
-    <summary month="March" units-sold="16" total-sum="613120" />
-    <summary month="April" units-sold="18" total-sum="689760" />
-    <summary month="May" units-sold="75" total-sum="2874000" />
-    <summary month="June" units-sold="19" total-sum="728080" />
-    <summary month="July" units-sold="34" total-sum="1302880" />
-    <summary month="August" units-sold="18" total-sum="689760" />
-    <summary month="September" units-sold="59" total-sum="2260880" />
-    <summary month="October" units-sold="62" total-sum="2375840" />
-    <summary month="December" units-sold="4" total-sum="153280" />
-    <summary month="December" units-sold="40" total-sum="1532800" />
+    <summary month="February" units-sold="7" total-sum="268240" />
+    <summary month="February" units-sold="26" total-sum="996320" />
+    <summary month="March" units-sold="30" total-sum="1149600" />
+    <summary month="April" units-sold="33" total-sum="1264560" />
+    <summary month="June" units-sold="9" total-sum="344880" />
+    <summary month="June" units-sold="35" total-sum="1341200" />
+    <summary month="July" units-sold="9" total-sum="344880" />
+    <summary month="August" units-sold="12" total-sum="459840" />
+    <summary month="October" units-sold="7" total-sum="268240" />
+    <summary month="October" units-sold="19" total-sum="728080" />
+    <summary month="November" units-sold="33" total-sum="1264560" />
+  </sale>
+  <sale model="Imperial Landing Craft">
+    <summary month="January" units-sold="21" total-sum="502530" />
+    <summary month="February" units-sold="12" total-sum="287160" />
+    <summary month="March" units-sold="52" total-sum="1244360" />
+    <summary month="April" units-sold="48" total-sum="1148640" />
+    <summary month="May" units-sold="117" total-sum="2799810" />
+    <summary month="June" units-sold="50" total-sum="1196500" />
+    <summary month="July" units-sold="28" total-sum="670040" />
+    <summary month="August" units-sold="13" total-sum="311090" />
+    <summary month="September" units-sold="67" total-sum="1603310" />
+    <summary month="October" units-sold="26" total-sum="622180" />
+    <summary month="November" units-sold="8" total-sum="191440" />
+    <summary month="December" units-sold="42" total-sum="1005060" />
+  </sale>
+  <sale model="Neimoidian Shuttle">
+    <summary month="January" units-sold="32" total-sum="962080" />
+    <summary month="February" units-sold="50" total-sum="1503250" />
+    <summary month="March" units-sold="25" total-sum="751625" />
+    <summary month="April" units-sold="38" total-sum="1142470" />
+    <summary month="May" units-sold="27" total-sum="811755" />
+    <summary month="June" units-sold="4" total-sum="120260" />
+    <summary month="July" units-sold="41" total-sum="1232665" />
+    <summary month="August" units-sold="28" total-sum="841820" />
+    <summary month="September" units-sold="44" total-sum="1322860" />
+    <summary month="October" units-sold="14" total-sum="420910" />
+    <summary month="November" units-sold="49" total-sum="1473185" />
+    <summary month="December" units-sold="12" total-sum="360780" />
+  </sale>
+  <sale model="Slave I">
+    <summary month="January" units-sold="45" total-sum="2006370" />
+    <summary month="February" units-sold="18" total-sum="802548" />
+    <summary month="March" units-sold="23" total-sum="1025478" />
+    <summary month="May" units-sold="2" total-sum="89172" />
+    <summary month="May" units-sold="6" total-sum="267516" />
+    <summary month="June" units-sold="58" total-sum="2585988" />
+    <summary month="July" units-sold="34" total-sum="1515924" />
+    <summary month="August" units-sold="28" total-sum="1248408" />
+    <summary month="September" units-sold="11" total-sum="490446" />
+    <summary month="October" units-sold="15" total-sum="668790" />
+    <summary month="November" units-sold="71" total-sum="3165606" />
+    <summary month="December" units-sold="42" total-sum="1872612" />
+  </sale>
+  <sale model="Republic Attack Cruiser">
+    <summary month="January" units-sold="7" total-sum="89299" />
+    <summary month="February" units-sold="16" total-sum="204112" />
+    <summary month="March" units-sold="42" total-sum="535794" />
+    <summary month="April" units-sold="42" total-sum="535794" />
+    <summary month="May" units-sold="53" total-sum="676121" />
+    <summary month="June" units-sold="52" total-sum="663364" />
+    <summary month="July" units-sold="57" total-sum="727149" />
+    <summary month="August" units-sold="15" total-sum="191355" />
+    <summary month="September" units-sold="59" total-sum="752663" />
+    <summary month="October" units-sold="5" total-sum="63785" />
+    <summary month="November" units-sold="10" total-sum="127570" />
+    <summary month="December" units-sold="28" total-sum="357196" />
+  </sale>
+  <sale model="Sith Infiltrator">
+    <summary month="January" units-sold="29" total-sum="715691" />
+    <summary month="March" units-sold="4" total-sum="98716" />
+    <summary month="March" units-sold="18" total-sum="444222" />
+    <summary month="April" units-sold="28" total-sum="691012" />
+    <summary month="May" units-sold="16" total-sum="394864" />
+    <summary month="June" units-sold="35" total-sum="863765" />
+    <summary month="July" units-sold="62" total-sum="1530098" />
+    <summary month="August" units-sold="5" total-sum="123395" />
+    <summary month="September" units-sold="48" total-sum="1184592" />
+    <summary month="October" units-sold="32" total-sum="789728" />
+    <summary month="November" units-sold="88" total-sum="2171752" />
+    <summary month="December" units-sold="11" total-sum="271469" />
   </sale>
   <sale model="Virago">
-    <summary month="January" units-sold="81" total-sum="3141099" />
-    <summary month="February" units-sold="38" total-sum="1473602" />
-    <summary month="March" units-sold="52" total-sum="2016508" />
-    <summary month="April" units-sold="4" total-sum="155116" />
-    <summary month="May" units-sold="48" total-sum="1861392" />
-    <summary month="June" units-sold="29" total-sum="1124591" />
-    <summary month="July" units-sold="30" total-sum="1163370" />
-    <summary month="August" units-sold="43" total-sum="1667497" />
-    <summary month="September" units-sold="32" total-sum="1240928" />
-    <summary month="November" units-sold="8" total-sum="310232" />
-    <summary month="November" units-sold="30" total-sum="1163370" />
-    <summary month="December" units-sold="50" total-sum="1938950" />
+    <summary month="January" units-sold="17" total-sum="659243" />
+    <summary month="February" units-sold="27" total-sum="1047033" />
+    <summary month="March" units-sold="54" total-sum="2094066" />
+    <summary month="April" units-sold="36" total-sum="1396044" />
+    <summary month="June" units-sold="8" total-sum="310232" />
+    <summary month="June" units-sold="8" total-sum="310232" />
+    <summary month="July" units-sold="42" total-sum="1628718" />
+    <summary month="August" units-sold="42" total-sum="1628718" />
+    <summary month="September" units-sold="44" total-sum="1706276" />
+    <summary month="October" units-sold="10" total-sum="387790" />
+    <summary month="November" units-sold="45" total-sum="1745055" />
+    <summary month="December" units-sold="28" total-sum="1085812" />
   </sale>
-  <sale model="Outrider">
-    <summary month="January" units-sold="51" total-sum="2309739" />
-    <summary month="February" units-sold="36" total-sum="1630404" />
-    <summary month="March" units-sold="2" total-sum="90578" />
-    <summary month="April" units-sold="40" total-sum="1811560" />
-    <summary month="May" units-sold="33" total-sum="1494537" />
-    <summary month="June" units-sold="26" total-sum="1177514" />
-    <summary month="July" units-sold="3" total-sum="135867" />
-    <summary month="September" units-sold="5" total-sum="226445" />
-    <summary month="September" units-sold="31" total-sum="1403959" />
-    <summary month="November" units-sold="6" total-sum="271734" />
-    <summary month="November" units-sold="26" total-sum="1177514" />
-    <summary month="December" units-sold="49" total-sum="2219161" />
+  <sale model="Nebulon-B Frigate">
+    <summary month="January" units-sold="27" total-sum="149499" />
+    <summary month="February" units-sold="16" total-sum="88592" />
+    <summary month="March" units-sold="2" total-sum="11074" />
+    <summary month="April" units-sold="16" total-sum="88592" />
+    <summary month="May" units-sold="84" total-sum="465108" />
+    <summary month="June" units-sold="24" total-sum="132888" />
+    <summary month="July" units-sold="1" total-sum="5537" />
+    <summary month="August" units-sold="18" total-sum="99666" />
+    <summary month="September" units-sold="6" total-sum="33222" />
+    <summary month="October" units-sold="21" total-sum="116277" />
+    <summary month="November" units-sold="50" total-sum="276850" />
+    <summary month="December" units-sold="59" total-sum="326683" />
   </sale>
-  <sale model="Death Star">
-    <summary month="January" units-sold="76" total-sum="2938528" />
-    <summary month="February" units-sold="8" total-sum="280464" />
-    <summary month="March" units-sold="72" total-sum="2680816" />
-    <summary month="April" units-sold="48" total-sum="1996064" />
-    <summary month="May" units-sold="85" total-sum="2979930" />
-    <summary month="June" units-sold="41" total-sum="1642968" />
-    <summary month="July" units-sold="82" total-sum="3501316" />
-    <summary month="August" units-sold="9" total-sum="403632" />
-    <summary month="September" units-sold="39" total-sum="1690332" />
-    <summary month="October" units-sold="40" total-sum="1529590" />
-    <summary month="November" units-sold="7" total-sum="245406" />
-    <summary month="December" units-sold="82" total-sum="3285936" />
+  <sale model="Rogue Shadow">
+    <summary month="January" units-sold="35" total-sum="762230" />
+    <summary month="February" units-sold="47" total-sum="1023566" />
+    <summary month="March" units-sold="13" total-sum="283114" />
+    <summary month="April" units-sold="24" total-sum="522672" />
+    <summary month="May" units-sold="40" total-sum="871120" />
+    <summary month="June" units-sold="6" total-sum="130668" />
+    <summary month="July" units-sold="68" total-sum="1480904" />
+    <summary month="August" units-sold="31" total-sum="675118" />
+    <summary month="September" units-sold="23" total-sum="500894" />
+    <summary month="October" units-sold="27" total-sum="588006" />
+    <summary month="November" units-sold="14" total-sum="304892" />
+    <summary month="December" units-sold="61" total-sum="1328458" />
+  </sale>
+  <sale model="Trade Federation Landing Ship">
+    <summary month="January" units-sold="67" total-sum="2348886" />
+    <summary month="February" units-sold="14" total-sum="490812" />
+    <summary month="March" units-sold="41" total-sum="1437378" />
+    <summary month="April" units-sold="6" total-sum="210348" />
+    <summary month="May" units-sold="98" total-sum="3435684" />
+    <summary month="June" units-sold="8" total-sum="280464" />
+    <summary month="July" units-sold="9" total-sum="315522" />
+    <summary month="August" units-sold="22" total-sum="771276" />
+    <summary month="September" units-sold="15" total-sum="525870" />
+    <summary month="October" units-sold="15" total-sum="525870" />
+    <summary month="November" units-sold="12" total-sum="420696" />
+    <summary month="December" units-sold="33" total-sum="1156914" />
+  </sale>
+  <sale model="Ebon Hawk">
+    <summary month="January" units-sold="16" total-sum="787968" />
+    <summary month="February" units-sold="42" total-sum="2068416" />
+    <summary month="March" units-sold="39" total-sum="1920672" />
+    <summary month="April" units-sold="27" total-sum="1329696" />
+    <summary month="May" units-sold="39" total-sum="1920672" />
+    <summary month="June" units-sold="1" total-sum="49248" />
+    <summary month="July" units-sold="68" total-sum="3348864" />
+    <summary month="August" units-sold="6" total-sum="295488" />
+    <summary month="October" units-sold="3" total-sum="147744" />
+    <summary month="October" units-sold="51" total-sum="2511648" />
+    <summary month="November" units-sold="34" total-sum="1674432" />
+    <summary month="December" units-sold="23" total-sum="1132704" />
+  </sale>
+  <sale model="Naboo Star Skiff">
+    <summary month="January" units-sold="32" total-sum="917632" />
+    <summary month="February" units-sold="16" total-sum="458816" />
+    <summary month="March" units-sold="19" total-sum="544844" />
+    <summary month="April" units-sold="36" total-sum="1032336" />
+    <summary month="June" units-sold="4" total-sum="114704" />
+    <summary month="June" units-sold="12" total-sum="344112" />
+    <summary month="July" units-sold="23" total-sum="659548" />
+    <summary month="August" units-sold="21" total-sum="602196" />
+    <summary month="September" units-sold="15" total-sum="430140" />
+    <summary month="October" units-sold="6" total-sum="172056" />
+    <summary month="November" units-sold="15" total-sum="430140" />
+    <summary month="December" units-sold="71" total-sum="2035996" />
+  </sale>
+  <sale model="Trade Federation Cruiser">
+    <summary month="January" units-sold="13" total-sum="54652" />
+    <summary month="February" units-sold="32" total-sum="134528" />
+    <summary month="March" units-sold="6" total-sum="25224" />
+    <summary month="April" units-sold="50" total-sum="210200" />
+    <summary month="May" units-sold="62" total-sum="260648" />
+    <summary month="June" units-sold="38" total-sum="159752" />
+    <summary month="July" units-sold="36" total-sum="151344" />
+    <summary month="August" units-sold="63" total-sum="264852" />
+    <summary month="September" units-sold="60" total-sum="252240" />
+    <summary month="October" units-sold="9" total-sum="37836" />
+    <summary month="November" units-sold="28" total-sum="117712" />
+    <summary month="December" units-sold="44" total-sum="184976" />
+  </sale>
+  <sale model="Theta-class Shuttle">
+    <summary month="January" units-sold="63" total-sum="729855" />
+    <summary month="February" units-sold="88" total-sum="1019480" />
+    <summary month="March" units-sold="40" total-sum="463400" />
+    <summary month="April" units-sold="28" total-sum="324380" />
+    <summary month="May" units-sold="48" total-sum="556080" />
+    <summary month="June" units-sold="60" total-sum="695100" />
+    <summary month="July" units-sold="36" total-sum="417060" />
+    <summary month="August" units-sold="60" total-sum="695100" />
+    <summary month="September" units-sold="21" total-sum="243285" />
+    <summary month="October" units-sold="24" total-sum="278040" />
+    <summary month="November" units-sold="37" total-sum="428645" />
+    <summary month="December" units-sold="6" total-sum="69510" />
+  </sale>
+  <sale model="Star Destroyer">
+    <summary month="January" units-sold="80" total-sum="710800" />
+    <summary month="February" units-sold="36" total-sum="319860" />
+    <summary month="March" units-sold="39" total-sum="346515" />
+    <summary month="April" units-sold="2" total-sum="17770" />
+    <summary month="May" units-sold="72" total-sum="639720" />
+    <summary month="June" units-sold="37" total-sum="328745" />
+    <summary month="July" units-sold="14" total-sum="124390" />
+    <summary month="August" units-sold="3" total-sum="26655" />
+    <summary month="September" units-sold="6" total-sum="53310" />
+    <summary month="October" units-sold="79" total-sum="701915" />
+    <summary month="November" units-sold="42" total-sum="373170" />
+    <summary month="December" units-sold="36" total-sum="319860" />
   </sale>
   <sale model="Republic Assault Ship">
-    <summary month="January" units-sold="35" total-sum="457110" />
-    <summary month="February" units-sold="79" total-sum="1418050" />
-    <summary month="March" units-sold="24" total-sum="430800" />
-    <summary month="April" units-sold="63" total-sum="959710" />
-    <summary month="May" units-sold="30" total-sum="435816" />
-    <summary month="June" units-sold="36" total-sum="457946" />
-    <summary month="July" units-sold="12" total-sum="164058" />
-    <summary month="August" units-sold="56" total-sum="799832" />
-    <summary month="September" units-sold="54" total-sum="781046" />
-    <summary month="October" units-sold="99" total-sum="1237959" />
-    <summary month="November" units-sold="35" total-sum="345869" />
-    <summary month="December" units-sold="52" total-sum="779374" />
-  </sale>
-  <sale model="Republic Assault Ship">
-    <summary month="January" units-sold="35" total-sum="457110" />
-    <summary month="February" units-sold="79" total-sum="1418050" />
-    <summary month="March" units-sold="24" total-sum="430800" />
-    <summary month="April" units-sold="63" total-sum="959710" />
-    <summary month="May" units-sold="30" total-sum="435816" />
-    <summary month="June" units-sold="36" total-sum="457946" />
-    <summary month="July" units-sold="12" total-sum="164058" />
-    <summary month="August" units-sold="56" total-sum="799832" />
-    <summary month="September" units-sold="54" total-sum="781046" />
-    <summary month="October" units-sold="99" total-sum="1237959" />
-    <summary month="November" units-sold="35" total-sum="345869" />
-    <summary month="December" units-sold="52" total-sum="779374" />
+    <summary month="January" units-sold="19" total-sum="178467" />
+    <summary month="February" units-sold="37" total-sum="347541" />
+    <summary month="March" units-sold="37" total-sum="347541" />
+    <summary month="April" units-sold="6" total-sum="56358" />
+    <summary month="May" units-sold="39" total-sum="366327" />
+    <summary month="June" units-sold="22" total-sum="206646" />
+    <summary month="July" units-sold="22" total-sum="206646" />
+    <summary month="August" units-sold="34" total-sum="319362" />
+    <summary month="September" units-sold="27" total-sum="253611" />
+    <summary month="October" units-sold="4" total-sum="37572" />
+    <summary month="November" units-sold="51" total-sum="479043" />
+    <summary month="December" units-sold="51" total-sum="479043" />
   </sale>
   <sale model="Geonosian Solar Sailer">
-    <summary month="January" units-sold="21" total-sum="148302" />
-    <summary month="March" units-sold="6" total-sum="42372" />
-    <summary month="March" units-sold="21" total-sum="148302" />
-    <summary month="April" units-sold="2" total-sum="14124" />
-    <summary month="May" units-sold="10" total-sum="70620" />
-    <summary month="June" units-sold="26" total-sum="183612" />
-    <summary month="July" units-sold="71" total-sum="501402" />
-    <summary month="August" units-sold="35" total-sum="247170" />
-    <summary month="September" units-sold="65" total-sum="459030" />
-    <summary month="November" units-sold="2" total-sum="14124" />
-    <summary month="November" units-sold="29" total-sum="204798" />
-    <summary month="December" units-sold="35" total-sum="247170" />
+    <summary month="February" units-sold="9" total-sum="63558" />
+    <summary month="February" units-sold="95" total-sum="670890" />
+    <summary month="March" units-sold="43" total-sum="303666" />
+    <summary month="April" units-sold="16" total-sum="112992" />
+    <summary month="May" units-sold="12" total-sum="84744" />
+    <summary month="June" units-sold="56" total-sum="395472" />
+    <summary month="July" units-sold="20" total-sum="141240" />
+    <summary month="August" units-sold="21" total-sum="148302" />
+    <summary month="September" units-sold="12" total-sum="84744" />
+    <summary month="October" units-sold="42" total-sum="296604" />
+    <summary month="November" units-sold="28" total-sum="197736" />
+    <summary month="December" units-sold="53" total-sum="374286" />
+  </sale>
+  <sale model="Death Star">
+    <summary month="January" units-sold="52" total-sum="2332096" />
+    <summary month="February" units-sold="24" total-sum="1076352" />
+    <summary month="March" units-sold="25" total-sum="1121200" />
+    <summary month="April" units-sold="32" total-sum="1435136" />
+    <summary month="May" units-sold="47" total-sum="2107856" />
+    <summary month="June" units-sold="22" total-sum="986656" />
+    <summary month="July" units-sold="55" total-sum="2466640" />
+    <summary month="August" units-sold="25" total-sum="1121200" />
+    <summary month="October" units-sold="8" total-sum="358784" />
+    <summary month="October" units-sold="48" total-sum="2152704" />
+    <summary month="November" units-sold="19" total-sum="852112" />
+    <summary month="December" units-sold="18" total-sum="807264" />
+  </sale>
+  <sale model="Sith Star Fighter">
+    <summary month="January" units-sold="8" total-sum="55112" />
+    <summary month="February" units-sold="12" total-sum="82668" />
+    <summary month="April" units-sold="5" total-sum="34445" />
+    <summary month="April" units-sold="28" total-sum="192892" />
+    <summary month="June" units-sold="8" total-sum="55112" />
+    <summary month="July" units-sold="5" total-sum="34445" />
+    <summary month="July" units-sold="43" total-sum="296227" />
+    <summary month="August" units-sold="82" total-sum="564898" />
+    <summary month="September" units-sold="19" total-sum="130891" />
+    <summary month="October" units-sold="37" total-sum="254893" />
+    <summary month="November" units-sold="25" total-sum="172225" />
+    <summary month="December" units-sold="21" total-sum="144669" />
+  </sale>
+  <sale model="Republic Deffence Ship">
+    <summary month="January" units-sold="3" total-sum="53850" />
+    <summary month="February" units-sold="66" total-sum="1184700" />
+    <summary month="March" units-sold="24" total-sum="430800" />
+    <summary month="April" units-sold="39" total-sum="700050" />
+    <summary month="May" units-sold="21" total-sum="376950" />
+    <summary month="June" units-sold="48" total-sum="861600" />
+    <summary month="July" units-sold="20" total-sum="359000" />
+    <summary month="August" units-sold="31" total-sum="556450" />
+    <summary month="September" units-sold="12" total-sum="215400" />
+    <summary month="October" units-sold="39" total-sum="700050" />
+    <summary month="November" units-sold="26" total-sum="466700" />
+    <summary month="December" units-sold="18" total-sum="323100" />
+  </sale>
+  <sale model="Outrider">
+    <summary month="January" units-sold="4" total-sum="181156" />
+    <summary month="March" units-sold="6" total-sum="271734" />
+    <summary month="March" units-sold="18" total-sum="815202" />
+    <summary month="May" units-sold="4" total-sum="181156" />
+    <summary month="May" units-sold="43" total-sum="1947427" />
+    <summary month="June" units-sold="57" total-sum="2581473" />
+    <summary month="July" units-sold="7" total-sum="317023" />
+    <summary month="August" units-sold="8" total-sum="362312" />
+    <summary month="September" units-sold="9" total-sum="407601" />
+    <summary month="October" units-sold="28" total-sum="1268092" />
+    <summary month="November" units-sold="32" total-sum="1449248" />
+    <summary month="December" units-sold="12" total-sum="543468" />
   </sale>
   <sale model="Techno Union Starship">
-    <summary month="January" units-sold="58" total-sum="1681169" />
-    <summary month="February" units-sold="52" total-sum="1584884" />
-    <summary month="March" units-sold="88" total-sum="2408528" />
-    <summary month="April" units-sold="20" total-sum="478600" />
-    <summary month="May" units-sold="46" total-sum="1403468" />
-    <summary month="June" units-sold="38" total-sum="1051225" />
-    <summary month="July" units-sold="65" total-sum="1668958" />
-    <summary month="August" units-sold="26" total-sum="697852" />
-    <summary month="September" units-sold="64" total-sum="2089601" />
-    <summary month="October" units-sold="6" total-sum="200334" />
-    <summary month="November" units-sold="83" total-sum="2194288" />
-    <summary month="December" units-sold="72" total-sum="2404008" />
+    <summary month="January" units-sold="11" total-sum="367279" />
+    <summary month="February" units-sold="16" total-sum="534224" />
+    <summary month="March" units-sold="50" total-sum="1669450" />
+    <summary month="April" units-sold="20" total-sum="667780" />
+    <summary month="May" units-sold="27" total-sum="901503" />
+    <summary month="June" units-sold="39" total-sum="1302171" />
+    <summary month="July" units-sold="58" total-sum="1936562" />
+    <summary month="August" units-sold="11" total-sum="367279" />
+    <summary month="September" units-sold="9" total-sum="300501" />
+    <summary month="October" units-sold="41" total-sum="1368949" />
+    <summary month="November" units-sold="4" total-sum="133556" />
+    <summary month="December" units-sold="18" total-sum="601002" />
   </sale>
   <sale model="Republic Cruiser">
-    <summary month="January" units-sold="94" total-sum="2945819" />
-    <summary month="February" units-sold="20" total-sum="671860" />
-    <summary month="March" units-sold="62" total-sum="858322" />
-    <summary month="April" units-sold="39" total-sum="1137449" />
-    <summary month="May" units-sold="39" total-sum="1215939" />
-    <summary month="June" units-sold="36" total-sum="871841" />
-    <summary month="July" units-sold="57" total-sum="2809587" />
-    <summary month="August" units-sold="39" total-sum="705754" />
-    <summary month="September" units-sold="49" total-sum="2179789" />
-    <summary month="October" units-sold="25" total-sum="1232275" />
-    <summary month="November" units-sold="74" total-sum="2862634" />
-    <summary month="December" units-sold="94" total-sum="2082429" />
+    <summary month="January" units-sold="39" total-sum="391794" />
+    <summary month="February" units-sold="14" total-sum="140644" />
+    <summary month="March" units-sold="18" total-sum="180828" />
+    <summary month="April" units-sold="8" total-sum="80368" />
+    <summary month="May" units-sold="33" total-sum="331518" />
+    <summary month="June" units-sold="64" total-sum="642944" />
+    <summary month="July" units-sold="27" total-sum="271242" />
+    <summary month="August" units-sold="39" total-sum="391794" />
+    <summary month="October" units-sold="6" total-sum="60276" />
+    <summary month="October" units-sold="84" total-sum="843864" />
+    <summary month="November" units-sold="18" total-sum="180828" />
+    <summary month="December" units-sold="18" total-sum="180828" />
   </sale>
 </sales>

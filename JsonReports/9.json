@@ -1,8 +1,8 @@
 {
   "id": 9,
-  "model": "Neimoidian Shuttle",
-  "category": "Spacecraft",
-  "price": 30065.0,
-  "quantity-sold": 443,
-  "total-income": 13318795.0
+  "model": "Trade Federation Shuttle",
+  "category": "Battleship",
+  "price": 26675.00,
+  "quantity-sold": 447,
+  "total-income": 11923725.00
 }

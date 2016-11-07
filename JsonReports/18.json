@@ -1,8 +1,8 @@
 {
   "id": 18,
-  "model": "Corellian Corvette",
-  "category": "Battleship",
-  "price": 48421.0,
-  "quantity-sold": 584,
-  "total-income": 18150089.0
+  "model": "Rogue Shadow",
+  "category": "Cruiser",
+  "price": 21778.00,
+  "quantity-sold": 389,
+  "total-income": 8471642.00
 }

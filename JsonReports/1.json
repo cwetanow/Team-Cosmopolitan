@@ -1,8 +1,8 @@
 {
   "id": 1,
-  "model": "TIE Fighter",
+  "model": "Raven's Claw",
   "category": "Spacecraft",
-  "price": 24792.0,
-  "quantity-sold": 667,
-  "total-income": 20012352.0
+  "price": 49291.00,
+  "quantity-sold": 412,
+  "total-income": 20307892.00
 }

@@ -1,8 +1,8 @@
 {
   "id": 13,
-  "model": "Ebon Hawk",
-  "category": "Spacecraft",
-  "price": 49248.0,
-  "quantity-sold": 368,
-  "total-income": 18123264.0
+  "model": "Slave I",
+  "category": "Battleship",
+  "price": 44586.00,
+  "quantity-sold": 353,
+  "total-income": 15738858.00
 }

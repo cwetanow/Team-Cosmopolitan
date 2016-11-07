@@ -1,8 +1,8 @@
 {
   "id": 2,
-  "model": "Corellian Corvette",
-  "category": "Spacecraft",
-  "price": 14996.0,
-  "quantity-sold": 584,
-  "total-income": 18150089.0
+  "model": "Trade Federation Battleship",
+  "category": "Battleship",
+  "price": 12241.00,
+  "quantity-sold": 405,
+  "total-income": 4957605.00
 }

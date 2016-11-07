@@ -1,8 +1,8 @@
 {
   "id": 24,
-  "model": "Naboo Royal Cruiser",
+  "model": "Star Destroyer",
   "category": "Cruiser",
-  "price": 38320.0,
-  "quantity-sold": 432,
-  "total-income": 16554240.0
+  "price": 8885.00,
+  "quantity-sold": 446,
+  "total-income": 3962710.00
 }

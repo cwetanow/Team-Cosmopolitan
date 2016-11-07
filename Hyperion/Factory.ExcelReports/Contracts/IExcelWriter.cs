@@ -4,6 +4,6 @@ namespace Factory.ExcelReports.Contracts
 {
     public interface IExcelWriter
     {
-        void WriteRepors(IList<string> headers, IDictionary<string, IList<int>> modelFinancialData);
+        void WriteRepors(IList<string> headers, IDictionary<string, IList<decimal>> modelFinancialData);
     }
 }

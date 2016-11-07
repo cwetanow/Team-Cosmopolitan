@@ -1,8 +1,8 @@
 {
   "id": 30,
-  "model": "Geonosian Solar Sailer",
-  "category": "Cruiser",
-  "price": 7062.0,
-  "quantity-sold": 323,
-  "total-income": 2281026.0
+  "model": "Outrider",
+  "category": "Battleship",
+  "price": 45289.00,
+  "quantity-sold": 228,
+  "total-income": 10325892.00
 }

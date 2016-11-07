@@ -1,8 +1,8 @@
 {
   "id": 7,
-  "model": "Techno Union Starship",
-  "category": "Battleship",
-  "price": 23930.0,
-  "quantity-sold": 627,
-  "total-income": 18078285.0
+  "model": "TIE Fighter 2002",
+  "category": "Cruiser",
+  "price": 34368.00,
+  "quantity-sold": 326,
+  "total-income": 11203968.00
 }

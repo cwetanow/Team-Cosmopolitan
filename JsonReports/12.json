@@ -1,8 +1,8 @@
 {
   "id": 12,
-  "model": "Death Star",
+  "model": "Neimoidian Shuttle",
   "category": "Spacecraft",
-  "price": 35058.0,
-  "quantity-sold": 677,
-  "total-income": 26827906.0
+  "price": 30065.00,
+  "quantity-sold": 364,
+  "total-income": 10943660.00
 }

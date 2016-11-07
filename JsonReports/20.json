@@ -1,8 +1,8 @@
 {
   "id": 20,
-  "model": "Star Destroyer",
-  "category": "Cruiser",
-  "price": 8885.0,
-  "quantity-sold": 262,
-  "total-income": 2327870.0
+  "model": "Ebon Hawk",
+  "category": "Spacecraft",
+  "price": 49248.00,
+  "quantity-sold": 349,
+  "total-income": 17187552.00
 }

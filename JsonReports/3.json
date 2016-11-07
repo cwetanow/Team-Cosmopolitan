@@ -1,8 +1,8 @@
 {
   "id": 3,
-  "model": "Rebel BlockadeRunner",
-  "category": "Battleship",
-  "price": 45598.0,
-  "quantity-sold": 691,
-  "total-income": 19059460.0
+  "model": "TIE Fighter",
+  "category": "Spacecraft",
+  "price": 24792.00,
+  "quantity-sold": 455,
+  "total-income": 11280360.00
 }

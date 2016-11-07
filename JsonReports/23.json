@@ -1,8 +1,8 @@
 {
   "id": 23,
-  "model": "Sith Infiltrator",
-  "category": "Battleship",
-  "price": 24679.0,
-  "quantity-sold": 680,
-  "total-income": 10715330.0
+  "model": "Theta-class Shuttle",
+  "category": "Cruiser",
+  "price": 11585.00,
+  "quantity-sold": 511,
+  "total-income": 5919935.00
 }
