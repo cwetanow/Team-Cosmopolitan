@@ -1,8 +1,8 @@
 {
   "id": 2,
-  "model": "Sith Infiltrator",
-  "category": "Battleship",
-  "price": 24679.00,
-  "quantity-sold": 680,
-  "total-income": 10715330.0
+  "model": "Corellian Corvette",
+  "category": "Spacecraft",
+  "price": 14996.0,
+  "quantity-sold": 584,
+  "total-income": 18150089.0
 }

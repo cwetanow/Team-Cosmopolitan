@@ -1,8 +1,8 @@
 {
   "id": 9,
-  "model": "Corellian Corvette",
+  "model": "Neimoidian Shuttle",
   "category": "Spacecraft",
-  "price": 14996.00,
-  "quantity-sold": 584,
-  "total-income": 18150089.0
+  "price": 30065.0,
+  "quantity-sold": 443,
+  "total-income": 13318795.0
 }

@@ -1,25 +1,25 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using Factory.Common;
 using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
 using Factory.InsertData;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
+using Factory.InsertData.Models.SpaceshipMissions;
 using Factory.JsonReports;
+using Factory.LoadXML;
+using Factory.LoadXML.Models;
+using Factory.Models;
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using Factory.MySql;
 using Factory.MySql.Models;
-using Factory.Models;
 using Factory.PdfReports;
-using Factory.LoadXML;
 using Factory.SQLite;
 using Factory.XmlReports;
-using Factory.Common;
-using Factory.LoadXML.Models;
 using MongoDB.Driver;
 using Newtonsoft.Json;
-using Factory.InsertData.Models.SpaceshipMissions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Factory.Main
 {
@@ -33,10 +33,10 @@ namespace Factory.Main
             //var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
 
             //// For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            //var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
+            // var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
 
             //ImportXmlToMongoDb();
-            ImportXMLToSqlServer();
+            //ImportXMLToSqlServer();
 
             ////SQL Server should be accessed through Entity Framework.
             //var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
@@ -55,10 +55,10 @@ namespace Factory.Main
             //GenerateJSONReports(context, Constants.JsonReportsPath);
 
             ////MySQL should be accessed through Telerik® Data Access ORM (research it).
-            //var mySqlContext = new FactoryMySqlDbContext();
-            //mySqlContext.UpdateDatabase();
-            //PopulateMySQLDataBase(context, mySqlContext);
-            
+            var mySqlContext = new FactoryMySqlDbContext();
+            mySqlContext.UpdateDatabase();
+            PopulateMySQLDataBase(context, mySqlContext);
+
             ////The SQLite embedded database should be accesses though its Entity Framework provider.
             //// var modelExpensesPair = GetDataFromSQLite();
 
@@ -88,13 +88,16 @@ namespace Factory.Main
             var jsonWriter = new JsonReportsWriter(spaceships, sales, reports);
             var jsonData = jsonWriter.GetReportsInJsonFormat();
 
-            foreach (var json in jsonData)
+            if (mySqlContext.ProductsReports.Count() == 0)
             {
-                var report = JsonConvert.DeserializeObject<MySqlReport>(json);
-                mySqlContext.Add(report);
-            }
+                foreach (var json in jsonData)
+                {
+                    var report = JsonConvert.DeserializeObject<MySqlReport>(json);
+                    mySqlContext.Add(report);
+                }
 
-            mySqlContext.SaveChanges();
+                mySqlContext.SaveChanges();
+            }
         }
 
         private static void GenerateJSONReports(FactoryDbContext context, string resultFilesPath)
@@ -169,7 +172,7 @@ namespace Factory.Main
 
             var collection = FactoryXmlImporter.ImportSpaceships(Constants.XmlDataToImport);
 
-            var mongoCollection = db.GetCollection<SpaceshipMissionsXmlModel>("spaceships");
+            var mongoCollection = db.GetCollection<SpaceshipMissionsXmlModel>("missions");
 
             foreach (var spaceship in collection)
             {

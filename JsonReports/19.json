@@ -1,8 +1,8 @@
 {
   "id": 19,
-  "model": "Death Star",
-  "category": "Spacecraft",
-  "price": 35058.00,
-  "quantity-sold": 677,
-  "total-income": 26827906.0
+  "model": "Trade Federation Cruiser",
+  "category": "Battleship",
+  "price": 4204.0,
+  "quantity-sold": 1024,
+  "total-income": 13844223.0
 }

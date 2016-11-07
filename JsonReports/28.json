@@ -2,7 +2,7 @@
   "id": 28,
   "model": "Republic Assault Ship",
   "category": "Battleship",
-  "price": 17950.00,
+  "price": 17950.0,
   "quantity-sold": 646,
   "total-income": 9105613.0
 }

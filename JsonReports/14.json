@@ -1,8 +1,8 @@
 {
   "id": 14,
-  "model": "Techno Union Starship",
-  "category": "Battleship",
-  "price": 23930.00,
-  "quantity-sold": 627,
-  "total-income": 18078285.0
+  "model": "Rebel BlockadeRunner",
+  "category": "Cruiser",
+  "price": 11585.0,
+  "quantity-sold": 691,
+  "total-income": 19059460.0
 }

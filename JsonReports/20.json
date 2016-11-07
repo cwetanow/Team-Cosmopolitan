@@ -1,8 +1,8 @@
 {
   "id": 20,
-  "model": "Rebel BlockadeRunner",
+  "model": "Star Destroyer",
   "category": "Cruiser",
-  "price": 11585.00,
-  "quantity-sold": 691,
-  "total-income": 19059460.0
+  "price": 8885.0,
+  "quantity-sold": 262,
+  "total-income": 2327870.0
 }

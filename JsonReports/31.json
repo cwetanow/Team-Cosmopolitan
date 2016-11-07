@@ -1,8 +1,8 @@
 {
   "id": 31,
-  "model": "Republic Cruiser",
-  "category": "Battleship",
-  "price": 10046.00,
-  "quantity-sold": 779,
-  "total-income": 23406099.0
+  "model": "Techno Union Starship",
+  "category": "Cruiser",
+  "price": 33389.0,
+  "quantity-sold": 627,
+  "total-income": 18078285.0
 }

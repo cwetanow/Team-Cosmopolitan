@@ -1,8 +1,8 @@
 {
   "id": 6,
-  "model": "Virago",
-  "category": "Cruiser",
-  "price": 38779.00,
-  "quantity-sold": 445,
-  "total-income": 17256655.0
+  "model": "Trade Federation Cruiser",
+  "category": "Battleship",
+  "price": 26675.0,
+  "quantity-sold": 1024,
+  "total-income": 13844223.0
 }

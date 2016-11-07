@@ -1,8 +1,8 @@
 {
   "id": 11,
-  "model": "Rebel BlockadeRunner",
-  "category": "Battleship",
-  "price": 45598.00,
-  "quantity-sold": 691,
-  "total-income": 19059460.0
+  "model": "Rogue Shadow",
+  "category": "Cruiser",
+  "price": 21778.0,
+  "quantity-sold": 313,
+  "total-income": 6816514.0
 }

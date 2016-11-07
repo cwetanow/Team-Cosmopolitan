@@ -1,8 +1,8 @@
 {
   "id": 18,
-  "model": "Republic Attack Cruiser",
-  "category": "Spacecraft",
-  "price": 12757.00,
-  "quantity-sold": 287,
-  "total-income": 3661259.0
+  "model": "Corellian Corvette",
+  "category": "Battleship",
+  "price": 48421.0,
+  "quantity-sold": 584,
+  "total-income": 18150089.0
 }

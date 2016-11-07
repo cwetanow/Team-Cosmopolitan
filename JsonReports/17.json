@@ -1,8 +1,8 @@
 {
   "id": 17,
-  "model": "Rogue Shadow",
-  "category": "Cruiser",
-  "price": 21778.00,
-  "quantity-sold": 313,
-  "total-income": 6816514.0
+  "model": "Trade Federation Cruiser",
+  "category": "Battleship",
+  "price": 12241.0,
+  "quantity-sold": 1024,
+  "total-income": 13844223.0
 }

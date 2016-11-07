@@ -7,7 +7,7 @@ namespace Factory.MySql
 {
     public class FactoryMySqlDbContext : OpenAccessContext
     {
-        private static readonly string ConnectionString = "server=localhost;database=factory;uid=root;pwd=ENTER-PASS-HERE";
+        private static readonly string ConnectionString = "server=localhost;database=factory;uid=root;pwd=root123";
         private static readonly BackendConfiguration BackendConfig = GetBackendConfiguration();
         private static readonly MetadataSource MetadataSource = GetMetadataSource();
 

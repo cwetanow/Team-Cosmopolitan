@@ -1,8 +1,8 @@
 {
   "id": 22,
-  "model": "Naboo Star Skiff",
-  "category": "Cruiser",
-  "price": 28676.00,
-  "quantity-sold": 1104,
-  "total-income": 22587616.00
+  "model": "Nebulon-B Frigate",
+  "category": "Spacecraft",
+  "price": 5537.0,
+  "quantity-sold": 351,
+  "total-income": 1943487.0
 }
