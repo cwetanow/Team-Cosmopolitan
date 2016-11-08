@@ -19,6 +19,6 @@ namespace Factory.Common
         public const string MongoDbConnectionString = "mongodb://localhost";
         public const string JsonReportsPath = "../../../../JsonReports/";
         public const string FinancialReportPath = "../../../../ FinancialReport/";
-        public const string FinanicalReportFileName = "financial-report.xls";
+        public const string FinanicalReportFileName = "financial-report.xlsx";
     }
 }

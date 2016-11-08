@@ -2,8 +2,8 @@
 using System.IO;
 using Factory.Common;
 using Factory.ExcelReports.Contracts;
-using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
+using NPOI.XSSF.UserModel;
 
 namespace Factory.ExcelReports
 {
@@ -11,7 +11,7 @@ namespace Factory.ExcelReports
     {
         public void WriteRepors(IList<string> headers, IList<string> models, IList<decimal> expensePerModel, IList<decimal> incomePerModel)
         {
-            var workbook = new HSSFWorkbook();
+            var workbook = new XSSFWorkbook();
             var sheet = workbook.CreateSheet("Financial Result");
 
             // Cell styles and fonts.

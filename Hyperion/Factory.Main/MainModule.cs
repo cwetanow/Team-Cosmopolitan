@@ -27,28 +27,28 @@ namespace Factory.Main
     {
         public static void Main()
         {
-            var context = new FactoryDbContext();
-            context.Database.CreateIfNotExists();
+            //var context = new FactoryDbContext();
+            //context.Database.CreateIfNotExists();
 
-            var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
-            var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
+            //var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
+            //var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
             
-            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-            PopulateSQLDbWithProducts(productData, context);
+            //var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+            //PopulateSQLDbWithProducts(productData, context);
 
-            var reportsData = ReportMigrator.Instance.GetReports(reports);
-            PopulateSqlDbWithReports(reportsData, context);
+            //var reportsData = ReportMigrator.Instance.GetReports(reports);
+            //PopulateSqlDbWithReports(reportsData, context);
 
-            ImportXmlToMongoDb();
-            ImportXMLToSqlServer();
+            //ImportXmlToMongoDb();
+            //ImportXMLToSqlServer();
 
-            GenerateXMLReport(context, Constants.XmlReportsPath);
-            GeneratePDFReport(context, Constants.PdfReportsPath);
-            GenerateJSONReports(context, Constants.JsonReportsPath);
+            //GenerateXMLReport(context, Constants.XmlReportsPath);
+            //GeneratePDFReport(context, Constants.PdfReportsPath);
+            //GenerateJSONReports(context, Constants.JsonReportsPath);
 
             var mySqlContext = new FactoryMySqlDbContext();
-            mySqlContext.UpdateDatabase();
-            PopulateMySQLDataBase(context, mySqlContext);
+            //mySqlContext.UpdateDatabase();
+            //PopulateMySQLDataBase(context, mySqlContext);
 
             var expensesPerModel = GetDataFromSQLite();
             var incomesPerModel = GetIncomePerModel(mySqlContext);
