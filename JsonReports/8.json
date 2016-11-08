@@ -2,7 +2,7 @@
   "id": 8,
   "model": "Millennium Falcon",
   "category": "Cruiser",
-  "price": 26165.00,
+  "price": 26165.0,
   "quantity-sold": 415,
-  "total-income": 10858475.00
+  "total-income": 10858475.0
 }

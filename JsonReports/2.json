@@ -2,7 +2,7 @@
   "id": 2,
   "model": "Trade Federation Battleship",
   "category": "Battleship",
-  "price": 12241.00,
+  "price": 12241.0,
   "quantity-sold": 405,
-  "total-income": 4957605.00
+  "total-income": 4957605.0
 }

@@ -2,7 +2,7 @@
   "id": 29,
   "model": "Republic Deffence Ship",
   "category": "Battleship",
-  "price": 17950.00,
+  "price": 17950.0,
   "quantity-sold": 347,
-  "total-income": 6228650.00
+  "total-income": 6228650.0
 }

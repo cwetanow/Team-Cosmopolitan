@@ -2,7 +2,7 @@
   "id": 24,
   "model": "Star Destroyer",
   "category": "Cruiser",
-  "price": 8885.00,
+  "price": 8885.0,
   "quantity-sold": 446,
-  "total-income": 3962710.00
+  "total-income": 3962710.0
 }

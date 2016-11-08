@@ -2,7 +2,7 @@
   "id": 5,
   "model": "Corellian Corvette",
   "category": "Spacecraft",
-  "price": 14996.00,
+  "price": 14996.0,
   "quantity-sold": 394,
-  "total-income": 5908424.00
+  "total-income": 5908424.0
 }

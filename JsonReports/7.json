@@ -2,7 +2,7 @@
   "id": 7,
   "model": "TIE Fighter 2002",
   "category": "Cruiser",
-  "price": 34368.00,
+  "price": 34368.0,
   "quantity-sold": 326,
-  "total-income": 11203968.00
+  "total-income": 11203968.0
 }

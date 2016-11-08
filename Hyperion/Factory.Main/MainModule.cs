@@ -1,4 +1,6 @@
-﻿using Factory.Common;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Factory.Common;
 using Factory.ExcelReports;
 using Factory.ExcelReports.Models;
 using Factory.InsertData;
@@ -18,9 +20,6 @@ using Factory.SQLite;
 using Factory.XmlReports;
 using MongoDB.Driver;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using System;
 
 namespace Factory.Main
 {
@@ -31,50 +30,40 @@ namespace Factory.Main
             var context = new FactoryDbContext();
             context.Database.CreateIfNotExists();
 
-            //var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
+            var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
+            var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
+            
+            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+            PopulateSQLDbWithProducts(productData, context);
 
-            //// For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).
-            // var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
+            var reportsData = ReportMigrator.Instance.GetReports(reports);
+            PopulateSqlDbWithReports(reportsData, context);
 
-           // ImportXmlToMongoDb();
-           // ImportXMLToSqlServer();
+            ImportXmlToMongoDb();
+            ImportXMLToSqlServer();
 
-            ////SQL Server should be accessed through Entity Framework.
-           // var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-           // PopulateSQLDataBase(productData, context);
+            GenerateXMLReport(context, Constants.XmlReportsPath);
+            GeneratePDFReport(context, Constants.PdfReportsPath);
+            GenerateJSONReports(context, Constants.JsonReportsPath);
 
-           // var reportsData = ReportMigrator.Instance.GetReports(reports);
-           // PopulateSqlDbReports(reportsData, context);
+            var mySqlContext = new FactoryMySqlDbContext();
+            mySqlContext.UpdateDatabase();
+            PopulateMySQLDataBase(context, mySqlContext);
 
-            ////The XML files should be read / written through the standard .NET parsers (by your choice).
-           // GenerateXMLReport(context, Constants.XmlReportsPath);
-
-            ////For the PDF export use a non-commercial third party framework.
-           // GeneratePDFReport(context, Constants.PdfReportsPath);
-
-            ////For JSON serializations use a non-commercial library / framework of your choice.
-            //GenerateJSONReports(context, Constants.JsonReportsPath);
-
-            ////MySQL should be accessed through Telerik® Data Access ORM (research it).
-           var mySqlContext = new FactoryMySqlDbContext();
-           //mySqlContext.UpdateDatabase();
-           //PopulateMySQLDataBase(context, mySqlContext);
-
-            ////The SQLite embedded database should be accesses though its Entity Framework provider.
-            var expensePerModel = GetDataFromSQLite();
-
-            ////For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.
-            var incomePerModel = GetIncomePerModel(mySqlContext);
-            CreateExcelYearlyFinancialResult(expensePerModel, incomePerModel);
+            var expensesPerModel = GetDataFromSQLite();
+            var incomesPerModel = GetIncomePerModel(mySqlContext);
+            CreateExcelYearlyFinancialResult(expensesPerModel, incomesPerModel);
         }
 
-        private static void CreateExcelYearlyFinancialResult(IDictionary<string, decimal> expensePerModel, IDictionary<string, decimal> incomePerModel)
+        private static void CreateExcelYearlyFinancialResult(IDictionary<string, decimal> expensesPerModel, IDictionary<string, decimal> incomesPerModel)
         {
-            var excelWriter = new ExcelWriter();
-            var headers = new List<string>() { "Model", "Incomes", "Expenses", "Financial Result"};
-            var financialDataPerModel = new Dictionary<string, List<decimal>>();
+            var headers = new List<string>() { "Model", "Incomes", "Expenses", "Financial Result" };
+            var expenses = expensesPerModel.OrderBy(x => x.Key).Select(x => x.Value).ToList();
+            var incomes = incomesPerModel.OrderBy(x => x.Key).Select(x => x.Value).ToList();
+            var models = expensesPerModel.OrderBy(x => x.Key).Select(x => x.Key).ToList();
 
-            excelWriter.WriteRepors(headers, expensePerModel, incomePerModel)
+            var excelWriter = new ExcelWriter();
+            excelWriter.WriteRepors(headers, models, expenses, incomes);
         }
 
         private static IDictionary<string, decimal> GetIncomePerModel(FactoryMySqlDbContext mySqlContext)
@@ -143,13 +132,13 @@ namespace Factory.Main
             pdfWriter.WriteAggregatedSalesReportsToPdf(resultFilePath);
         }
 
-        private static void PopulateSQLDataBase(IEnumerable<Spaceship> productData, FactoryDbContext context)
+        private static void PopulateSQLDbWithProducts(IEnumerable<Spaceship> productData, FactoryDbContext context)
         {
             context.Spaceships.AddRange(productData);
             context.SaveChanges();
         }
 
-        private static void PopulateSqlDbReports(IEnumerable<Report> reportsForSql, FactoryDbContext context)
+        private static void PopulateSqlDbWithReports(IEnumerable<Report> reportsForSql, FactoryDbContext context)
         {
             context.Reports.AddRange(reportsForSql);
             context.SaveChanges();

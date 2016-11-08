@@ -2,7 +2,7 @@
   "id": 13,
   "model": "Slave I",
   "category": "Battleship",
-  "price": 44586.00,
+  "price": 44586.0,
   "quantity-sold": 353,
-  "total-income": 15738858.00
+  "total-income": 15738858.0
 }

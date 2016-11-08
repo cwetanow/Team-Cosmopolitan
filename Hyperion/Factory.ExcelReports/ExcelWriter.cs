@@ -1,19 +1,20 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.IO;
+using Factory.Common;
+using Factory.ExcelReports.Contracts;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
-using System.Collections.Generic;
-using Factory.ExcelReports.Contracts;
 
 namespace Factory.ExcelReports
 {
     public class ExcelWriter : IExcelWriter
     {
-        public void WriteRepors(IList<string> headers, IDictionary<string, decimal> expensePerModel, IDictionary<string, decimal> incomePerModel)
+        public void WriteRepors(IList<string> headers, IList<string> models, IList<decimal> expensePerModel, IList<decimal> incomePerModel)
         {
             var workbook = new HSSFWorkbook();
             var sheet = workbook.CreateSheet("Financial Result");
 
-            // Cell styles and fonts
+            // Cell styles and fonts.
             var horizonatalAlignmentStyle = workbook.CreateCellStyle();
             horizonatalAlignmentStyle.Alignment = HorizontalAlignment.Center;
             var thinBorderStyle = workbook.CreateCellStyle();
@@ -26,28 +27,60 @@ namespace Factory.ExcelReports
             font.Boldweight = (short)NPOI.SS.UserModel.FontBoldWeight.Bold;
 
             var rowIndex = 0;
-            var row = sheet.CreateRow(rowIndex);
-
-            var productName = row.CreateCell(0);
-            productName.SetCellValue("Product model");
-            productName.CellStyle = horizonatalAlignmentStyle;
-
-            var quantity = row.CreateCell(1);
-            quantity.SetCellValue("Incomes");
-            quantity.CellStyle = horizonatalAlignmentStyle;
-
-            var unitPrice = row.CreateCell(2);
-            unitPrice.SetCellValue("Expenses");
-            unitPrice.CellStyle = horizonatalAlignmentStyle;
-
-            var sum = row.CreateCell(3);
-            sum.SetCellValue("Financial result");
-            sum.CellStyle = horizonatalAlignmentStyle;
+            var firstRow = sheet.CreateRow(rowIndex);
             rowIndex++;
 
-            // write cells values
+            for (int i = 0; i < headers.Count; i++)
+            {
+                var currentCell = firstRow.CreateCell(i);
+                currentCell.SetCellValue(headers[i]);
+                currentCell.CellStyle = horizonatalAlignmentStyle;
+            }
 
+            // write cells values.
+            for (int col = 0; col < models.Count; col++)
+            {
+                var newRow = sheet.CreateRow(rowIndex);
+                newRow.CreateCell(0).SetCellValue(models[col]);
+                newRow.CreateCell(1).SetCellValue((double)incomePerModel[col]);
+                newRow.CreateCell(2).SetCellValue((double)expensePerModel[col]);
 
+                var cell = newRow.CreateCell(3);
+                cell.SetCellType(CellType.Formula);
+                cell.SetCellFormula(string.Format("PRODUCT(B{0} - C{0})", cell.RowIndex + 1));
+                
+                rowIndex++;
+            }
+
+            sheet.AutoSizeColumn(0);
+            sheet.AutoSizeColumn(1);
+            sheet.AutoSizeColumn(2);
+            sheet.AutoSizeColumn(3);
+
+            // write total sum.
+            var lastRow = sheet.CreateRow(rowIndex);
+            NPOI.SS.Util.CellRangeAddress merge = new NPOI.SS.Util.CellRangeAddress(rowIndex, rowIndex, 0, 2);
+            sheet.AddMergedRegion(merge);
+
+            var totalSumTextCell = lastRow.CreateCell(0);
+            totalSumTextCell.SetCellValue("Total sum");
+            totalSumTextCell.CellStyle = horizonatalAlignmentStyle;
+            totalSumTextCell.CellStyle.SetFont(font);
+
+            var totalSumCell = lastRow.CreateCell(3);
+            totalSumCell.SetCellType(CellType.Formula);
+            totalSumCell.SetCellFormula(string.Format("SUM(D1:D{0})", totalSumCell.RowIndex));
+            totalSumCell.CellStyle = horizonatalAlignmentStyle;
+            totalSumCell.CellStyle = thinBorderStyle;
+            totalSumCell.CellStyle.SetFont(font);
+
+            // save file.
+            System.IO.Directory.CreateDirectory(Constants.FinancialReportPath);
+
+            using (var fileData = new FileStream(Constants.FinancialReportPath + Constants.FinanicalReportFileName, FileMode.Create))
+            {
+                workbook.Write(fileData);
+            }
         }
     }
 }

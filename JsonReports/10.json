@@ -2,7 +2,7 @@
   "id": 10,
   "model": "Naboo Royal Cruiser",
   "category": "Cruiser",
-  "price": 38320.00,
+  "price": 38320.0,
   "quantity-sold": 220,
-  "total-income": 8430400.00
+  "total-income": 8430400.0
 }

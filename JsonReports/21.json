@@ -2,7 +2,7 @@
   "id": 21,
   "model": "Naboo Star Skiff",
   "category": "Cruiser",
-  "price": 28676.00,
+  "price": 28676.0,
   "quantity-sold": 270,
-  "total-income": 7742520.00
+  "total-income": 7742520.0
 }

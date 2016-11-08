@@ -2,7 +2,7 @@
   "id": 23,
   "model": "Theta-class Shuttle",
   "category": "Cruiser",
-  "price": 11585.00,
+  "price": 11585.0,
   "quantity-sold": 511,
-  "total-income": 5919935.00
+  "total-income": 5919935.0
 }

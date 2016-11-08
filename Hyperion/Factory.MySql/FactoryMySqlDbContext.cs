@@ -11,7 +11,7 @@ namespace Factory.MySql
         private static readonly BackendConfiguration BackendConfig = GetBackendConfiguration();
         private static readonly MetadataSource MetadataSource = GetMetadataSource();
 
-        public FactoryMySqlDbContext() 
+        public FactoryMySqlDbContext()
             : base(ConnectionString, BackendConfig, MetadataSource)
         {
         }

@@ -2,7 +2,7 @@
   "id": 12,
   "model": "Neimoidian Shuttle",
   "category": "Spacecraft",
-  "price": 30065.00,
+  "price": 30065.0,
   "quantity-sold": 364,
-  "total-income": 10943660.00
+  "total-income": 10943660.0
 }

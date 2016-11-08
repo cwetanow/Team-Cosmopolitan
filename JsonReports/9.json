@@ -2,7 +2,7 @@
   "id": 9,
   "model": "Trade Federation Shuttle",
   "category": "Battleship",
-  "price": 26675.00,
+  "price": 26675.0,
   "quantity-sold": 447,
-  "total-income": 11923725.00
+  "total-income": 11923725.0
 }

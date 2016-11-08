@@ -2,7 +2,7 @@
   "id": 22,
   "model": "Trade Federation Cruiser",
   "category": "Battleship",
-  "price": 4204.00,
+  "price": 4204.0,
   "quantity-sold": 441,
-  "total-income": 1853964.00
+  "total-income": 1853964.0
 }

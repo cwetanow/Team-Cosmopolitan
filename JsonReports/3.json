@@ -2,7 +2,7 @@
   "id": 3,
   "model": "TIE Fighter",
   "category": "Spacecraft",
-  "price": 24792.00,
+  "price": 24792.0,
   "quantity-sold": 455,
-  "total-income": 11280360.00
+  "total-income": 11280360.0
 }

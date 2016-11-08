@@ -2,7 +2,7 @@
   "id": 19,
   "model": "Trade Federation Landing Ship",
   "category": "Spacecraft",
-  "price": 35058.00,
+  "price": 35058.0,
   "quantity-sold": 340,
-  "total-income": 11919720.00
+  "total-income": 11919720.0
 }
