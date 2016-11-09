@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Factory.Common;
 using Factory.ExcelReports;
@@ -50,13 +51,14 @@ namespace Factory.Main
             mySqlContext.UpdateDatabase();
             PopulateMySQLDataBase(context, mySqlContext);
 
-            var expensesPerModel = GetDataFromSQLite();
-            var incomesPerModel = GetIncomePerModel(mySqlContext);
-            CreateExcelYearlyFinancialResult(expensesPerModel, incomesPerModel);
+        //    var expensesPerModel = GetDataFromSQLite();
+        //    var incomesPerModel = GetIncomePerModel(mySqlContext);
+        //    CreateExcelYearlyFinancialResult(expensesPerModel, incomesPerModel);
         }
 
         private static void CreateExcelYearlyFinancialResult(IDictionary<string, decimal> expensesPerModel, IDictionary<string, decimal> incomesPerModel)
         {
+            Console.WriteLine("Generating Excel Reports...");
             var headers = new List<string>() { "Model", "Incomes", "Expenses", "Financial Result" };
             var expenses = expensesPerModel.OrderBy(x => x.Key).Select(x => x.Value).ToList();
             var incomes = incomesPerModel.OrderBy(x => x.Key).Select(x => x.Value).ToList();
@@ -82,6 +84,7 @@ namespace Factory.Main
 
         private static void PopulateMySQLDataBase(FactoryDbContext sqlContext, FactoryMySqlDbContext mySqlContext)
         {
+            Console.WriteLine("Populating MySql Database...");
             var spaceships = sqlContext.Spaceships.ToList();
             var sales = sqlContext.Sales.ToList();
             var reports = new List<ProductReport>();
@@ -102,6 +105,7 @@ namespace Factory.Main
 
         private static void GenerateJSONReports(FactoryDbContext context, string resultFilesPath)
         {
+            Console.WriteLine("Generating Json Reports...");
             var spaceships = context.Spaceships.ToList();
             var sales = context.Sales.ToList();
             var reports = new List<ProductReport>();
@@ -119,6 +123,7 @@ namespace Factory.Main
 
         private static void GenerateXMLReport(FactoryDbContext context, string resultFilePath)
         {
+            Console.WriteLine("Generating Xml Reports...");
             var shipModels = context.Spaceships.Select(sh => sh.Model).ToList();
             var reports = context.Reports.OrderBy(r => r.Date).ToList();
             var xmlWriter = new XmlReportsWriter(shipModels, reports);
@@ -127,6 +132,7 @@ namespace Factory.Main
 
         private static void GeneratePDFReport(FactoryDbContext context, string resultFilePath)
         {
+            Console.WriteLine("Generating Pdf Reports...");
             var salesReports = context.Reports.OrderBy(r => r.Date).ToList();
             var pdfWriter = new PdfReportsWriter(salesReports);
             pdfWriter.WriteAggregatedSalesReportsToPdf(resultFilePath);
@@ -134,18 +140,21 @@ namespace Factory.Main
 
         private static void PopulateSQLDbWithProducts(IEnumerable<Spaceship> productData, FactoryDbContext context)
         {
+            Console.WriteLine("Populating Sql Database with Models...");
             context.Spaceships.AddRange(productData);
             context.SaveChanges();
         }
 
         private static void PopulateSqlDbWithReports(IEnumerable<Report> reportsForSql, FactoryDbContext context)
         {
+            Console.WriteLine("Populating Sql Database with Reports...");
             context.Reports.AddRange(reportsForSql);
             context.SaveChanges();
         }
 
         private static ICollection<ExcelReport> GetReportsDataFromExcel(string zipFilePath, string unzipedFilesPath)
         {
+            Console.WriteLine("Collecting Reports Data from Excel...");
             var userMessanger = new UserMessageWriter();
 
             UzipFiles unzipper = new UzipFiles(userMessanger);
@@ -159,6 +168,7 @@ namespace Factory.Main
 
         private static IList<SpaceshipMap> GetDataFromMongoDb(string dataName, string collectionName)
         {
+            Console.WriteLine("Collecting Data from MongoDB...");
             var mongoContext = new MongoDBContext(dataName, Constants.MongoDbConnectionString);
             var mongoDBData = mongoContext.GetData(collectionName);
 
@@ -167,6 +177,7 @@ namespace Factory.Main
 
         private static void ImportXmlToMongoDb()
         {
+            Console.WriteLine("Importing Data from Xml to MongoDB...");
             var mongo = new MongoClient(Constants.MongoDbConnectionString);
             var db = mongo.GetDatabase(Constants.DataName);
 
@@ -182,6 +193,7 @@ namespace Factory.Main
 
         private static void ImportXMLToSqlServer()
         {
+            Console.WriteLine("Importing Data from Xml to Sql Server...");
             var db = new FactoryDbContext();
 
             var collection = FactoryXmlImporter.ImportSpaceships(Constants.XmlDataToImport);
