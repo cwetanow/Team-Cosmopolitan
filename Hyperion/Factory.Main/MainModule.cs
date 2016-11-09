@@ -8,9 +8,9 @@ using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
 using Factory.InsertData.Models.SpaceshipMissions;
 using Factory.JsonReports;
+using Factory.JsonReports.Models;
 using Factory.LoadXML;
 using Factory.LoadXML.Models;
-using Factory.Models;
 using Factory.MongoDB;
 using Factory.MongoDB.ModelMaps;
 using Factory.MySql;
@@ -27,28 +27,28 @@ namespace Factory.Main
     {
         public static void Main()
         {
-            //var context = new FactoryDbContext();
-            //context.Database.CreateIfNotExists();
+            var context = new FactoryDbContext();
+            context.Database.CreateIfNotExists();
 
-            //var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
-            //var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
-            
-            //var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
-            //PopulateSQLDbWithProducts(productData, context);
+            var mongoData = GetDataFromMongoDb(Constants.DataName, Constants.CollectionName);
+            var reports = GetReportsDataFromExcel(Constants.ZipFilePath, Constants.UnzipedFilesPath);
 
-            //var reportsData = ReportMigrator.Instance.GetReports(reports);
-            //PopulateSqlDbWithReports(reportsData, context);
+            var productData = ProductMigrator.Instance.GetProductData(mongoData, context);
+            PopulateSQLDbWithProducts(productData, context);
 
-            //ImportXmlToMongoDb();
-            //ImportXMLToSqlServer();
+            var reportsData = ReportMigrator.Instance.GetReports(reports);
+            PopulateSqlDbWithReports(reportsData, context);
 
-            //GenerateXMLReport(context, Constants.XmlReportsPath);
-            //GeneratePDFReport(context, Constants.PdfReportsPath);
-            //GenerateJSONReports(context, Constants.JsonReportsPath);
+            ImportXmlToMongoDb();
+            ImportXMLToSqlServer();
+
+            GenerateXMLReport(context, Constants.XmlReportsPath);
+            GeneratePDFReport(context, Constants.PdfReportsPath);
+            GenerateJSONReports(context, Constants.JsonReportsPath);
 
             var mySqlContext = new FactoryMySqlDbContext();
-            //mySqlContext.UpdateDatabase();
-            //PopulateMySQLDataBase(context, mySqlContext);
+            mySqlContext.UpdateDatabase();
+            PopulateMySQLDataBase(context, mySqlContext);
 
             var expensesPerModel = GetDataFromSQLite();
             var incomesPerModel = GetIncomePerModel(mySqlContext);
@@ -85,8 +85,8 @@ namespace Factory.Main
             var spaceships = sqlContext.Spaceships.ToList();
             var sales = sqlContext.Sales.ToList();
             var reports = new List<ProductReport>();
-            var jsonWriter = new JsonReportsWriter(spaceships, sales, reports);
-            var jsonData = jsonWriter.GetReportsInJsonFormat();
+            var jsonHandler = new JsonReportsHandler(spaceships, sales, reports);
+            var jsonData = jsonHandler.GetReportsInJsonFormat();
 
             if (mySqlContext.ProductsReports.Count() == 0)
             {
@@ -105,7 +105,7 @@ namespace Factory.Main
             var spaceships = context.Spaceships.ToList();
             var sales = context.Sales.ToList();
             var reports = new List<ProductReport>();
-            var jsonWriter = new JsonReportsWriter(spaceships, sales, reports);
+            var jsonWriter = new JsonReportsHandler(spaceships, sales, reports);
             jsonWriter.WriteReportsToJson(resultFilesPath);
         }
 

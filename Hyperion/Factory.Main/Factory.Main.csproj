@@ -132,10 +132,6 @@
       <Project>{9A012B8C-D594-40FB-8402-00532CC098D9}</Project>
       <Name>Factory.LoadXML</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Factory.Models\Factory.Models.csproj">
-      <Project>{af50c4b5-2e40-4189-953e-b4a3f37d4f11}</Project>
-      <Name>Factory.Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Factory.MongoDB\Factory.MongoDB.csproj">
       <Project>{586b8862-81ec-49b5-a42c-a849f9941c7d}</Project>
       <Name>Factory.MongoDB</Name>

@@ -3,18 +3,18 @@ using System.IO;
 using System.Linq;
 using Factory.InsertData.Models.Products;
 using Factory.InsertData.Models.Reports;
-using Factory.Models;
+using Factory.JsonReports.Models;
 using Newtonsoft.Json;
 
 namespace Factory.JsonReports
 {
-    public class JsonReportsWriter
+    public class JsonReportsHandler
     {
         private readonly ICollection<Spaceship> Spaceships;
         private readonly ICollection<ProductSale> Sales;
         private readonly ICollection<ProductReport> Reports;
 
-        public JsonReportsWriter(ICollection<Spaceship> spaceships, ICollection<ProductSale> sales, ICollection<ProductReport> reports)
+        public JsonReportsHandler(ICollection<Spaceship> spaceships, ICollection<ProductSale> sales, ICollection<ProductReport> reports)
         {
             this.Spaceships = spaceships;
             this.Sales = sales;
@@ -31,7 +31,7 @@ namespace Factory.JsonReports
             }
         }
 
-        public IList<string> GetReportsInJsonFormat()
+        public ICollection<string> GetReportsInJsonFormat()
         {
             var reports = new List<string>();
 
